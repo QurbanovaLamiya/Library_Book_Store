@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,9 @@
     <link rel="icon" href="./assets/images/./logo.png">
     <!-- Css -->
     <link rel="stylesheet" href="./assets/css/client/global.css">
-    <title>Home | Library Book Store</title>
+    <title>Books | Library Book Store</title>
 </head>
+
 <body>
     <!-- Header Start -->
     <header class="container-fluid">
@@ -21,11 +23,11 @@
         </div>
         <nav class="clientPageNavbar">
             <ul class="d-flex ">
-                <li><a href="./index.html" class="font-weight-bold">Home</a></li>
-                <li><a href="./catalog.html">Catalog</a></li>
-                <li><a href="./aboutStore.html">About Store</a></li>
-                <li><a href="./contactUs.html">Contact Us</a></li>
-                <li><a href="./search.html">Search</a></li>
+                <li><a href="" class="font-weight-bold">Home</a></li>
+                <li><a href="">Catalog</a></li>
+                <li><a href="">About Store</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Search</a></li>
             </ul>
         </nav>
         <!-- Button trigger modal -->
@@ -60,70 +62,54 @@
     </header>
 
     <!-- Main Start -->
-    <main>
-        <section class="homeSection d-flex justify-content-between align-items-center">
-            <div>
-                <h1>Books from A to Z</h1>
-                <p class="mb-lg-3">In our store you can find a book for every taste. A large assortment. Nice prices.
-                    Interesting stories.</p>
-                <button class="pl-lg-4"><a href="" class="text-white h6">Go to catalog</a></button>
-            </div>
-            <div>
-                <img src="./assets/images/bookImages.svg" alt="">
-            </div>
-        </section>
-
-        <section class="catalogSection container">
-            <div>
-                <p class="text-center mb-lg-5 h4 ">Catalog</p>
-            </div>
-            <div class="catalogSectionBox text-white d-flex flex-wrap">
-                <div class="pt-4"><a href="">Books</a></div>
-                <div class="pt-4"><a href="">Electronic books</a></div>
-                <div class="pt-4"><a href="">Audiobooks</a></div>
-                <div class="pt-4"><a href="">Toys, creativity</a></div>
-                <div class="pt-4"><a href="">Book accessories</a></div>
-                <div class="pt-4"><a href="">Notepads</a></div>
-                <div class="pt-4"><a href="">Board games</a></div>
-                <div class="pt-4"><a href="">Present</a></div>
-                <div class="pt-4"><a href="">Stock</a></div>
-            </div>
-        </section>
-
-        <section class="aboutStoreSection container">
-            <div class="aboutStoreTitle">
-                <p class="text-center">About Store</p>
-            </div>
-            <div class="aboutStoreContent d-flex">
-                <div class="d-flex align-items-center">
-                    <span>35</span>
-                    <p>Branches the country</p>
+    <main class="container">
+        <!-- Book Page Start -->
+        <section class="booksSection d-flex justify-content-between">
+            <div class="bookInfo">
+                <button class="backBtn text-white">&#60;BACK</button>
+                <div>
+                    <p class="bookYear text-white text-center">2017</p>
+                    <h2>Order in Chaos</h2>
+                    <span class="h6"> 2 days ago</span>
+                    <p class="bookAuthor">Konstantin Koptelov</p>
+                    <p class="bookContent"> s of Kiev can receive an order on the day of its registration. Customers
+                        from other cities of Ukraine can receive an order within 1-5 days, depending on the location of
+                        the settlement and the selected delivery method. Orders over UAH 1000 are delivered free of
+                        charge *. You can see the available methods, exact terms and cost of delivery during checkout in
+                        the order basket, after selecting the delivery city.More details</p>
                 </div>
-                <div class="d-flex align-items-center">
-                    <span>898</span>
-                    <p>Products catalog</p>
-                </div>
-                <div class="d-flex align-items-center">
-                    <span>8659</span>
-                    <p>Buyers</p>
-                </div>
-                <div class="d-flex align-items-center">
-                    <span>72</span>
-                    <p>Hours delivery to cities</p>
+                <div class="commentSection">
+                    <div class="commentInput d-flex">
+                        <input class="form-control form-control-lg bg-white pl-lg-4 mb-lg-5" type="text"
+                            placeholder="your anonim comment ...">
+                        <button class="commentBtn"><img src="./assets/images/sendIcon.svg                         "
+                                alt=""></button>
+                    </div>
+                    <div class="commentContent">
+                        <div class="bg-white p-lg-4">
+                            <span class="h6 pr-lg-4 ">anonim</span>
+                            <span class="h6 font-weight-light">18:32 today</span>
+                            <p class="mt-lg-3 h6">Woah, your project looks awesome! How long have you been coding for?
+                                I’m still new, but
+                                think I want to dive into React as well soon. Perhaps you can give me an insight on
+                                where I can learn React? Thanks!</p>
+                        </div>
+                        <div class="bg-white p-lg-4">
+                            <span class="h6 pr-lg-4">anonim</span>
+                            <span class="h6 font-weight-light">2 days ago</span>
+                            <p class="mt-lg-3 h6">Woah, your project looks awesome! How long have you been coding for?
+                                I’m still new, but
+                                think I want to dive into </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="bookImg">
+                <img src="./assets/images/book.svg" alt="">
+            </div>
 
-        <section class="deliverySection container">
-            <p class="deliverySectionTitle h4 text-center">Delivery</p>
-            <p class="deliverySectionContent text-center">We work without holidays and weekends! Residents of Kiev can
-                receive an order on the day of its registration. Customers from other cities of Ukraine can receive an
-                order within 1-5 days,<br /> depending on the location of the settlement and the selected delivery
-                method. Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact
-                terms and cost of delivery during checkout in the order basket, aafter selecting the delivery
-                city.<br />More details</p>
         </section>
-
+        <!-- Socialbar Start -->
         <section class="socialMediaSection container">
             <div class="socialMediaSectionTitle mb-lg-4">
                 <p class="text-center h4">
@@ -183,4 +169,5 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
