@@ -52,6 +52,7 @@ button {
     margin: 20px auto;
     width: 151px;
     line-height: 24px;
+    font-size: 20px;
   }
   .adminLoginForm input,
   button {
