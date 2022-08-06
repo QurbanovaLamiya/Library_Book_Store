@@ -1,0 +1,86 @@
+body {
+  box-sizing: border-box;
+  font-family: var(--MontserratFont);
+  color: var(--ColorDarkGreen);
+}
+
+.booksSection {
+  margin-top: 180px;
+}
+.backBtn {
+  margin-bottom: 80px;
+}
+.backBtn,
+.bookYear {
+  width: 100px;
+  height: 29px;
+  background-color: var(--ColorOrange);
+  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
+  border-radius: 3px;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  border: none;
+}
+.bookYear {
+  width: 69px;
+  height: 23px;
+  background: #2f80ed;
+}
+.bookInfo h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 70px;
+}
+.bookInfo span {
+  font-weight: 700;
+  line-height: 30px;
+}
+.bookAuthor {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+}
+.bookContent {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  width: 85%;
+}
+.commentSection {
+  margin: 120px 0 53px 0;
+}
+
+.commentSection input {
+  height: 60px;
+  width: 83%;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.commentBtn {
+  width: 60px;
+  height: 60px;
+  background: #e16a00;
+  border-radius: 5px;
+  border: none;
+  margin-left: 20px;
+}
+
+.commentContent div {
+  width: 95%;
+  border-radius: 5px;
+  margin-bottom: 43px;
+}
+.commentContent span{
+  font-weight: 500;
+  line-height: 19px;
+  color: #232323;
+  
+}
+.commentContent div p{
+  font-weight: 400;
+  line-height: 24px;  
+  color: #232323;
+}
