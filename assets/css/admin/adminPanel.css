@@ -22,15 +22,15 @@
 .image-admin {
   display: block;
 }
-.logo{
+.logo {
   display: none;
 }
-#AdminSearch {
-  border: 2px solid #391f007a;
+.searchBtn {
+  padding: 8px 22px;
+  width: 63px;
+  height: 40px;
+  background: #ff8b00;
   border-radius: 34px;
-}
-.formdiv {
-  width: 50%;
 }
 .addbook {
   font-family: var(--MontserratFont);
@@ -52,6 +52,11 @@
   font-size: 14px;
   line-height: 25px;
   color: var(--ininput);
+  border: 2px solid #391f007a;
+  border-radius: 34px;
+  width: 395px;
+  height: 41px;
+  margin-right: 7px;
 }
 .bookForm {
   font-family: var(--MontserratFont);
@@ -96,20 +101,25 @@
   width: 90%;
 }
 @media screen and (max-width: 320px) {
-  #adminPanelNavbar{
+  #adminPanelNavbar {
+    position: relative;
     display: none;
   }
-  .logo{
+  .logo {
     display: block;
-    background-color: aqua;
+    margin-right: 20px;
+  }
+  #AdminSearch {
+    width: 196px;
   }
   .adminpanel {
     overflow-x: hidden;
   }
   .hamburger {
-    background-color: #E16A00;
     display: block;
-    /* margin: 5% 7%; */
+    position: absolute;
+    top: 63px;
+    right: 0;
   }
   .img-fluid {
     display: none;
@@ -127,8 +137,6 @@
     width: 10%;
   }
 }
-
-
 
 /* ScrollBar */
 ::-webkit-scrollbar {
@@ -157,14 +165,14 @@
 }
 form input {
   height: 70px;
-  border: 1px solid #CECECE;
+  border: 1px solid #cecece;
   margin-bottom: 35px;
   padding-left: 50px;
 }
 form .joinBtn {
   height: 70px;
   color: #fff;
-  background: #E16A00;
-  border: 1px solid #CECECE;
+  background: #e16a00;
+  border: 1px solid #cecece;
   border-radius: 5px;
 }
