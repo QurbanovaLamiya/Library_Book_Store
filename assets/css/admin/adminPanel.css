@@ -4,6 +4,9 @@
 #adminPanelNavbar {
   background-color: var(--ColorRed);
 }
+#AdminPanel{
+  display: none;
+}
 .mainLogo img {
   margin: 75px 0 55px 35px;
 }
