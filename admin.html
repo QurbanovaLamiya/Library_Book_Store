@@ -19,7 +19,7 @@
 
     <!-- Admin Login -->
 
-    <div id="adminLogin" class="vh-100  d-none">
+    <div id="adminLogin" class="vh-100">
         <div>
             <img src="./assets/images/mainLogo.svg" class="adminLoginImg" alt="logoImg">
         </div>
@@ -36,7 +36,7 @@
 
     <!-- Admin Panel -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="AdminPanel">
         <div class="row">
             <div class="col-lg-3" id="adminPanelNavbar">
                 <div class="mainLogo">
@@ -58,7 +58,7 @@
                             <li><a href="#menuContact" class="text-white d-flex align-items-center"><img
                                         src="./assets/images/bookLogo.svg" alt="" /><span>Contact</span></a>
                             </li>
-                            <li><a href="#adminLogin" class="text-white d-flex align-items-center"><img
+                            <li><a href="#adminLogin" class="text-white d-flex align-items-center" id="adminLogout"><img
                                         src="./assets/images/bookLogo.svg" alt="" /><span>Logout</span></a></li>
                         </ul>
                     </nav>
@@ -82,19 +82,19 @@
                                     <img src="./assets/images/x.svg" class="x-image" alt="">
                                 </div>
                                 <ul class="ml-2 mobileNavList">
-                                    <li class=""><a href="" class="d-flex align-items-center mb-3"><img
+                                    <li><a href="#homePage" class="d-flex align-items-center mb-3"><img
                                                 src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
                                                 class="text-white">Home</span></a></li>
-                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                    <li><a href="#menuAboutStore" class="d-flex align-items-center mb-3"><img
                                                 src="./assets/images/mobileNavBook.svg" class="mr-2 " alt=""><span
                                                 class="text-white">About</span></a></li>
-                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                    <li><a href="#menuJoin" class="d-flex align-items-center mb-3"><img
                                                 src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
                                                 class="text-white">Join Us</span></a></li>
-                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                    <li><a href="#menuContact" class="d-flex align-items-center mb-3"><img
                                                 src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
                                                 class="text-white">Contact</span></a></li>
-                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                    <li><a href="#adminLogin" id="adminLogout" class="d-flex align-items-center mb-3"><img
                                                 src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
                                                 class="text-white">Logout</span></a></li>
                                 </ul>
@@ -350,6 +350,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+        <script src="./assets/js/admin/adminLogin.js"></script>
     <script src="./assets/js/admin/admin.js"></script>
 </body>
 
