@@ -22,7 +22,10 @@
 .image-admin {
   display: block;
 }
-.logo {
+.menuHeader {
+  display: none;
+}
+.responsiveNavbar {
   display: none;
 }
 .searchBtn {
@@ -92,34 +95,29 @@
   background-color: var(--ColorRed);
   font-family: var(--NunitoSansFont);
 }
-.hamburger {
-  background: none;
-  border: none;
-  display: none;
-}
 .tablewidth {
   width: 90%;
+}
+.sideBarBtn {
+  display: none;
+}
+.sideBar {
+  display: none;
 }
 @media screen and (max-width: 320px) {
   #adminPanelNavbar {
     position: relative;
     display: none;
   }
-  .logo {
+  .menuHeader {
     display: block;
-    margin-right: 20px;
   }
   #AdminSearch {
-    width: 196px;
+    width: 100%;
+    margin-left: 15px;
   }
   .adminpanel {
     overflow-x: hidden;
-  }
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 63px;
-    right: 0;
   }
   .img-fluid {
     display: none;
@@ -135,6 +133,37 @@
   }
   .tablewidth {
     width: 10%;
+  }
+  .navbar-brand {
+    margin-top: 16px;
+  }
+  .sideBar {
+    display: block;
+    height: 100%;
+  }
+  .leftSide {
+    background-color: var(--ColorRed);
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  .mobileNavImg {
+    margin: 20px 0 70px;
+  }
+  .mobileNavList {
+    font-family: var(--MontserratFont);
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .rightSide {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: rgba(36, 20, 0, 0.7);
+    height: 100%;
   }
 }
 

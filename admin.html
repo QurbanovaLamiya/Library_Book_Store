@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <!-- Admin Login -->
 
     <div id="adminLogin" class="vh-100  d-none">
@@ -64,29 +65,58 @@
                 </div>
             </div>
             <div class="col-lg-9 adminpanel">
-                <div id="adminLogin"></div>
+                <div class="mobileNav">
+                    <div class="menuHeader mb-5">
+                        <div class="d-flex align-items-center justify-content-between mr-4">
+                            <a class="navbar-brand" href="#"><img src="./assets/images/homeLogo.svg" alt=""></a>
+                            <img class="hamburger" src="./assets/images/hamburgerMenu.svg" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="sideBar">
+                        <div class="row sidebar">
+                            <div class="col-9 leftSide">
+                                <div class="mobileNavImg d-flex justify-content-between align-items-center">
+                                    <img src="./assets/images/mobileLogo.svg" class="logoImg" alt="">
+                                    <img src="./assets/images/x.svg" class="x-image" alt="">
+                                </div>
+                                <ul class="ml-2 mobileNavList">
+                                    <li class=""><a href="" class="d-flex align-items-center mb-3"><img
+                                                src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                class="text-white">Home</span></a></li>
+                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                                src="./assets/images/mobileNavBook.svg" class="mr-2 " alt=""><span
+                                                class="text-white">About</span></a></li>
+                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                                src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                class="text-white">Join Us</span></a></li>
+                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                                src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                class="text-white">Contact</span></a></li>
+                                    <li><a href="" class="d-flex align-items-center mb-3"><img
+                                                src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
+                                                class="text-white">Logout</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-3 rightSide"></div>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="adminPanel">
-                    <div class="col-md-12 ">
-                        <div class="row ml-2">
+                    <div>
+                        <div class="row ml-lg-2">
                             <div class="col-md-12">
-                                <div class="d-flex justify-content-end mt-5 mx-5">
-                                    <div class="d-flex    mt-3">
-                                        <img src="./assets/images/homeLogo.svg" class="logo" alt="">
-                                        <img src="./assets/images/adminLogo.svg" class="img-fluid mr-2 " alt="">
-                                        <span class="admin h5 mt-1">Admin</span>
+                                <div class="d-flex justify-content-end mt-lg-5 mx-lg-5">
+                                    <div class="d-flex mt-lg-3">
+                                        <img src="./assets/images/adminLogo.svg" class="img-fluid mr-lg-2 " alt="">
+                                        <span class="admin h5 mt-lg-1">Admin</span>
                                     </div>
-                                    <button class="hamburger">
-                                        <svg width="35" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <rect y="10.5262" width="25" height="3.94736" fill="#241400" />
-                                            <rect y="21.0527" width="25" height="3.94736" fill="#241400" />
-                                            <rect width="25" height="3.94736" fill="#241400" />
-                                        </svg>
-                                    </button>
                                 </div>
                             </div>
 
-                            <div class="addBook col-md-12 mt-5">
+                            <div class="addBook col-md-12 mt-lg-5">
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="h4 addbook " id="homePage"> Add book</div>
@@ -97,20 +127,21 @@
                                     <div class="form-group d-flex  formdiv  ml-lg-3 ">
                                         <div class="d-flex">
                                             <input type="text" id="AdminSearch" placeholder="Dan Brown"
-                                            class="form-control px-lg-5">
-                                            <button class="searchBtn "><img src="./assets/images/searchBtn.svg" alt=""></button>
+                                                class="form-control px-lg-5">
+                                            <button class="searchBtn "><img src="./assets/images/searchBtn.svg"
+                                                    alt=""></button>
                                         </div>
                                         <div>
-                                            <img src="./assets/images/search.svg" class=" ml-lg-2" alt="">
+                                            <!-- <img src="./assets/images/search.svg" class=" ml-lg-2" alt=""> -->
                                         </div>
                                         <div id="AdminSearchResult"
                                             class="jumbotron-fluid  AdminSearchResult d-none position-absolute bg-white shadow rounded-35 overflow-auto w-50 pt-lg-3 pb-lg-1  ">
                                             <div class="container">
                                                 <div class="search-result-list">
-                                                    <div class="loading">
+                                                    <!-- <div class="loading">
                                                         <img class="rounded-circle"
                                                             src="./assets/images/Spinner-1s-200px.gif" width="45" />
-                                                    </div>
+                                                    </div> -->
                                                     <!-- <div class="search-result-item cursor-pointer">
                                                              <p class="lead">
                                                                 <img src="./assets/images/clock.svg" class="mr-2" alt="">
@@ -123,7 +154,6 @@
                                         </div>
                                     </div>
                                 </div>
-
 
                                 <!-- Add Book -->
                                 <div class="form-book-section  mt-lg-5">
@@ -164,7 +194,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-group mb-lg-4 name2">
-                                                <label  class="ml-3" for="bookDesc">Description</label>
+                                                <label class="ml-3" for="bookDesc">Description</label>
                                                 <textarea rows="4" value='' type="text"
                                                     class="form-control form-control-lg form2" id="bookDesc"
                                                     name="bookDesc">
@@ -186,7 +216,7 @@
                                                         </button>
                                                         <div class="dropdown-menu shadow  ">
                                                             <!-- Dropdown menu links -->
-                                                            <div class="form-group p--lg1">
+                                                            <div class="form-group p-lg-1">
                                                                 <label for="addType">Add type</label>
                                                                 <input type="text" class="form-control" id="addType"
                                                                     name="publicationYear">
@@ -212,10 +242,10 @@
                             </div>
 
                             <!-- About Store section -->
-                            <div class="col-md-12 mt-5">
-                                <div class="h2 mb-4 addbook  bookForm" id="menuAboutStore">About Store</div>
-                                <div class="form-book-section mt-2">
-                                    <div class="jumbotron form-book-section2  bg-white p-4 px-0">
+                            <div class="col-md-12 mt-lg-5">
+                                <div class="h2 mb-lg-4 addbook  bookForm" id="menuAboutStore">About Store</div>
+                                <div class="form-book-section mt-lg-2">
+                                    <div class="jumbotron form-book-section2  bg-white p-lg-4 px-lg-0">
                                         <form>
                                             <div class="form-group name2">
                                                 <label for="aboutTitle">Title</label>
@@ -229,9 +259,8 @@
                                                     id="aboutStoreImageUrl" name="aboutImageUrl">
                                                 <small class="form-text text-danger" style="display:none"></small>
                                             </div>
-                                            <div class="form-group mb-4 name2">
-                                                <label 
-                                            for="aboutDesc">Description</label>
+                                            <div class="form-group mb-lg-4 name2">
+                                                <label for="aboutDesc">Description</label>
                                                 <textarea rows="4" value='' type="text"
                                                     class="form-control form-control-lg form2" id="aboutStoreDesc"
                                                     name="aboutDesc">
@@ -247,8 +276,8 @@
                             </div>
 
                             <!-- Join  Us section -->
-                            <div class="col-md-12 my-5">
-                                <div class="h2 mb-4 bookForm" id="menuJoin">Join Us</div>
+                            <div class="col-md-12 my-lg-5">
+                                <div class="h2 mb-lg-4 bookForm" id="menuJoin">Join Us</div>
                                 <table class=" w-50 table text-center">
                                     <thead class="table1 text-white ">
                                         <tr>
@@ -287,8 +316,8 @@
                             </div>
 
                             <!-- Contact Us section -->
-                            <div class="col-12 my-5 pr-5 ">
-                                <div class="h2 mb-4 bookForm" id="menuContact">Contact Us</div>
+                            <div class="col-12 my-lg-5 pr-lg-5 ">
+                                <div class="h2 mb-lg-4 bookForm" id="menuContact">Contact Us</div>
                                 <table class="table tablewidth text-center">
                                     <thead class=" table1 text-white ">
                                         <tr>
@@ -321,6 +350,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/admin/admin.js"></script>
 </body>
 
 </html>
