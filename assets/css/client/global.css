@@ -7,5 +7,6 @@
 /* Client Page */
 
 @import url(./index.css);
-@import url(./about.css);
-@import url(./books.css);
+/* @import url(./about.css);
+@import url(./books.css); */
+@import url(./search.css);

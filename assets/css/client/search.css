@@ -1,0 +1,261 @@
+main{
+    margin-top: 143px;
+  margin-bottom: 134px;
+  z-index: -10;
+}
+
+.content{
+    margin-top: 44px;
+    margin-left: 40px ;
+    margin-right: -15px;
+}
+.textt h2{
+    font-weight: 700;
+font-size: 36px;
+line-height: 196.19%;
+
+color: var(--ColorDarkGreen);
+}
+
+.content h2{
+   font-family: var(--Montserrat600);
+   font-style: normal;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 196.19%;
+   margin-left: -20px;
+   display: flex;
+   align-items: center;
+   
+   color: var(--ColorDarkGreen);
+   
+    
+
+}
+.content h3{
+    font-family: var(--Montserrat600);
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 176.19%;
+
+
+color: var(--ColorDarkGreen);
+
+}
+.searchh{
+    margin-top: 40px;
+   background-color: var(--White);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.searchh2{
+    margin-top: 40px;
+background-color: var(--White);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+.content p{
+    font-family: var(--Montserrat600);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 176.19%;
+
+display: flex;
+align-items: center;
+
+
+color: var(--ColorDarkGreen);
+
+}
+.form-control{
+    font-family: var(--CrimsonTextFont);
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 30px;
+border-radius: 5px;
+color: var(--ColorDarkGreen);
+height: 69.52px;
+margin-top: 44px;
+background: var(--White);
+border: 1px solid var(--White3);
+font-family: var(--CrimsonTextFon);
+}
+#exampleFormControlInput1{
+    font-family: var(--CrimsonTextFont);
+    font-weight: 400;
+font-size: 23px;
+line-height: 30px;
+
+color:var(--Brown);
+}
+.btns{
+    background-color: var(--Orange2);
+ margin-top: 34.48px;
+ height: 65px;
+ /* width: 433px; */
+ border: none;
+border-radius: 5px;
+font-family: var(--CrimsonTextFon);
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+
+line-height: 39px;
+text-align: center;
+}
+.btns a{
+    color: var(--White);
+    text-decoration: none;
+}
+.hamburger {
+    background: none;
+    border: none;
+    display: none;
+  }
+ .search-content{
+    margin: 64px 27px 134px 23px;
+ }
+ .search-content2{
+    margin: 64px 27px 134px 23px;
+ }
+ 
+
+
+
+
+.carousel-control-prev{
+    margin-left: -60px;
+background-image:url(/assets/images/prev.svg);
+
+width: 14.79px;
+height: 46px;
+margin-top: 250px;
+/* margin: auto 0; */
+/* top: 50px; */
+
+/* Тема */
+
+/* border: 1px solid #720418; */
+}
+.carousel-control-next{
+    margin-right: -60px;
+    background-image: url(/assets/images/next.svg);
+    width: 14.79px;
+height: 46px;
+margin-top: 250px;
+
+}
+.fixed-menu{
+    display: none;
+}
+.modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-dialog {
+    /* width: 100%; */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  
+  
+  .modal-content {
+    height: auto;
+    /* min-height: 100%; */
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    margin: 0 auto;
+    text-align: center;
+    /* margin-left: 200px; */
+  }
+  
+  .modal-body {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+   @media screen and (max-width:320px) {
+              body{
+                overflow-x: hidden;
+              }
+    .search-content{
+        text-align: center;
+        margin-bottom: 30px;
+    
+    }
+    .search-content2{
+        text-align: center;
+        margin-bottom: 30px;
+       
+    }
+    .content{
+    text-align: center;
+    }
+    .content h2{
+        margin-left: 0px;
+    }
+    .content p{
+        margin-left: -20px;
+    }
+    .searchh{
+        background-color: var(--ColorPink);
+        box-shadow: none;
+    }
+   .search-content img{
+    margin-left: 20px;
+   }
+.textt h2{
+    text-align: center;
+}
+   .searchh2{
+    background-color: var(--ColorPink);
+    box-shadow: none;
+}
+.text  h2{
+    font-size: 16px;
+    
+}
+.carousel-control-next{
+    margin-right: -30px;
+    margin-top: 200px;
+} 
+.carousel-control-prev{
+margin-left: 10px;
+margin-top: 200px;
+}
+.hamburger{
+    display: block;
+  
+}
+.clientPageNavbar{
+    display: none;
+
+}
+/* Footer */
+.joinUs img{
+    display: none;
+
+  }
+  .joinUs a{
+    display: none;
+
+  }
+  .clientLogo{
+    margin-left: 0%;
+  }
+  .footerLogo img{
+    margin-left: 300px;
+    width: 250px;
+  }
+  .footerList li {
+display: none;
+  }
+  .footerNumber{
+    display: none;
+  }
+   }

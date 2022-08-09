@@ -12,10 +12,230 @@
     <link rel="icon" href="./assets/images/./logo.png">
     <!-- Css -->
     <link rel="stylesheet" href="./assets/css/client/global.css">
+    
     <title>Search | Library Book Store</title>
 </head>
 
 <body>
+    <!-- Header Start -->
+    <header class="container-fluid">
+        <div class="clientLogo">
+            <img src="./assets/images/homeLogo.svg" alt="">
+        </div>
+        <nav class="clientPageNavbar">
+            <ul class="d-flex ">
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="./catalog.html">Catalog</a></li>
+                <li><a href="./aboutStore.html">About Store</a></li>
+                <li><a href="./contactUs.html">Contact Us</a></li>
+                <li><a href="./search.html" class="font-weight-bold">Search</a></li>
+            </ul>
+        </nav>
+        <!-- Button trigger modal -->
+        <div class="joinUs d-flex align-items-center mr-lg-5">
+            <img src="./assets/images/adminLogo.svg" alt="">
+            <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Join Us</a>
+        </div>
+
+        <!-- Modal -->
+        <div class="joinUsPage modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="joinUsContent modal-body mx-3">
+                        <div class="joinUsTitle text-center">
+                            <p>Join Us</p>
+                        </div>
+                        <form>
+                            <div class="form-group ">
+                                <input type="text" class="w-100" placeholder="Full name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="w-100" placeholder="Email">
+                            </div>
+                            <button type="submit" class="joinBtn btn-block mt-5 mb-3 py-3">Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="hamburger">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect y="10.5262" width="25" height="3.94736" fill="#241400" />
+                <rect y="21.0527" width="25" height="3.94736" fill="#241400" />
+                <rect width="25" height="3.94736" fill="#241400" />
+            </svg>
+        </button>
+    </header>
+ <!-- Main Start -->
+ <main>
+           
+    <div class="container ">
+       <div class="row">
+           <div class="col-12 col-sm-12 textt">
+           <h2>Search</h1>
+       </div>
+       </div>
+       <!--Search result card-->
+       <div class="row " style="display: flex; justify-content: space-between";  >
+           <div class="col-12 col-sm-4 searchbutton">
+               <input type="name" class="form-control col-12 " id="exampleFormControlInput1" placeholder="Search a book">
+           
+               <button type="button  " class="btns form-control "  id="searchBookButton"><a href="#">Search</a> </button>
+       
+           </div>
+          
+       <!-- <div class="col-sm-7 col-10 pb-5  d-flex searchh">
+       <div class="row ">
+           <div class="search-content col-3">
+            <img  src="./assets/images/searcchbook.svg" >
+           </div>
+       <div class="col-sm-7 text col-10 content" style="margin-left: 50px">
+       <h2 class="col-12">Order in Chaos</h2>
+       <h3>Konstantin Koptelov</h3>
+       <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered  free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city     </p>
+       </div>
+       </div>
+       </div> -->
+
+       <div id="carouselExampleControls" class="carousel slide col-sm-7 col-10  searchh2 d-flex " data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row ">
+                <div class="search-content2 col-3">
+                 <img  src="./assets/images/searcchbook.svg" >
+                </div>
+            <div class="col-sm-7 text col-10 content" style="margin-left: 50px">
+            <h2 class="col-12">Order in Chaos</h2>
+            <h3>Konstantin Koptelov</h3>
+            <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered  free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city     </p>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <div class="row ">
+           <div class="search-content col-3">
+            <img  src="./assets/images/searcchbook.svg" >
+           </div>
+       <div class="col-sm-7 text col-10 content" style="margin-left: 50px">
+       <h2 class="col-12">Order in Chaos</h2>
+       <h3>Konstantin Koptelov</h3>
+       <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered  free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city     </p>
+       </div>
+       </div>
+          </div>
+          <div class="carousel-item">
+             <div class="row ">
+           <div class="search-content col-3">
+            <img  src="./assets/images/searcchbook.svg" >
+           </div>
+       <div class="col-sm-7 text col-10 content" style="margin-left: 50px">
+       <h2 class="col-12">Order in Chaos</h2>
+       <h3>Konstantin Koptelov</h3>
+       <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day of its registration. Customers from other cities of Ukraine can receive an order within 1-5 days, depending on the location of the settlement and the selected delivery method. Orders over UAH 1000 are delivered  free of charge *. You can see the available methods, exact terms and cost of delivery during checkout in the order basket, after selecting the delivery city     </p>
+       </div>
+       </div>
+          </div>
+        </div>
+       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+        </main> 
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Start -->
+<footer class="d-flex flex-wrap align-items-center justify-content-center">
+    <div class="d-flex align-items-center footerContent">
+        <div class="footerLogo">
+            <img src="./assets/images/footerLogo.svg" alt="" />
+        </div>
+        <div class="footerList d-flex">
+            <ul>
+                <li class=" text-white h5">Popular</li>
+                <li class=""><a href="" class="text-white">Programming</a></li>
+                <li class=""><a href="" class="text-white">Books for children</a></li>
+                <li class=""><a href="" class="text-white">Psychology</a></li>
+                <li class=""><a href="" class="text-white"> Business </a></li>
+            </ul>
+            <ul>
+                <li class=" text-white h5">Information</li>
+                <li class=""><a href="" class="text-white">Delivery</a></li>
+                <li class=""><a href="" class="text-white">Payment</a></li>
+                <li class=""><a href="" class="text-white">About the store</a></li>
+            </ul>
+            <ul>
+                <li class=" text-white h5">Help</li>
+                <li class=""><a href="" class="text-white">Contacts</a></li>
+                <li class=""><a href="" class="text-white">Purchase returns</a></li>
+                <li class=""><a href="" class="text-white">Buyer help</a></li>
+            </ul>
+        </div>
+        <div class="footerNumber">
+            <p class="text-white mb-1">+38 (071) 339-16-26</p>
+            <button class=" text-left my-4">Request a call </button>
+        </div>
+    </div>
+    <p class="footerNum text-white text-center">All rights reserved © 2003-2022 LIBRARY TERMS OF USE | Privacy
+        Policy</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
