@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var( --ColorPink);
+    font-family: var(--Montserrat600);
+    font-weight: 400;
+font-size: 23px;
+line-height: 30px;
+    overflow-x: hidden;
+}
+
+
+  .intl-tel-input {
+    display: table-cell;
+   
+  }
+  .intl-tel-input .selected-flag {
+    z-index: 4;
+  }
+  .intl-tel-input .country-list {
+    z-index: 5;
+    width: 500px;
+  }
+  .input-group .intl-tel-input .form-control {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+  }
+  input{
+      margin-top: 20px;
+  
+    }
+    .btn3{
+        background-color: var(--Orange2);
+        border: none;
+    }
+    @media screen and (max-width:320px) {
+        .intl-tel-input .country-list {
+          
+            width: 250px;
+          }
+          .search-title {
+            margin-left: 50px;
+          }
+          .socialMediaSectionContent img{
+            width: 100%;
+            }
+    }
