@@ -1,76 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- Logo -->
-    <link rel="icon" href="./assets/images/./logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/css/intlTelInput.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="./assets/css/client/global.css">
+    
+     <link rel="icon" href="./assets/images/./logo.png">
     <!-- Css -->
     <link rel="stylesheet" href="./assets/css/client/global.css">
     <link rel="stylesheet" href="./owl-carousel/owl.carousel.min.css">
 
-    <link rel="stylesheet" href="./owl-carousel/owl.theme.default.min.css">
-    <title>Catalog | Library Book Store</title>
+<link rel="stylesheet" href="./owl-carousel/owl.theme.default.min.css">
+
+    <title>Books | Library Book Store</title>
 </head>
-
 <body>
-    <!-- Header Start -->
-    <header class="container-fluid">
-        <div class="clientLogo">
-            <img src="./assets/images/homeLogo.svg" alt="">
-        </div>
-        <nav class="clientPageNavbar">
-            <ul class="d-flex ">
-                <li><a href="./index.html" >Home</a></li>
-                <li><a href="./catalog.html"  class="font-weight-bold">Catalog</a></li>
-                <li><a href="./aboutStore.html">About Store</a></li>
-                <li><a href="./contactUs.html">Contact Us</a></li>
-                <li><a href="./search.html">Search</a></li>
-            </ul>
-        </nav>
-        <!-- Button trigger modal -->
-        <div class="joinUs d-flex align-items-center mr-lg-5">
-            <img src="./assets/images/adminLogo.svg" alt="">
-            <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Join Us</a>
-        </div>
 
-        <!-- Modal -->
-        <div class="joinUsPage modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="joinUsContent modal-body mx-3">
-                        <div class="joinUsTitle text-center">
-                            <p>Join Us</p>
-                        </div>
-                        <form>
-                            <div class="form-group ">
-                                <input type="text" class="w-100" placeholder="Full name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="w-100" placeholder="Email">
-                            </div>
-                            <button type="submit" class="joinBtn btn-block mt-5 mb-3 py-3">Join</button>
-                        </form>
+ <!-- Header Start -->
+ <header class="container-fluid ">
+    <div class="clientLogo">
+        <img src="./assets/images/homeLogo.svg" alt="">
+    </div>
+    <nav class="clientPageNavbar">
+        <ul class="d-flex ">
+            <li><a href="./index.html" >Home</a></li>
+            <li><a href="./catalog.html">Catalog</a></li>
+            <li><a href="./aboutStore.html">About Store</a></li>
+            <li><a href="./contactUs.html" class="font-weight-bold">Contact Us</a></li>
+            <li><a href="./search.html">Search</a></li>
+        </ul>
+    </nav>
+    <!-- Button trigger modal -->
+    <div class="joinUs d-flex align-items-center mr-lg-5">
+        <img src="./assets/images/adminLogo.svg" alt="">
+        <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Join Us</a>
+    </div>
+
+    <!-- Modal -->
+    <div class="joinUsPage modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="joinUsContent modal-body mx-3">
+                    <div class="joinUsTitle text-center">
+                        <p>Join Us</p>
                     </div>
+                    <form>
+                        <div class="form-group ">
+                            <input type="text" class="w-100" placeholder="Full name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="w-100" placeholder="Email">
+                        </div>
+                        <button type="submit" class="joinBtn btn-block mt-5 mb-3 py-3">Join</button>
+                    </form>
                 </div>
             </div>
         </div>
-        <button class="hamburger">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <rect y="10.5262" width="25" height="3.94736" fill="#241400" />
-                <rect y="21.0527" width="25" height="3.94736" fill="#241400" />
-                <rect width="25" height="3.94736" fill="#241400" />
-            </svg>
-        </button>
-    </header>
- <!-- Main Start -->
+    </div>
+    <button class="hamburger">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect y="10.5262" width="25" height="3.94736" fill="#241400" />
+            <rect y="21.0527" width="25" height="3.94736" fill="#241400" />
+            <rect width="25" height="3.94736" fill="#241400" />
+        </svg>
+    </button>
+</header>
+
+<!-- Main Start -->
 
 
 
@@ -448,6 +450,19 @@
                       </div>
             </section>
         </div>
+           <!-- Socialbar Start -->
+           <section class="socialMediaSection container">
+            <div class="socialMediaSectionTitle mb-lg-4">
+                <p class="text-center h4">
+                    Follow us on social media
+                </p>
+            </div>
+            <div class="socialMediaSectionContent d-flex justify-content-between">
+                <a href=""><img src="./assets/images/facebook.svg" alt=""></a>
+                <a href=""><img src="./assets/images/twitter.svg" alt=""></a>
+                <a href=""><img src="./assets/images/instagram.svg" alt=""></a>
+            </div>
+        </section>
     </main>
 
 <!-- Footer Start -->
