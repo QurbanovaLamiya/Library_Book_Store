@@ -319,10 +319,12 @@ footer {
 .navbar-dark .navbar-toggler[aria-expanded="false"] span {
   transform: none;
   opacity: 1;
+
+ 
 }
 
 /* Join us Modal */
-.joinUsPage {
+/* .joinUsPage {
   opacity: 0.9; 
 }
 .joinUsTitle {
@@ -344,7 +346,7 @@ form .joinBtn {
   background: #e16a00;
   border: 1px solid #cecece;
   border-radius: 5px;
-} 
+}  */
 
 @media screen and (max-width: 320px) {
   
