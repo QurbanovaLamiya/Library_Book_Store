@@ -82,3 +82,58 @@ body {
   line-height: 24px;  
   color: #232323;
 }
+@media screen and (max-width:320px) {
+body{
+  overflow-x: hidden;
+}
+.bookImg  img{
+  width: 273px;
+  margin-top: 80px;
+  /* margin-right: 500px;
+   */
+  left: 0;
+  margin-left: -90px;
+}
+
+.bookYear{
+  margin-top: 400px;
+}
+.bookInfo{
+  width: 81px;
+ 
+  /* height: 24px; */
+}
+.bookInfo h2 {
+  text-align: center;
+  font-size: 18px;
+  width: 250px;
+}
+.bookInfo span{
+  text-align: center;
+  font-size: 18px;
+  width: 150px;
+}
+.bookAuthor{
+  font-size: 18px;
+  width: 250px;
+  text-align: center;
+}
+.bookContent{
+  font-size: 14px;
+  width: 250px;
+}
+
+.commentSection input{
+  width: 400px;
+  font-size: 16px;
+
+}
+.commentBtn{
+  margin-top: 42px;
+}
+.commentContent div{
+  width: 270px;
+  margin-top: 30px;
+}
+
+}

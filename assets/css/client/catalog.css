@@ -1,0 +1,323 @@
+.owl-dots {
+    display: none;
+  }
+  .owl-nav {
+    margin-left: -28px;
+    font-size: 50px;
+    color: var(--mainRedColor);
+    position: absolute;
+    width: 104%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .owl-nav button:hover {
+    background: transparent !important;
+    color: var(--BLACK )!important;
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    margin-right: -30px !important;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot {
+    margin-left: -30px !important;
+  }
+  #active{
+    color:var( --Orange2);
+}
+body{
+    background-color: var(--ColorPink);
+}
+.navbar-light .navbar-toggler {
+    color:var(--Brown);
+    border: none;
+}
+
+.prev-button {
+    background-color: var(--BLACK);
+    color: var(--White);
+    padding: 10px;
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+  }
+  .next-button{
+      background-color: var(--BLACK);
+      color: var(--White);
+      padding: 10px;
+      position: absolute;
+      top: 40%;
+      border-radius: 50%;
+  }
+  .next-button {
+    right: 0;
+  }
+  .prev-button {
+    left: -70px;
+  }
+  .content{
+      width: 90%;
+      margin-left: 30px;
+  }
+  
+  
+ 
+
+   /* main */
+   
+   .card{
+       background-color:var(--White);
+       padding: 24px;
+       margin-top: 50px;
+       border-radius: 0%;
+       box-shadow: 0 0 10px 0 lightgray;
+   }
+  
+   .catalogul a{
+      color: var(--Brown);
+      text-decoration: none;
+      /* display: flex; */
+   }
+  
+   .card-title{
+       font-size: 14px;
+       font-weight: 700;
+       font-family: var(--MontserratFont);
+       text-align: center;
+       margin: 0px auto;
+   }
+  
+   .card-text{
+       /* margin-top: 10px; */
+       font-weight: 400;
+       font-size: 12px;
+       text-align: center;
+       margin: 10px auto;
+   }
+  
+   
+   .cataloglist{
+       display: flex;
+   }
+  
+   .catalogul{
+       margin: auto;
+       width: 446px;
+       overflow-x: scroll;
+       overflow-y: hidden;
+   }
+  
+   .catalogul::-webkit-scrollbar-track {
+      background:var(--White2);
+      border-radius: 5px;
+    }
+    .catalogul::-webkit-scrollbar-thumb {
+      background:var(--Brown2);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar {
+      height: 5px;
+      width: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background: var(--Black2);
+  }
+  
+   .catalogul li{
+       margin-left: 40px;
+       font-size: 13px;
+       font-weight: 400;
+       
+   }
+  
+   .catalog-main{
+       margin-top: 140px;
+   }
+  
+   .allbooks{
+       font-weight: 900;
+       font-size: 25px;
+       color: var(--Brown);
+       
+   }
+  
+   .besteller{
+      font-weight: 900;
+      font-size: 25px;
+      color: var(--Brown);
+      text-align: center;
+      margin-top: 30px;
+   }
+  
+   .catalogbtn{
+       background-color:var(--Orange2);
+       color: var(--White);
+       border-radius: 3px;
+       font-size: 12px;
+       font-family: var(--MontserratFont);
+       font-weight: 900;
+       border: none;
+       width: 110px;
+       padding: 10px;
+       margin: 10px auto;
+   }
+   .catalogbtn a{
+      color: var(--White);
+      text-decoration: none;
+   }
+   .slick-next{
+    background-color:var(--Orange2);
+  margin-top: 20px;
+  border: none;
+  color: var(--White);
+}
+.slick-prev{
+    background-color:var(--Orange2);
+    margin-top: 30px;
+    color: var(--White);
+    border: none;
+    /* left: 0; */
+    /* width: 50px; */
+}
+
+.navbar {
+    /* background: #444; */
+    transition: all .6s;
+    display: none;
+    backface-visibility: hidden;
+    /* box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5); */
+}
+ 
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    color: black;
+    background: rgba(36, 20, 0, 0.9);
+    text-transform: uppercase;
+}
+ 
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+    color: black;
+    border: 0;
+}
+ 
+/* .navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: black;
+    outline: 0;
+}
+  */
+/* .navbar-dark .navbar-toggler {
+    border-color: #444;
+} */
+ 
+.navbar-dark .navbar-toggler:focus {
+    background: none;
+    outline: 0;
+}
+ 
+.navbar-dark .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: black;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+ 
+.navbar-dark .navbar-toggler:hover span,
+.navbar-dark .navbar-toggler:focus span {
+    background: black
+}
+ 
+/* rotate first span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+ 
+.navbar-dark .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+ 
+.navbar-brand {
+    width: 162px;
+    height: 44px;
+    background: url(../img/logo.png) left center no-repeat;
+    border: 0;
+    text-indent: -99999px;
+}
+
+.navbar-dark .navbar-toggler span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: black;
+    transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+
+/* rotate first span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+ 
+/* hide second span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+ 
+/* rotate third span */
+.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar-dark .navbar-toggler[aria-expanded="false"] span {
+    transform: none;
+    opacity: 1;
+}
+
+
+
+
+
+
+ @media screen and (max-width:320px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .cataloglist{
+    flex-wrap: wrap;
+    margin-top: 150px;
+    }
+    
+    .catalogul{
+        margin-top: 50px;
+    }
+    
+    .owl-next img{
+        margin-right:30px ;
+    }
+    .owl-prev img{
+        margin-left: 20px;
+    }
+.navbar{
+    display: block;
+}
+}
