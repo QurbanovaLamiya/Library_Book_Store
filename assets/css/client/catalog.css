@@ -193,6 +193,7 @@ body{
 .navbar-dark .navbar-nav {
     font-size: 15px;
     color: black;
+    background: rgba(36, 20, 0, 0.9);
     text-transform: uppercase;
 }
  
