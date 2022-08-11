@@ -4,6 +4,9 @@
 #adminPanelNavbar {
   background-color: var(--ColorRed);
 }
+#AdminPanel{
+  /* display: none; */
+}
 .mainLogo img {
   margin: 75px 0 55px 35px;
 }
@@ -22,15 +25,18 @@
 .image-admin {
   display: block;
 }
-.logo{
+.menuHeader {
   display: none;
 }
-#AdminSearch {
-  border: 2px solid #391f007a;
-  border-radius: 34px;
+.responsiveNavbar {
+  display: none;
 }
-.formdiv {
-  width: 50%;
+.searchBtn {
+  padding: 8px 22px;
+  width: 63px;
+  height: 40px;
+  background: #ff8b00;
+  border-radius: 34px;
 }
 .addbook {
   font-family: var(--MontserratFont);
@@ -52,6 +58,11 @@
   font-size: 14px;
   line-height: 25px;
   color: var(--ininput);
+  border: 2px solid #391f007a;
+  border-radius: 34px;
+  width: 395px;
+  height: 41px;
+  margin-right: 7px;
 }
 .bookForm {
   font-family: var(--MontserratFont);
@@ -87,29 +98,29 @@
   background-color: var(--ColorRed);
   font-family: var(--NunitoSansFont);
 }
-.hamburger {
-  background: none;
-  border: none;
-  display: none;
-}
 .tablewidth {
   width: 90%;
 }
+.sideBarBtn {
+  display: none;
+}
+.sideBar {
+  display: none;
+}
 @media screen and (max-width: 320px) {
-  #adminPanelNavbar{
+  #adminPanelNavbar {
+    position: relative;
     display: none;
   }
-  .logo{
+  .menuHeader {
     display: block;
-    background-color: aqua;
+  }
+  #AdminSearch {
+    width: 100%;
+    margin-left: 15px;
   }
   .adminpanel {
     overflow-x: hidden;
-  }
-  .hamburger {
-    background-color: #E16A00;
-    display: block;
-    /* margin: 5% 7%; */
   }
   .img-fluid {
     display: none;
@@ -126,9 +137,40 @@
   .tablewidth {
     width: 10%;
   }
+  .navbar-brand {
+    margin-top: 16px;
+  }
+  .sideBar {
+    display: block;
+    height: 100%;
+  }
+  .leftSide {
+    background-color: var(--ColorRed);
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /* display: none; */
+  }
+  .mobileNavImg {
+    margin: 20px 0 70px;
+  }
+  .mobileNavList {
+    font-family: var(--MontserratFont);
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .rightSide {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: rgba(36, 20, 0, 0.7);
+    height: 100%;
+    /* display: none; */
+  }
 }
-
-
 
 /* ScrollBar */
 ::-webkit-scrollbar {
@@ -157,14 +199,14 @@
 }
 form input {
   height: 70px;
-  border: 1px solid #CECECE;
+  border: 1px solid #cecece;
   margin-bottom: 35px;
   padding-left: 50px;
 }
 form .joinBtn {
   height: 70px;
   color: #fff;
-  background: #E16A00;
-  border: 1px solid #CECECE;
+  background: #e16a00;
+  border: 1px solid #cecece;
   border-radius: 5px;
 }

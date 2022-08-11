@@ -4,16 +4,17 @@ body {
   background-color: #fffaf5;
 }
 
-/* Header */
+Header 
 header {
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 999;
   top: 0;
   background-color: #fffaf5;
-}
+} 
 .clientLogo {
   margin-left: 15%;
 }
@@ -154,10 +155,10 @@ footer {
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;
-}
+} */
 
 /* ScrollBar */
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
@@ -167,10 +168,10 @@ footer {
 ::-webkit-scrollbar-thumb {
   background-color: #720418;
   border-radius: 10px;
-}
+} */
 
 /* Join us Modal */
-.joinUsPage {
+ .joinUsPage {
   opacity: 0.9;
   margin-top: 15%;
 }
@@ -193,6 +194,7 @@ form .joinBtn {
   background: #e16a00;
   border: 1px solid #cecece;
   border-radius: 5px;
+
 }
 @media screen and (max-width:320px){
 
@@ -221,5 +223,5 @@ width: 200%;
   font-size: 16px;
   text-align: center;
 }
-}
 
+}

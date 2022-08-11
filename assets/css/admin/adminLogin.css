@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
 #adminLogin {
   background-color: var(--ColorRed);
+  height: 100vh;
 }
 
 .adminLoginImg {
