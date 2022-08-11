@@ -5,7 +5,7 @@
   background-color: var(--ColorRed);
 }
 #AdminPanel{
-  display: none;
+  /* display: none; */
 }
 .mainLogo img {
   margin: 75px 0 55px 35px;
@@ -151,6 +151,7 @@
     top: 0;
     left: 0;
     height: 100%;
+    /* display: none; */
   }
   .mobileNavImg {
     margin: 20px 0 70px;
@@ -167,6 +168,7 @@
     right: 0;
     background-color: rgba(36, 20, 0, 0.7);
     height: 100%;
+    /* display: none; */
   }
 }
 
