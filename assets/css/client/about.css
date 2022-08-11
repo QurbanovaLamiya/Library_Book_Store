@@ -188,8 +188,36 @@ form input {
   margin-bottom: 35px;
   padding-left: 50px;
 }
+form .joinBtn {
+  height: 70px;
+  color: #fff;
+  background: #e16a00;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
  */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 @media screen and (max-width:320px){
   body{
     overflow-x: hidden;
