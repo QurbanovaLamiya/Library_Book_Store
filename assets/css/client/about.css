@@ -194,8 +194,98 @@ form .joinBtn {
   background: #e16a00;
   border: 1px solid #cecece;
   border-radius: 5px;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+@media screen and (max-width:320px){
+  body{
+    overflow-x: hidden;
+  }
+  .aboutImg img{
+    margin-left: -140px;
+    width: 296px;
+  }
+  .aboutContent {
+    margin-top: 250px;
+  }
+  .aboutTitle{
+  text-align: center;
+  font-size: 25px;
+  width: 200%;
+  }
+  .aboutText {
+    width: 250%;
+    font-size: 16px;
+    text-align: center;
+  }
+  }
+
 .navbar {
   /* background: #444; */
   transition: all .6s;
@@ -327,3 +417,4 @@ width: 300%;
 }
 
 }
+
