@@ -32,13 +32,13 @@
             </ul>
         </nav>
         <!-- Button trigger modal -->
-        <div class="joinUs d-flex align-items-center mr-lg-5">
+        <div class="joinUs d-flex align-items-center mr-lg-5 " >
             <img src="./assets/images/adminLogo.svg" alt="">
             <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Join Us</a>
         </div>
 
         <!-- Modal  -->
-        <div class="joinUsPage modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <!-- <div class="joinUsPage modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -58,9 +58,139 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Button trigger modal -->
+        </div> -->
 
+        <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content p-4">
+            <div class="modal-body">
+              <div class="h1 modal-title mb-4 font-weight-bold text-center">
+                Join Us
+              </div>
+              <form method="post" id = "inputFormReset">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Full Name"
+                    class="form-control form-control-lg"
+                    id="fullNameJoinUs"
+                  />
+                </div>
+                <div class="form-group my-4">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control form-control-lg"
+                    id="joinUsEmail"
+                  />
+                </div>
+  
+                <button
+                  id="joinUsButton"
+                  type="button"
+                  class="btn bg-orange btn-lg text-white btn-block"
+                >
+                  Join
+                </button>
+  
+                <div
+                  id = "missing-field-alert-warning"
+                  class="alert alert-warning mt-4 join-error-both-fields"
+                  role="alert"
+                  style="display: none"
+                >
+                  <h4 class="alert-heading">Error</h4>
+                  <p></p>
+                  <p class="mb-0">Full Name and Email fields are required</p>
+                </div>
+  
+                <div
+                  class="alert alert-success mt-4 join-success-message"
+                  role="alert"
+                  style="display: none"
+                >
+                  <h4 class="alert-heading">Successful</h4>
+                  <p></p>
+                  <p class="mb-0">Welcome to the library</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+<<<<<<< HEAD
+        <button class="hamburger">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+=======
+      </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container">
+     
+                <a class="navbar-brand" href="index.html">Bootstrap Hamburger Menu</a>
+     
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+     
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="./catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="./aboutStore.html">About Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="./contactUs.html">Contact US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="./search.html">Search</a>
+                        </li>
+                        <li class="nav-item  d-flex ">
+                           
+                            <a class="nav-link scroll-link" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Join Us</a>
+                        </li>
+                    </ul>
+                    
+                    </div>
+                </div>
+     
+            </div>
+        </nav>
+        <!-- <button class="hamburger">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+>>>>>>> bf60703f8aec26b69cb23aef2174f68f3aa37885
+                <rect y="10.5262" width="25" height="3.94736" fill="#241400" />
+                <rect y="21.0527" width="25" height="3.94736" fill="#241400" />
+                <rect width="25" height="3.94736" fill="#241400" />
+            </svg>
+        </button> -->
 
     </header>
 
@@ -72,7 +202,8 @@
                     <h2 class="homeTitle w-100">Books from A to Z</h2>
                     <p class="mb-lg-3 homeText w-100">In our store you can find a book for every taste. A large
                         assortment. Nice prices.Interesting stories.</p>
-                    <button class="homeBtn pl-lg-4"><a href="./catalog.html" class="text-white text-left h6">Go to catalog</a></button>
+                    <button class="homeBtn pl-lg-4"><a href="./catalog.html" class="text-white text-left h6">Go to
+                            catalog</a></button>
                 </div>
                 <div class="homeImg">
                     <img src="./assets/images/bookImages.svg" alt="">
@@ -132,7 +263,7 @@
                 terms and cost of delivery during checkout in the order basket, aafter selecting the delivery
                 city.More details</p>
         </section>
-        
+
         <section class="socialMediaSection container">
             <div class="socialMediaSectionTitle mb-lg-4">
                 <p class="text-center h4">
@@ -192,6 +323,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="./assets/js/db.js"></script>
+    <script src="./assets/js/client/home.js"></script>
 </body>
 
 </html>
