@@ -5,23 +5,19 @@
   background-color: var(--ColorRed);
   height: 100vh;
 }
-
 .adminLoginImg {
   margin: 75px 0 121px 35px;
 }
-
 .adminLoginForm {
   padding: 54px;
   width: 40%;
 }
-
 .adminLoginForm h1 {
   font-family: var(--MontserratFont);
   font-weight: 700;
   font-size: 44px;
   line-height: 54px;
 }
-
 .adminLoginForm input,
 button {
   border: 1px solid #cecece;
@@ -31,7 +27,6 @@ button {
   line-height: 21px;
   font-size: 18px;
 }
-
 .adminLoginForm button {
   margin-top: 84px;
   font-family: var(--CrimsonTextFont);
