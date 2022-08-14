@@ -16,320 +16,288 @@
 </head>
 
 <body>
-
     <!-- Admin Login -->
-
-    <<<<<<< HEAD <div id="adminLogin" class="vh-100 ">
-        =======
-        <div id="adminLogin" class="d-none">
-
-            <div>
-                <img src="./assets/images/mainLogo.svg" class="adminLoginImg" alt="logoImg">
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <form class="adminLoginForm bg-white">
-                    <h1 class="text-center mb-lg-5">Welcome Admin</h1>
-                    <input id="userName" class="form-control form-control-lg h6" type="text" placeholder="Username">
-                    <input id="userPassword" class="form-control form-control-lg h6" type="password"
-                        placeholder="Password">
-                    <button type="submit" id="joinButton"
-                        class="btn btn-block h6 font-weight-bold text-white">Join</button>
-                </form>
-            </div>
+    <div id="adminLoginForm">
+        <div>
+            <img src="./assets/images/mainLogo.svg" class="adminLoginImg" alt="logoImg">
         </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <form class="adminLoginForm bg-white">
+                <h1 class="text-center mb-lg-5">Welcome Admin</h1>
+                <input id="userName" class="form-control form-control-lg h6" type="text" placeholder="Username">
+                <input id="userPassword" class="form-control form-control-lg h6" type="password" placeholder="Password">
+                <button type="submit" id="joinButton" class="btn btn-block h6 font-weight-bold text-white">Join</button>
+            </form>
+        </div>
+    </div>
 
 
-        <!-- Admin Panel -->
-
-        <<<<<<< HEAD <div class="container-fluid " id="AdminPanel">
-            =======
-            <div class="container-fluid" id="AdminPanel">
-                >>>>>>> eb71bf2034c6160160a2bb3786a6eb99198cb40a
-                <div class="row">
-                    <div class="col-lg-3" id="adminPanelNavbar">
-                        <div class="mainLogo">
-                            <a href="./index.html">
-                                <img src="./assets/images/mainLogo.svg" alt="pageLogo">
-                            </a>
-                        </div>
-
-                        <div class="mainNavbar">
-                            <nav>
-                                <ul>
-                                    <li><a href="#homePage" class="text-white d-flex align-items-center"><img
-                                                src="./assets/images/bookLogo.svg" alt="" /><span>Home</span></a></li>
-                                    <li><a href="#menuAboutStore" class="text-white d-flex align-items-center"><img
-                                                src="./assets/images/bookLogo.svg" alt="" /><span>About</span></a></li>
-                                    <li><a href="#menuJoin" class="text-white d-flex align-items-center"><img
-                                                src="./assets/images/bookLogo.svg" alt="" /><span>Join Us</span></a>
-                                    </li>
-                                    <li><a href="#menuContact" class="text-white d-flex align-items-center"><img
-                                                src="./assets/images/bookLogo.svg" alt="" /><span>Contact</span></a>
-                                    </li>
-                                    <li><a href="#adminLogin" class="text-white d-flex align-items-center"
-                                            id="adminLogout"><img src="./assets/images/bookLogo.svg"
-                                                alt="" /><span>Logout</span></a></li>
-                                </ul>
-                            </nav>
-                        </div>
+    <!-- Admin Panel -->
+    <div class="container-fluid d-none" id="AdminPanel">
+        <div class="container-fluid" id="AdminPanel">
+            <div class="row">
+                <div class="col-lg-3" id="adminPanelNavbar">
+                    <div class="mainLogo">
+                        <a href="./index.html">
+                            <img src="./assets/images/mainLogo.svg" alt="pageLogo">
+                        </a>
                     </div>
-                    <div class="col-lg-9 adminpanel">
-                        <<<<<<< HEAD <div id="adminPanel">
 
-                            =======
-                            <div class="mobileNav">
-                                <div class="menuHeader mb-5">
-                                    <div class="d-flex align-items-center justify-content-between mr-4">
-                                        <a class="navbar-brand" href="#"><img src="./assets/images/homeLogo.svg"
-                                                alt=""></a>
-                                        <img class="hamburger" src="./assets/images/hamburgerMenu.svg" alt="">
+                    <div class="mainNavbar">
+                        <nav>
+                            <ul>
+                                <li><a href="#homePage" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>Home</span></a></li>
+                                <li><a href="#menuAboutStore" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>About</span></a></li>
+                                <li><a href="#menuJoin" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>Join Us</span></a>
+                                </li>
+                                <li><a href="#menuContact" class="text-white d-flex align-items-center"><img
+                                            src="./assets/images/bookLogo.svg" alt="" /><span>Contact</span></a>
+                                </li>
+                                <li><a href="#adminLogin" class="text-white d-flex align-items-center"
+                                        id="adminLogout"><img src="./assets/images/bookLogo.svg"
+                                            alt="" /><span>Logout</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-9 adminpanel">
+                    <div id="adminPanel">
+                        <div class="mobileNav">
+                            <div class="menuHeader mb-5">
+                                <div class="d-flex align-items-center justify-content-between mr-4">
+                                    <a class="navbar-brand" href="#"><img src="./assets/images/homeLogo.svg" alt=""></a>
+                                    <img class="hamburger" src="./assets/images/hamburgerMenu.svg" alt="">
 
-                                    </div>
-                                </div>
-
-                                <div class="sideBar">
-                                    <div class="row sidebar">
-                                        <div class="col-9 leftSide">
-                                            <div class="mobileNavImg d-flex justify-content-between align-items-center">
-                                                <img src="./assets/images/mobileLogo.svg" class="logoImg" alt="">
-                                                <img src="./assets/images/x.svg" class="x-image" alt="">
-                                            </div>
-                                            <ul class="ml-2 mobileNavList">
-                                                <li><a href="#homePage" class="d-flex align-items-center mb-3"><img
-                                                            src="./assets/images/mobileNavBook.svg" class="mr-2"
-                                                            alt=""><span class="text-white">Home</span></a></li>
-                                                <li><a href="#menuAboutStore"
-                                                        class="d-flex align-items-center mb-3"><img
-                                                            src="./assets/images/mobileNavBook.svg" class="mr-2 "
-                                                            alt=""><span class="text-white">About</span></a></li>
-                                                <li><a href="#menuJoin" class="d-flex align-items-center mb-3"><img
-                                                            src="./assets/images/mobileNavBook.svg" class="mr-2"
-                                                            alt=""><span class="text-white">Join Us</span></a></li>
-                                                <li><a href="#menuContact" class="d-flex align-items-center mb-3"><img
-                                                            src="./assets/images/mobileNavBook.svg" class="mr-2"
-                                                            alt=""><span class="text-white">Contact</span></a></li>
-                                                <li><a href="#adminLogin" class="d-flex align-items-center mb-3"><img
-                                                            src="./assets/images/mobileNavBook.svg" class="mr-2"
-                                                            alt=""><span class="text-white">Logout</span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-3 rightSide"></div>
-                                    </div>
                                 </div>
                             </div>
 
-                            <div id="adminPanel">
-                                <div>
-                                    >>>>>>> eb71bf2034c6160160a2bb3786a6eb99198cb40a
-                                    <div class="row ml-lg-2">
-                                        <div class="col-md-12">
-                                            <div class="d-flex justify-content-end mt-lg-5 mx-lg-5">
-                                                <div class="d-flex mt-lg-3">
-                                                    <img src="./assets/images/adminLogo.svg" class="img-fluid mr-lg-2 "
-                                                        alt="">
-                                                    <span class="admin h5 mt-lg-1">Admin</span>
-                                                </div>
+                            <div class="sideBar">
+                                <div class="row sidebar">
+                                    <div class="col-9 leftSide">
+                                        <div class="mobileNavImg d-flex justify-content-between align-items-center">
+                                            <img src="./assets/images/mobileLogo.svg" class="logoImg" alt="">
+                                            <img src="./assets/images/x.svg" class="x-image" alt="">
+                                        </div>
+                                        <ul class="ml-2 mobileNavList">
+                                            <li><a href="#homePage" class="d-flex align-items-center mb-3"><img
+                                                        src="./assets/images/mobileNavBook.svg" class="mr-2"
+                                                        alt=""><span class="text-white">Home</span></a></li>
+                                            <li><a href="#menuAboutStore" class="d-flex align-items-center mb-3"><img
+                                                        src="./assets/images/mobileNavBook.svg" class="mr-2 "
+                                                        alt=""><span class="text-white">About</span></a></li>
+                                            <li><a href="#menuJoin" class="d-flex align-items-center mb-3"><img
+                                                        src="./assets/images/mobileNavBook.svg" class="mr-2"
+                                                        alt=""><span class="text-white">Join Us</span></a></li>
+                                            <li><a href="#menuContact" class="d-flex align-items-center mb-3"><img
+                                                        src="./assets/images/mobileNavBook.svg" class="mr-2"
+                                                        alt=""><span class="text-white">Contact</span></a></li>
+                                            <li><a href="#adminLogin" class="d-flex align-items-center mb-3"><img
+                                                        src="./assets/images/mobileNavBook.svg" class="mr-2"
+                                                        alt=""><span class="text-white">Logout</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 rightSide"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="adminPanel">
+                            <div>
+                                <div class="row ml-lg-2">
+                                    <div class="col-md-12">
+                                        <div class="d-flex justify-content-end mt-lg-5 mx-lg-5">
+                                            <div class="d-flex mt-lg-3">
+                                                <img src="./assets/images/adminLogo.svg" class="img-fluid mr-lg-2 "
+                                                    alt="">
+                                                <span class="admin h5 mt-lg-1">Admin</span>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="addBook col-md-12 mt-lg-5">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="h4 addbook " id="homePage"> Add book</div>
-                                                    <div class="serachpart mt-lg-5">
-                                                        <div class="h5 mb-lg-3 searchbook"> Search book</div>
-                                                        <<<<<<< HEAD=======</div>
-                                                            >>>>>>> eb71bf2034c6160160a2bb3786a6eb99198cb40a
-                                                    </div>
-                                                    <div class="form-group d-flex  formdiv  ml-lg-3 ">
-                                                        <div class="d-flex">
-                                                            <input type="text" id="AdminSearch" placeholder="Dan Brown"
-                                                                class="form-control px-lg-5">
-                                                            <button class="searchBtn "><img
-                                                                    src="./assets/images/searchBtn.svg" alt=""></button>
-                                                            <<<<<<< HEAD=======</div>
-                                                                <div>
-                                                                    <!-- <img src="./assets/images/search.svg" class=" ml-lg-2" alt=""> -->
-                                                                    >>>>>>> eb71bf2034c6160160a2bb3786a6eb99198cb40a
-                                                                </div>
-                                                                <div id="AdminSearchResult"
-                                                                    class="jumbotron-fluid  AdminSearchResult d-none position-absolute bg-white shadow rounded-35 overflow-auto w-50 pt-lg-3 pb-lg-1  ">
-                                                                    <div class="container">
-                                                                        <div class="search-result-list">
-                                                                            <!-- <div class="loading">
+                                    <div class="addBook col-md-12 mt-lg-5">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="h4 addbook " id="homePage"> Add book</div>
+                                                <div class="serachpart mt-lg-5">
+                                                    <div class="h5 mb-lg-3 searchbook"> Search book</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group d-flex  formdiv  ml-lg-3 ">
+                                                <div class="d-flex">
+                                                    <input type="text" id="AdminSearch" placeholder="Dan Brown"
+                                                        class="form-control px-lg-5">
+                                                    <button class="searchBtn "><img src="./assets/images/searchBtn.svg"
+                                                            alt=""></button>
+                                                </div>
+                                                <div>
+                                                    <!-- <img src="./assets/images/search.svg" class=" ml-lg-2" alt=""> -->
+                                                </div>
+                                                <div id="AdminSearchResult"
+                                                    class="jumbotron-fluid  AdminSearchResult d-none position-absolute bg-white shadow rounded-35 overflow-auto w-50 pt-lg-3 pb-lg-1  ">
+                                                    <div class="container">
+                                                        <div class="search-result-list">
+                                                            <!-- <div class="loading">
                                                         <img class="rounded-circle"
                                                             src="./assets/images/Spinner-1s-200px.gif" width="45" />
                                                     </div> -->
-                                                                            <!-- <div class="search-result-item cursor-pointer">
+                                                            <!-- <div class="search-result-item cursor-pointer">
                                                              <p class="lead">
                                                                 <img src="./assets/images/clock.svg" class="mr-2" alt="">
                                                                 <span>Jumbo helper text</span>
                                                              </p>
                                                                       
                                                          </div>  -->
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <!-- Add Book -->
-                                                    <div class="form-book-section  mt-lg-5">
-                                                        <div class="h5 mb-lg-4 bookForm">Book form</div>
-                                                        <div
-                                                            class="jumbotron form-book-section2    bg-white p-lg-4 px-0">
-                                                            <form id="bookForm" method="post">
-                                                                <div class="form-group name2">
-                                                                    <label for="bookName">Book Name</label>
-                                                                    <input type="text"
-                                                                        class="form-control form-control-lg form2"
-                                                                        id="bookName" name="bookName">
-                                                                    <small class="form-text text-danger"></small>
-                                                                </div>
-                                                                <div class="form-group name2">
-                                                                    <label for="authorName">Author Name</label>
-                                                                    <input type="text"
-                                                                        class="form-control form-control-lg form2"
-                                                                        name="authorName" id="authorName">
-                                                                    <small class="form-text text-danger"></small>
-                                                                </div>
-                                                                <div class="form-group name2">
-                                                                    <label for="bookImageUrl"> Book Image Url</label>
-                                                                    <input type="text"
-                                                                        class="  form-control form-control-lg form2"
-                                                                        id="bookImageUrl" name="bookImageUrl">
-                                                                    <small class="form-text text-danger"> </small>
-                                                                </div>
-                                                                <div class="form-group name2">
-                                                                    <label for="publicationYear ">Publication
-                                                                        Year</label>
-                                                                    <input type="number"
-                                                                        class="form-control form-control-lg "
-                                                                        id="publicationYear" name="publicationYear">
-                                                                    <small class="form-text text-danger"> </small>
-                                                                </div>
-
-                                                                <div class="form-group ">
-                                                                    <!-- <small  class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="checkbox"
-                                                                            value="new" id="isNew">
-                                                                        <label class="form-check-label"
-                                                                            for="isNew">New</label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group mb-lg-4 name2">
-                                                                    <label class="ml-3"
-                                                                        for="bookDesc">Description</label>
-                                                                    <textarea rows="4" value='' type="text"
-                                                                        class="form-control form-control-lg form2"
-                                                                        id="bookDesc" name="bookDesc">
-                                                </textarea>
-                                                                    <span> 0 / 100</span>
-                                                                    <small class="form-text text-danger"
-                                                                        style="display:none"></small>
-                                                                </div>
-
-                                                                <div class="form-group name2">
-                                                                    <label
-                                                                        for="bookSelectType d-flex align-items-center form2 "
-                                                                        class="">
-                                                                        Book Type
-                                                                        <!-- Dropdown Menu -->
-                                                                        <div
-                                                                            class="btn-group mb-lg-1 p-lg-3 rounded dropright ">
-                                                                            <button type="button"
-                                                                                class="btn text-success"
-                                                                                data-toggle="dropdown"
-                                                                                aria-expanded="false">
-                                                                                <span class="h4">
-                                                                                    +
-                                                                                </span>
-                                                                            </button>
-                                                                            <div class="dropdown-menu shadow  ">
-                                                                                <!-- Dropdown menu links -->
-                                                                                <div class="form-group p-lg-1">
-                                                                                    <label for="addType">Add
-                                                                                        type</label>
-                                                                                    <input type="text"
-                                                                                        class="form-control"
-                                                                                        id="addType"
-                                                                                        name="publicationYear">
-                                                                                    <!-- <small  class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                                                                                    <button id="addTypeBtn"
-                                                                                        class="btn btn-outline-warning mt-3 btn-block">add</button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </label>
-                                                                    <select name="bookSelectType " id="bookSelectType"
-                                                                        class="form-control form-control-lg form2"
-                                                                        id="exampleFormControlSelect1">
-                                                                        <!-- <option value="1">Fantastic</option> -->
-                                                                    </select>
-                                                                    <small class="form-text text-danger"
-                                                                        style="display:block"></small>
-                                                                </div>
-                                                                <button type="submit" id="bookFormSubmit"
-                                                                    class="btn2  text-white">Add</button>
-                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
 
-                                                <!-- About Store section -->
-                                                <div class="col-md-12 mt-lg-5">
-                                                    <div class="h2 mb-lg-4 addbook  bookForm" id="menuAboutStore">About
-                                                        Store</div>
-                                                    <div class="form-book-section mt-lg-2">
-                                                        <div
-                                                            class="jumbotron form-book-section2  bg-white p-lg-4 px-lg-0">
-                                                            <form>
-                                                                <div class="form-group name2">
-                                                                    <label for="aboutTitle">Title</label>
-                                                                    <input type="text" class="form-control form2
-                                       form-control-lg" placeholder="About Store" id="aboutStoreTitle" name="bookName">
-                                                                    <small class="form-text text-danger"
-                                                                        style="display:none"></small>
-                                                                </div>
-                                                                <div class="form-group name2">
-                                                                    <label for="aboutImageUrl">Image Url</label>
-                                                                    <input type="text"
-                                                                        class="  form-control form-control-lg form2"
-                                                                        id="aboutStoreImageUrl" name="aboutImageUrl">
-                                                                    <small class="form-text text-danger"
-                                                                        style="display:none"></small>
-                                                                </div>
-                                                                <div class="form-group mb-lg-4 name2">
-                                                                    <label for="aboutDesc">Description</label>
-                                                                    <textarea rows="4" value='' type="text"
-                                                                        class="form-control form-control-lg form2"
-                                                                        id="aboutStoreDesc" name="aboutDesc">
+                                        <!-- Add Book -->
+                                        <div class="form-book-section  mt-lg-5">
+                                            <div class="h5 mb-lg-4 bookForm">Book form</div>
+                                            <div class="jumbotron form-book-section2    bg-white p-lg-4 px-0">
+                                                <form id="bookForm" method="post">
+                                                    <div class="form-group name2">
+                                                        <label for="bookName">Book Name</label>
+                                                        <input type="text" class="form-control form-control-lg form2"
+                                                            id="bookName" name="bookName">
+                                                        <small class="form-text text-danger"></small>
+                                                    </div>
+                                                    <div class="form-group name2">
+                                                        <label for="authorName">Author Name</label>
+                                                        <input type="text" class="form-control form-control-lg form2"
+                                                            name="authorName" id="authorName">
+                                                        <small class="form-text text-danger"></small>
+                                                    </div>
+                                                    <div class="form-group name2">
+                                                        <label for="bookImageUrl"> Book Image Url</label>
+                                                        <input type="text" class="  form-control form-control-lg form2"
+                                                            id="bookImageUrl" name="bookImageUrl">
+                                                        <small class="form-text text-danger"> </small>
+                                                    </div>
+                                                    <div class="form-group name2">
+                                                        <label for="publicationYear ">Publication
+                                                            Year</label>
+                                                        <input type="number" class="form-control form-control-lg "
+                                                            id="publicationYear" name="publicationYear">
+                                                        <small class="form-text text-danger"> </small>
+                                                    </div>
+
+                                                    <div class="form-group ">
+                                                        <!-- <small  class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value="new"
+                                                                id="isNew">
+                                                            <label class="form-check-label" for="isNew">New</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group mb-lg-4 name2">
+                                                        <label class="ml-3" for="bookDesc">Description</label>
+                                                        <textarea rows="4" value='' type="text"
+                                                            class="form-control form-control-lg form2" id="bookDesc"
+                                                            name="bookDesc">
                                                 </textarea>
-                                                                    <small class="form-text text-danger"
-                                                                        style="display:none"> </small>
-                                                                </div>
-                                                                <button type="submit" id="aboutStoreFormSubmit"
-                                                                    class="btn2 text-white ">About Info Add
+                                                        <span> 0 / 100</span>
+                                                        <small class="form-text text-danger"
+                                                            style="display:none"></small>
+                                                    </div>
+
+                                                    <div class="form-group name2">
+                                                        <label for="bookSelectType d-flex align-items-center form2 "
+                                                            class="">
+                                                            Book Type
+                                                            <!-- Dropdown Menu -->
+                                                            <div class="btn-group mb-lg-1 p-lg-3 rounded dropright ">
+                                                                <button type="button" class="btn text-success"
+                                                                    data-toggle="dropdown" aria-expanded="false">
+                                                                    <span class="h4">
+                                                                        +
+                                                                    </span>
                                                                 </button>
-                                                            </form>
-                                                        </div>
+                                                                <div class="dropdown-menu shadow  ">
+                                                                    <!-- Dropdown menu links -->
+                                                                    <div class="form-group p-lg-1">
+                                                                        <label for="addType">Add
+                                                                            type</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="addType" name="publicationYear">
+                                                                        <!-- <small  class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                                        <button id="addTypeBtn"
+                                                                            class="btn btn-outline-warning mt-3 btn-block">add</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <select name="bookSelectType " id="bookSelectType"
+                                                            class="form-control form-control-lg form2"
+                                                            id="exampleFormControlSelect1">
+                                                            <!-- <option value="1">Fantastic</option> -->
+                                                        </select>
+                                                        <small class="form-text text-danger"
+                                                            style="display:block"></small>
                                                     </div>
-                                                </div>
+                                                    <button type="submit" id="bookFormSubmit"
+                                                        class="btn2  text-white">Add</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                                <!-- Join  Us section -->
-                                                <div class="col-md-12 my-lg-5">
-                                                    <div class="h2 mb-lg-4 bookForm" id="menuJoin">Join Us</div>
-                                                    <table class=" w-50 table text-center">
-                                                        <thead class="table1 text-white ">
-                                                            <tr>
-                                                                <th scope="col">#</th>
-                                                                <th scope="col">Full Name</th>
-                                                                <th scope="col"> Email Address</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody id="joinTable">
-                                                            <!-- <tr>
+                                    <!-- About Store section -->
+                                    <div class="col-md-12 mt-lg-5">
+                                        <div class="h2 mb-lg-4 addbook  bookForm" id="menuAboutStore">About
+                                            Store</div>
+                                        <div class="form-book-section mt-lg-2">
+                                            <div class="jumbotron form-book-section2  bg-white p-lg-4 px-lg-0">
+                                                <form>
+                                                    <div class="form-group name2">
+                                                        <label for="aboutTitle">Title</label>
+                                                        <input type="text" class="form-control form2
+                                       form-control-lg" placeholder="About Store" id="aboutStoreTitle" name="bookName">
+                                                        <small class="form-text text-danger"
+                                                            style="display:none"></small>
+                                                    </div>
+                                                    <div class="form-group name2">
+                                                        <label for="aboutImageUrl">Image Url</label>
+                                                        <input type="text" class="  form-control form-control-lg form2"
+                                                            id="aboutStoreImageUrl" name="aboutImageUrl">
+                                                        <small class="form-text text-danger"
+                                                            style="display:none"></small>
+                                                    </div>
+                                                    <div class="form-group mb-lg-4 name2">
+                                                        <label for="aboutDesc">Description</label>
+                                                        <textarea rows="4" value='' type="text"
+                                                            class="form-control form-control-lg form2"
+                                                            id="aboutStoreDesc" name="aboutDesc">
+                                                </textarea>
+                                                        <small class="form-text text-danger" style="display:none">
+                                                        </small>
+                                                    </div>
+                                                    <button type="submit" id="aboutStoreFormSubmit"
+                                                        class="btn2 text-white ">About Info Add
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Join  Us section -->
+                                    <div class="col-md-12 my-lg-5">
+                                        <div class="h2 mb-lg-4 bookForm" id="menuJoin">Join Us</div>
+                                        <table class=" w-50 table text-center">
+                                            <thead class="table1 text-white ">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Full Name</th>
+                                                    <th scope="col"> Email Address</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="joinTable">
+                                                <!-- <tr>
                                                  <th scope="row">1</th>
                                                  <td></td>
                                                  <td></td>
@@ -353,47 +321,46 @@
                                                  <td></td>
                                                  <td></td>
                                             </tr> -->
-                                                        </tbody>
-                                                    </table>
-                                                </div>
+                                            </tbody>
+                                        </table>
+                                    </div>
 
-                                                <!-- Contact Us section -->
-                                                <div class="col-12 my-lg-5 pr-lg-5 ">
-                                                    <div class="h2 mb-lg-4 bookForm" id="menuContact">Contact Us</div>
-                                                    <table class="table tablewidth text-center">
-                                                        <thead class=" table1 text-white ">
-                                                            <tr>
-                                                                <th scope="col">#</th>
-                                                                <th scope="col">Full Name</th>
-                                                                <th scope="col">Address</th>
-                                                                <th scope="col">Email Address</th>
-                                                                <th scope="col">Phone Number</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody id="contactTable"></tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <!-- Contact Us section -->
+                                    <div class="col-12 my-lg-5 pr-lg-5 ">
+                                        <div class="h2 mb-lg-4 bookForm" id="menuContact">Contact Us</div>
+                                        <table class="table tablewidth text-center">
+                                            <thead class=" table1 text-white ">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Full Name</th>
+                                                    <th scope="col">Address</th>
+                                                    <th scope="col">Email Address</th>
+                                                    <th scope="col">Phone Number</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="contactTable"></tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
-            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-                crossorigin="anonymous"></script>
-            <script src="./assets/js/admin/adminLogin.js"></script>
-            <script src="./assets/js/admin/admin.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/admin/adminLogin.js"></script>
+    <script src="./assets/js/admin/admin.js"></script>
 </body>
 
 </html>
