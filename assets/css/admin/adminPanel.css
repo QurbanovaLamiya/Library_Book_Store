@@ -4,14 +4,11 @@
 #adminPanelNavbar {
   background-color: var(--ColorRed);
 }
-#AdminPanel{
-  /* display: none; */
-}
 .mainLogo img {
   margin: 75px 0 55px 35px;
 }
 .mainNavbar ul li {
-  margin: 0 0 34px 35px;
+  margin: 0 0 34px 40px;
 }
 .mainNavbar ul li img {
   margin-right: 13px;
@@ -151,10 +148,12 @@
     top: 0;
     left: 0;
     height: 100%;
-    /* display: none; */
   }
   .mobileNavImg {
     margin: 20px 0 70px;
+  }
+  .hamburger{
+    margin: 10px -7px 0 0;
   }
   .mobileNavList {
     font-family: var(--MontserratFont);
@@ -168,7 +167,6 @@
     right: 0;
     background-color: rgba(36, 20, 0, 0.7);
     height: 100%;
-    /* display: none; */
   }
 }
 
@@ -183,30 +181,4 @@
 ::-webkit-scrollbar-thumb {
   background-color: #720418;
   border-radius: 10px;
-}
-
-/* Join us Modal */
-.joinUsPage {
-  opacity: 0.9;
-  margin-top: 15%;
-}
-.joinUsTitle {
-  font-family: var(--MontserratFont);
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 54px;
-  margin: 60px 0 40px;
-}
-form input {
-  height: 70px;
-  border: 1px solid #cecece;
-  margin-bottom: 35px;
-  padding-left: 50px;
-}
-form .joinBtn {
-  height: 70px;
-  color: #fff;
-  background: #e16a00;
-  border: 1px solid #cecece;
-  border-radius: 5px;
 }
