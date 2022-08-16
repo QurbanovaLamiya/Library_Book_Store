@@ -10,10 +10,12 @@ header {
   width: 100%;
   padding: 20px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 999;
   background-color: #fffaf5;
 }
 .clientLogo {
@@ -25,7 +27,6 @@ header {
   font-size: 12px;
 }
 .clientPageNavbar ul li a:hover {
-  color: var(--ColorOrange);
   cursor: pointer;
   text-decoration: none;
 }
@@ -38,6 +39,7 @@ header {
 }
 /* Home Section */
 .homeSection {
+  width: 80%;
   margin: 10% 16%;
 }
 .homeContent {
@@ -66,6 +68,9 @@ header {
 }
 .homeSection button:hover {
   background-color: #c85e02;
+}
+.homeBtn a:hover {
+  text-decoration: none;
 }
 .homeImg img {
   width: 100%;
@@ -145,9 +150,10 @@ header {
   font-size: 12px;
   color: var(--ColorDarkGreen);
 }
-.socialMediaSectionContent{
-  display: flex;
-  justify-content: center;
+
+/* Social Section */
+.socialMediaSection {
+  margin: 134px auto;
 }
 .socialMediaSectionTitle p {
   font-weight: 900;
@@ -155,15 +161,13 @@ header {
   color: var(--ColorDarkGreen);
 }
 .socialMediaSectionContent a {
-  margin-right: 15px;
   cursor: pointer;
+  margin: 0 25px;
 }
 
 /* Footer */
 footer {
   background-color: #391f00;
-  height: 270px;
-  padding-top: 56px;
 }
 .footerContent {
   width: 100%;
@@ -177,7 +181,6 @@ footer {
 .footerList ul {
   margin: 0 45px;
 }
-
 .footerList ul li a {
   font-size: 13px;
   line-height: 26px;
@@ -190,7 +193,7 @@ footer {
 .footerNumber button {
   line-height: 27px;
   width: 136px;
-  height: 26px;
+  height: 30px;
   border: 1px solid var(--ColorOrange);
   background-color: transparent;
   color: var(--ColorOrange);
@@ -221,11 +224,10 @@ footer {
 }
 .navbar {
   /* background: #444; */
-  transition: all .6s;
-  /* background-color: red; */
+  transition: all 0.6s;
   display: none;
   backface-visibility: hidden;
-  /* box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5); */
+  box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
 }
 
 .navbar-dark .navbar-nav {
@@ -244,48 +246,38 @@ footer {
   margin-left: 150px;
   border: 0;
 }
-
-
-
 .navbar-dark .navbar-toggler:focus {
   background: none;
   outline: 0;
 }
-
 .navbar-dark .navbar-toggler span {
   display: block;
   width: 30px;
   height: 2px;
   margin: 6px auto;
   background: black;
-  transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-
 .navbar-dark .navbar-toggler:hover span,
 .navbar-dark .navbar-toggler:focus span {
-  background: black
+  background: black;
 }
-
 /* rotate first span */
 .navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
   transform: rotate(45deg) translate(6px, 6px);
 }
-
 /* hide second span */
 .navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
   opacity: 0;
 }
-
 /* rotate third span */
 .navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
 .navbar-dark .navbar-toggler[aria-expanded="false"] span {
   transform: none;
   opacity: 1;
 }
-
 .navbar-brand {
   width: 162px;
   height: 44px;
@@ -293,36 +285,29 @@ footer {
   border: 0;
   text-indent: -99999px;
 }
-
 .navbar-dark .navbar-toggler span {
   display: block;
   width: 30px;
   height: 2px;
   margin: 6px auto;
   background: black;
-  transition: all .6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
-
 /* rotate first span */
 .navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
   transform: rotate(45deg) translate(6px, 6px);
 }
-
 /* hide second span */
 .navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
   opacity: 0;
 }
-
 /* rotate third span */
 .navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
 .navbar-dark .navbar-toggler[aria-expanded="false"] span {
   transform: none;
   opacity: 1;
-
- 
 }
 
 /* Join us Modal */
@@ -350,7 +335,7 @@ form .joinBtn {
   border-radius: 5px;
 }  */
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   body{
     position: relative;
     background-color: red;
@@ -407,4 +392,4 @@ form .joinBtn {
    
   }
   
-}
+} */
