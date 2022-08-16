@@ -23,66 +23,21 @@
             <img src="./assets/images/homeLogo.svg" alt="">
         </div>
         <nav class="clientPageNavbar">
-            <ul class="d-flex ">
-
-<<<<<<< HEAD
-=======
-            <li><a href="./index.html" >Home</a></li>
-            <li><a href="./catalog.html">Catalog</a></li>
-            <li><a href="./aboutStore.html " class="font-weight-bold">About Store</a></li>
-            <li><a href="./contactUs.html">Contact Us</a></li>
-            <li><a href="./search.html">Search</a></li>
->>>>>>> bf60703f8aec26b69cb23aef2174f68f3aa37885
-
-
-                <li><a href="./index.html" class="font-weight-bold">Home</a></li>
+            <ul class="d-flex">
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./catalog.html">Catalog</a></li>
-                <li><a href="./aboutStore.html">About Store</a></li>
+                <li><a href="./aboutStore.html" class="font-weight-bold" style="color:var(--ColorOrange)">About Store</a></li>
                 <li><a href="./contactUs.html">Contact Us</a></li>
                 <li><a href="./search.html">Search</a></li>
-
             </ul>
         </nav>
         <!-- Button trigger modal -->
-        <div class="joinUs d-flex align-items-center mr-lg-5">
+        <div class="joinUs d-flex align-items-center mr-lg-5 ">
             <img src="./assets/images/adminLogo.svg" alt="">
             <a type="button" class="btn" data-toggle="modal" data-target="#exampleModal">Join Us</a>
         </div>
-
-        <!-- Modal -->
-        <div class="joinUsPage modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="joinUsContent modal-body mx-3">
-                        <div class="joinUsTitle text-center">
-                            <p>Join Us</p>
-                        </div>
-                        <form>
-                            <div class="form-group ">
-                                <input type="text" class="w-100" placeholder="Full name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="w-100" placeholder="Email">
-                            </div>
-                            <button type="submit" class="joinBtn btn-block mt-5 mb-3 py-3">Join</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-<<<<<<< HEAD
-        <button class="hamburger">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect y="10.5262" width="25" height="3.94736" fill="#241400" />
-                <rect y="21.0527" width="25" height="3.94736" fill="#241400" />
-                <rect width="25" height="3.94736" fill="#241400" />
-            </svg>
-        </button>
     </header>
-=======
-    </div>
-    <nav class="navbar navbar-dark fixed-top">
+    <!-- <nav class="navbar navbar-dark fixed-top">
         <div class="container">
  
             <a class="navbar-brand" href="index.html">Bootstrap Hamburger Menu</a>
@@ -119,7 +74,7 @@
             </div>
  
         </div>
-    </nav>
+    </nav> -->
     <!-- <button class="hamburger">
         <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -128,8 +83,7 @@
             <rect width="25" height="3.94736" fill="#241400" />
         </svg>
     </button> -->
-</header>
->>>>>>> bf60703f8aec26b69cb23aef2174f68f3aa37885
+
 
     <main>
         <!-- About Section -->
@@ -138,38 +92,39 @@
                 <h1 class="aboutTitle">About Store</h1>
                 <p class="aboutText text-left">We work without holidays and weekends! Residents of Kiev can receive an
                     order on the day of its registration. Customers from other cities of Ukraine can receive an order
-                    within 1-5 days, depending on the location of the settlement and the selected delivery method.
-                    Orders over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms
-                    and cost of delivery during checkout in the order basket, after selecting the delivery city.
+                    within 1-5 days, depending on the location of the settlement and the selected delivery method.Orders
+                    over UAH 1000 are delivered free of charge *. You can see the available methods, exact terms and
+                    cost of delivery during checkout in the order basket, after selecting the delivery city.
                 </p>
             </div>
             <div class="aboutImg">
                 <img src="./assets/images/aboutBooks.svg" alt="">
             </div>
         </section>
-        <!-- Socialbar Start -->
-        <section class="socialMediaSection container">
+
+        <!-- Social Section -->
+        <section class="socialMediaSection container d-flex align-items-center flex-column">
             <div class="socialMediaSectionTitle mb-lg-4">
                 <p class="text-center h4">
                     Follow us on social media
                 </p>
             </div>
-            <div class="socialMediaSectionContent d-flex justify-content-between">
-                <a href="https://www.facebook.com"><img src="./assets/images/facebook.svg" alt=""></a>
-                <a href="https://www.twitter.com"><img src="./assets/images/twitter.svg" alt=""></a>
-                <a href="https://www.instagram.com"><img src="./assets/images/instagram.svg" alt=""></a>
+            <div class="socialMediaSectionContent d-flex justify-content-center flex-wrap">
+                <a href="https://www.facebook.com"><img src="./assets/images/facebook.svg" alt="facebookLink"></a>
+                <a href="https://www.twitter.com"><img src="./assets/images/twitter.svg" alt="twitterLink"></a>
+                <a href="https://www.instagram.com"><img src="./assets/images/instagram.svg" alt="instagramLink"></a>
             </div>
         </section>
     </main>
 
 
     <!-- Footer Start -->
-    <footer class="d-flex flex-wrap align-items-center justify-content-center">
-        <div class="d-flex align-items-center footerContent">
+    <footer class="d-flex flex-wrap align-items-center justify-content-center pt-lg-3">
+        <div class="d-flex align-items-center my-lg-5 footerContent">
             <div class="footerLogo">
                 <img src="./assets/images/footerLogo.svg" alt="" />
             </div>
-            <div class="footerList d-flex">
+            <div class="footerList d-flex flex-wrap">
                 <ul>
                     <li class=" text-white h5">Popular</li>
                     <li class=""><a href="" class="text-white">Programming</a></li>
@@ -191,12 +146,12 @@
                 </ul>
             </div>
             <div class="footerNumber">
-                <p class="text-white mb-1">+38 (071) 339-16-26</p>
-                <button class=" text-left my-4">Request a call </button>
+                <p class="text-white mb-lg-1">+38 (071) 339-16-26</p>
+                <button class="text-left my-lg-1">Request a call </button>
             </div>
         </div>
-        <p class="footerNum text-white text-center">All rights reserved © 2003-2022 LIBRARY TERMS OF USE | Privacy
-            Policy</p>
+        <p class="footerNum text-white text-center pb-lg-3">All rights reserved © 2003-2022 LIBRARY TERMS OF USE |
+            Privacy Policy</p>
     </footer>
 
 
