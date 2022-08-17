@@ -9,4 +9,17 @@ $(document).ready(function() {
       sidebar.hide()      
       $('#adminpanel').show()
     })
-})
+  })
+  
+
+  
+
+
+
+
+
+
+
+
+
+    
