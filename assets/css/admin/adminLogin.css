@@ -32,6 +32,9 @@ button {
   font-family: var(--CrimsonTextFont);
   background-color: var(--ColorOrange);
 }
+.adminLoginForm button:hover {
+  background: #c85e02;
+}
 
 /* For Phone */
 @media only screen and (max-width: 320px) {
