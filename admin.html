@@ -34,7 +34,7 @@
 
 
     <!-- Admin Panel -->
-    <div class="container-fluid d-none " id="AdminPanel">
+    <div class="container-fluid" id="AdminPanel">
         <div class="row">
             <div class="col-lg-3" id="adminPanelNavbar">
                 <div class="mainLogo">
@@ -72,7 +72,7 @@
                             </div>
                         </div>
 
-                        <div class="sideBar">
+                        <div class="sideBar d-none">
                             <div class="row sidebar">
                                 <div class="col-9 leftSide">
                                     <div class="mobileNavImg d-flex justify-content-between align-items-center">
@@ -94,7 +94,7 @@
                                                     class="text-white">Contact</span></a></li>
                                         <li><a href="#adminLogin" class="d-flex align-items-center mb-3"><img
                                                     src="./assets/images/mobileNavBook.svg" class="mr-2" alt=""><span
-                                                    class="text-white">Logout</span></a></li>
+                                                    class="text-white" id="mobileLog">Logout</span></a></li>
                                     </ul>
                                 </div>
                                 <div class="col-3 rightSide"></div>

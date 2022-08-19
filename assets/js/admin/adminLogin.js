@@ -2,16 +2,18 @@ $(document).ready(() => {
   let adminLoginForm = $("#adminLoginForm");
   let adminPanel = $("#AdminPanel");
 
-  // if (localStorage.getItem("admin")) {
-  //   adminLoginForm.hide();
-  //   adminPanel.show();
-  // } else {
-  //   adminLoginForm.show();
-  //   adminPanel.hide();
-  // }
-
+  if (localStorage.getItem("login")) {
+    adminLoginForm.hide();
+    adminPanel.show();
+  } else {
+    adminLoginForm.show();
+    adminPanel.hide();
+  }
+  //  Join button
   $(document).on("click", "#adminJoinButton", (e) => {
     e.preventDefault();
+
+    $(".sideBar").addClass("d-none");
 
     let UserName = $("#userName").val().trim();
     let UserPassword = $("#userPassword").val().trim();
@@ -33,10 +35,15 @@ $(document).ready(() => {
         let name = snap.val().userName;
         let password = snap.val().userPassword;
 
+        let userInfo = {
+          name,
+          password,
+        };
+
         if (UserName == name && UserPassword == password) {
           setTimeout(() => {
+            localStorage.setItem("login", JSON.stringify(userInfo));
             adminLoginForm.hide();
-            adminPanel.removeClass("d-none");
             adminPanel.show();
             clearUserInfo();
           }, 1000);
@@ -52,19 +59,21 @@ $(document).ready(() => {
     }
   });
 
+  // Logout Button
   $(document).on("click", "#adminLogout", () => {
     setTimeout(() => {
+      localStorage.removeItem("login");
       adminLoginForm.show();
       adminPanel.hide();
     }, 1000);
   });
 
-  // $('#joinButton').click(function () {
-  //   $('#adminLogin').hide()
-  //    $('#AdminPanel').show()
-  // })
-  // $('#adminLogout').click(function() {
-  //   $('#AdminPanel').hide()
-  //   $('#adminLogin').show()
-  // })
+  // Hamburger Button
+  $(document).on("click", ".hamburger", () => {
+    $(".sideBar").removeClass("d-none");
+  });
+  $(document).on("click", "#mobileLog", () => {
+    adminLoginForm.show();
+    adminPanel.hide();
+  });
 });
