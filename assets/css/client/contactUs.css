@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 body {
   box-sizing: border-box;
   font-family: var(--MontserratFont);
@@ -15,9 +12,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
   background-color: #fffaf5;
 }
 .clientLogo {
@@ -163,75 +157,94 @@ input {
 
 /* Social Section */
 .socialMediaSection {
-    margin: 134px auto;
-  }
-  .socialMediaSectionTitle p {
-    font-weight: 900;
-    line-height: 49px;
-    color: var(--ColorDarkGreen);
-  }
-  .socialMediaSectionContent a {
-    cursor: pointer;
-    margin: 0 25px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #391f00;
-  }
-  .footerContent {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footerList {
-    font-weight: 400;
-    font-size: 18px;
-  }
-  .footerList ul {
-    margin: 0 45px;
-  }
-  .footerList ul li a {
-    font-size: 13px;
-    line-height: 26px;
-  }
-  .footerNumber p {
-    font-weight: 900;
-    font-size: 12px;
-    height: 18px;
-  }
-  .footerNumber button {
-    line-height: 27px;
-    width: 136px;
-    height: 30px;
-    border: 1px solid var(--ColorOrange);
-    background-color: transparent;
-    color: var(--ColorOrange);
-    font-weight: 500;
-    font-size: 14px;
-  }
-  .footerNumber button:hover {
-    background-color: var(--ColorOrange);
-    color: #fff;
-  }
-  .footerNum {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 24px;
-  }
-  
-  /* ScrollBar */
-  ::-webkit-scrollbar {
-    width: 7px;
-  }
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #a3a2a2;
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background-color: #720418;
-    border-radius: 10px;
-  }
+  margin: 134px auto;
+}
+.socialMediaSectionTitle p {
+  font-weight: 900;
+  line-height: 49px;
+  color: var(--ColorDarkGreen);
+}
+.socialMediaSectionContent a {
+  cursor: pointer;
+  margin: 0 25px;
+}
+
+/* Footer */
+footer {
+  background-color: #391f00;
+}
+.footerContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerList {
+  font-weight: 400;
+  font-size: 18px;
+}
+.footerList ul {
+  margin: 0 45px;
+}
+.footerList ul li a {
+  font-size: 13px;
+  line-height: 26px;
+}
+.footerNumber p {
+  font-weight: 900;
+  font-size: 12px;
+  height: 18px;
+}
+.footerNumber button {
+  line-height: 27px;
+  width: 136px;
+  height: 30px;
+  border: 1px solid var(--ColorOrange);
+  background-color: transparent;
+  color: var(--ColorOrange);
+  font-weight: 500;
+  font-size: 14px;
+}
+.footerNumber button:hover {
+  background-color: var(--ColorOrange);
+  color: #fff;
+}
+.footerNum {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #a3a2a2;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #720418;
+  border-radius: 10px;
+}
+
+/* Join us Modal */
+.modalSection {
+  margin-top: 30%;
+  padding: 30px;
+  width: 600px;
+}
+.modalForm input {
+  height: 70px;
+  border: 1px solid #cecece;
+}
+.modalForm .joinBtn {
+  height: 70px;
+  color: #fff;
+  background: #e16a00;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-top: 70px;
+}
 @media screen and (max-width: 320px) {
   .intl-tel-input .country-list {
     width: 250px;
