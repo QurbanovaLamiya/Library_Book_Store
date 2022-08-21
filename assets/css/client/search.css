@@ -7,15 +7,11 @@ body {
 }
 /* Header */
 header {
-  width: 100%;
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
   background-color: #fffaf5;
 }
 .clientLogo {
@@ -52,7 +48,6 @@ main {
   font-weight: 700;
   font-size: 36px;
   line-height: 196.19%;
-
   color: var(--ColorDarkGreen);
 }
 
@@ -65,7 +60,6 @@ main {
   margin-left: -20px;
   display: flex;
   align-items: center;
-
   color: var(--ColorDarkGreen);
 }
 .content h3 {
@@ -74,7 +68,6 @@ main {
   font-weight: 400;
   font-size: 18px;
   line-height: 176.19%;
-
   color: var(--ColorDarkGreen);
 }
 .searchh {
@@ -118,7 +111,6 @@ main {
   font-weight: 400;
   font-size: 23px;
   line-height: 30px;
-
   color: var(--Brown);
 }
 .btns {
@@ -366,8 +358,26 @@ footer {
   background-color: #720418;
   border-radius: 10px;
 }
+/* Join us Modal */
+.modalSection {
+  margin-top: 30%;
+  padding: 30px;
+  width: 600px;
+}
+.modalForm input {
+  height: 70px;
+  border: 1px solid #cecece;
+}
+.modalForm .joinBtn {
+  height: 70px;
+  color: #fff;
+  background: #e16a00;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-top: 70px;
+}
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   body {
     overflow-x: hidden;
   }
@@ -416,9 +426,9 @@ footer {
 
   .clientPageNavbar {
     display: none;
-  }
-  /* Footer */
-  .joinUs img {
+  } */
+/* Footer */
+/* .joinUs img {
     display: none;
   }
   .joinUs a {
@@ -436,5 +446,5 @@ footer {
   }
   .footerNumber {
     display: none;
-  }
-}
+  } */
+/* } */

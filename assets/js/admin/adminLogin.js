@@ -43,9 +43,9 @@ $(document).ready(() => {
         if (UserName == name && UserPassword == password) {
           setTimeout(() => {
             localStorage.setItem("login", JSON.stringify(userInfo));
+            clearUserInfo();
             adminLoginForm.hide();
             adminPanel.show();
-            clearUserInfo();
           }, 1000);
         } else {
           Swal.fire({
@@ -73,7 +73,9 @@ $(document).ready(() => {
     $(".sideBar").removeClass("d-none");
   });
   $(document).on("click", "#mobileLog", () => {
-    adminLoginForm.show();
-    adminPanel.hide();
+    setTimeout(() => {
+      adminLoginForm.show();
+      adminPanel.hide();
+    }, 1000);
   });
 });

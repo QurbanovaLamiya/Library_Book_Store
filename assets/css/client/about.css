@@ -7,15 +7,11 @@ body {
 }
 /* Header */
 header {
-  width: 100%;
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
   background-color: #fffaf5;
 }
 .clientLogo {
@@ -134,29 +130,22 @@ footer {
 }
 
 /* Join us Modal */
- .joinUsPage {
-  opacity: 0.9;
-  margin-top: 15%;
+.modalSection {
+  margin-top: 30%;
+  padding: 30px;
+  width: 600px;
 }
-.joinUsTitle {
-  font-family: var(--MontserratFont);
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 54px;
-  margin: 60px 0 40px;
-}
-form input {
+.modalForm input {
   height: 70px;
   border: 1px solid #cecece;
-  margin-bottom: 35px;
-  padding-left: 50px;
 }
-form .joinBtn {
+.modalForm .joinBtn {
   height: 70px;
   color: #fff;
   background: #e16a00;
   border: 1px solid #cecece;
   border-radius: 5px;
+  margin-top: 70px;
 }
 
 @media screen and (max-width: 320px) {

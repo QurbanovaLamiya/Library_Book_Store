@@ -7,15 +7,10 @@ body {
 }
 /* Header */
 header {
-  width: 100%;
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 999;
   background-color: #fffaf5;
 }
 .clientLogo {
@@ -39,7 +34,7 @@ header {
 }
 
 /* Main  */
-.mainSection{
+.mainSection {
   width: 70%;
   margin-left: 16%;
 }
@@ -88,7 +83,7 @@ header {
   width: 85%;
 }
 .commentSection {
-  margin: 120px 0 53px 0;
+  margin: 20% 0 53px 0;
 }
 
 .commentSection input {
@@ -104,7 +99,6 @@ header {
   background: #e16a00;
   border-radius: 5px;
   border: none;
-  margin-left: 20px;
 }
 
 .commentContent div {
@@ -292,6 +286,25 @@ footer {
   border-radius: 10px;
 }
 
+/* Join us Modal */
+.modalSection {
+  margin-top: 30%;
+  padding: 30px;
+  width: 600px;
+}
+.modalForm input {
+  height: 70px;
+  border: 1px solid #cecece;
+}
+.modalForm .joinBtn {
+  height: 70px;
+  color: #fff;
+  background: #e16a00;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  margin-top: 70px;
+}
+
 @media screen and (max-width: 320px) {
   body {
     overflow-x: hidden;
@@ -299,8 +312,6 @@ footer {
   .bookImg img {
     width: 273px;
     margin-top: 80px;
-    /* margin-right: 500px;
-   */
     left: 0;
     margin-left: -90px;
   }
@@ -310,8 +321,6 @@ footer {
   }
   .bookInfo {
     width: 81px;
-
-    /* height: 24px; */
   }
   .bookInfo h2 {
     text-align: center;
