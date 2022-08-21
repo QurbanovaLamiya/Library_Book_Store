@@ -50,7 +50,7 @@ header {
   border-bottom-right-radius: 0;
 }
 input {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .btn3 {
   background-color: var(--Orange2);

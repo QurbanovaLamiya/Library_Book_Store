@@ -18,7 +18,7 @@
 
 <body>
   <!-- Header Start -->
-  <header class="container-fluid position-fixed fixed-top bg-info">
+  <header class="position-fixed fixed-top">
     <div class="clientLogo">
       <img src="./assets/images/homeLogo.svg" alt="">
     </div>
@@ -88,7 +88,7 @@
 
           <!-- Contact Us Input  -->
           <form id="contactFormReset">
-            <div class="row">
+            <div class="row mt-5">
 
               <div class="col-md-6">
                 <div class="form-group d-flex flex-column position-relative">
@@ -111,25 +111,11 @@
                   <small class="h6 text-danger"></small>
                 </div>
               </div>
-              <div class="col-md-6 mt-5">
+              <div class="col-md-6">
                 <div class="form-group d-flex flex-column position-relative input-group">
-
                   <input type="phone" id="phoneContactUs" style="height: 75px" placeholder="Phone"
                     class="form-control form-control-lg px-5 rounded input" />
                   <small class="h6 text-danger"></small>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <div class="alert alert-danger" style="display: none" id="contactError">
-                  <h4 class="alert-heading">Error</h4>
-                  <p>Please check all informations</p>
-                  <p class="mb-0"></p>
-                </div>
-                <div class="alert alert-success" style="display: none" id="contactSuccess">
-                  <h4 class="alert-heading">Successful</h4>
-                  <p>Sended your information!</p>
-                  <p class="mb-0"></p>
                 </div>
               </div>
 
@@ -233,7 +219,7 @@
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.7/js/intlTelInput.js"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
   <script src="./assets/js/db.js"></script>
