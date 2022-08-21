@@ -24,12 +24,39 @@ $(document).ready(function () {
             <td>${item.inputEmail}</td>
        </tr>
         `;
-        })
-        .join("")
+        }).join("")
     );
   }
 
   // Contact Us //
+
+  let userContact = myDatabase.ref("/clientContact");
+
+  userContact.on("value", function (snap) {
+    let userContactData = Object.entries(snap.val()).map((data) => {
+      return {
+        id: data[0],
+        ...data[1],
+      };
+    });
+    renderPageContact(userContactData);
+  });
+
+  function renderPageContact(userArr) {
+    $("#contactTable").html(
+      userArr.map((user, index) => {
+        return `
+            <tr>
+                  <th scope="row">${index + 1}</th>
+                  <td>${user.fullNameContactUs}</td>
+                  <td>${user.emailContactUs}</td>
+                  <td>${user.addressContactUs}</td>
+                  <td>${user.phoneContactUs}</td>
+            </tr>
+      `;
+      })
+    );
+  }
 
   // Mobile //
 
