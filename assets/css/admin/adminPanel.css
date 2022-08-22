@@ -105,6 +105,9 @@
   display: none;
 }
 @media screen and (max-width: 320px) {
+  #contact{
+    overflow-x: scroll;
+    }
   #adminPanelNavbar {
     position: relative;
     display: none;
@@ -172,7 +175,7 @@
 
 /* ScrollBar */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #a3a2a2;
