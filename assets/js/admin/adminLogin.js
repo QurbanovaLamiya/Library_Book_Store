@@ -9,6 +9,7 @@ $(document).ready(() => {
     adminLoginForm.show();
     adminPanel.hide();
   }
+ 
   //  Join button
   $(document).on("click", "#adminJoinButton", (e) => {
     e.preventDefault();
@@ -68,14 +69,23 @@ $(document).ready(() => {
     }, 1000);
   });
 
-  // Hamburger Button
+  // Mobile Menu //
+  //*******************//
+  // Hamburger Button//
   $(document).on("click", ".hamburger", () => {
     $(".sideBar").removeClass("d-none");
   });
+
+  // Logout Button
   $(document).on("click", "#mobileLog", () => {
     setTimeout(() => {
       adminLoginForm.show();
       adminPanel.hide();
     }, 1000);
+  });
+
+  // List Button
+  $(document).on("click", ".mobileNavList li", () => {
+    $(".sidebar").hide();
   });
 });
