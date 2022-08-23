@@ -1,6 +1,7 @@
 $(document).ready(() => {
   let adminLoginForm = $("#adminLoginForm");
   let adminPanel = $("#AdminPanel");
+   
 
   if (localStorage.getItem("login")) {
     adminLoginForm.hide();

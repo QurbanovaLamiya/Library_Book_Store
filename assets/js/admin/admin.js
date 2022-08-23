@@ -1,9 +1,9 @@
-$(document).ready(() =>{
+$(document).ready(() => {
   let myDatabase = firebase.database();
   let bookDesc = $("#bookDesc");
   let addNewBook = myDatabase.ref("/addNewBook");
   let addAboutNewStore = myDatabase.ref("/addAboutNewStore");
- 
+
   const bookForm = document.querySelector("#bookForm");
   let searchAdminInput = $("#AdminSearch");
   let searchAdminResult = $("#AdminSearchResult");
@@ -34,7 +34,7 @@ $(document).ready(() =>{
     searchAdminResult.removeClass("d-none");
     getBook(value);
   });
-  
+
   bookDesc.on("input", function () {
     let descArea = $(this).val(searchChooseBookData.volumeInfo.authors);
     $(this).siblings("span").html(` ${descArea.length} / 100`);
@@ -46,7 +46,6 @@ $(document).ready(() =>{
     }
   });
   //Add book type selection
-  
 
   //Search result drop down box pops up after 4 charachters enterred
   function searchResultDropdownRender(data) {
@@ -92,7 +91,6 @@ $(document).ready(() =>{
       //Book type
       bookSelectType.val(searchChooseBookData.volumeInfo.printType);
       searchAdminInput.val("");
-
     });
 
     searchResultList.html(
@@ -115,25 +113,25 @@ $(document).ready(() =>{
     );
   }
 
-    //Write about store data to firebase
-    $("#aboutStoreFormSubmit").on("click", function (event) {
-      event.preventDefault();
-  
-      let aboutStoreTitle = $("#aboutStoreTitle").val();
-      let aboutStoreDesc = $("#aboutStoreDesc").val();
-      let aboutStoreImageUrl = $("aboutStoreImageUrl").val();
-  
-      addAboutNewStore.push().set({
-        aboutStoreTitle,
-        aboutStoreDesc,
-        aboutStoreImageUrl
-      });
+  //Write about store data to firebase
+  $("#aboutStoreFormSubmit").on("click", function (event) {
+    event.preventDefault();
+
+    let aboutStoreTitle = $("#aboutStoreTitle").val();
+    let aboutStoreDesc = $("#aboutStoreDesc").val();
+    let aboutStoreImageUrl = $("aboutStoreImageUrl").val();
+
+    addAboutNewStore.push().set({
+      aboutStoreTitle,
+      aboutStoreDesc,
+      aboutStoreImageUrl,
     });
+  });
 
   //Write bookdata to firebase
   $("#bookFormSubmit").on("click", function (event) {
     event.preventDefault();
- 
+
     let bookName = $("#bookName").val().trim();
     let authorName = $("#authorName").val().trim();
     let bookImageUrl = $("#bookImageUrl").val().trim();
@@ -153,7 +151,6 @@ $(document).ready(() =>{
     bookForm.reset();
   });
 
-
   // Get books from endpoint
 
   async function getBook(bookName) {
@@ -167,59 +164,59 @@ $(document).ready(() =>{
       console.log(searchResultData);
       searchResultDropdownRender(searchResultData);
     } catch (err) {
-      alert('Server Error')
+      alert("Server Error");
       console.log(err);
     }
   }
+});
+// Join Us //
 
-})
-  // Join Us //
+let userInformation = myDatabase.ref("/clientJoin");
 
-  let userInformation = myDatabase.ref("/clientJoin");
-
-  userInformation.on("value", function (snap) {
-    let userData = Object.entries(snap.val()).map((item) => {
-      return {
-        id: item[0],
-        ...item[1],
-      };
-    });
-    renderPage(userData);
+userInformation.on("value", function (snap) {
+  let userData = Object.entries(snap.val()).map((item) => {
+    return {
+      id: item[0],
+      ...item[1],
+    };
   });
+  renderPage(userData);
+});
 
-  function renderPage(userInfoArr) {
-    $("#joinTable").html(
-      userInfoArr
-        .map((item, index) => {
-          return `
+function renderPage(userInfoArr) {
+  $("#joinTable").html(
+    userInfoArr
+      .map((item, index) => {
+        return `
         <tr>
             <th scope="row">${index + 1}</th>
             <td>${item.inputFullName}</td>
             <td>${item.inputEmail}</td>
        </tr>
         `;
-        }).join("")
-    );
-  }
+      })
+      .join("")
+  );
+}
 
-  // Contact Us //
+// Contact Us //
 
-  let userContact = myDatabase.ref("/clientContact");
+let userContact = myDatabase.ref("/clientContact");
 
-  userContact.on("value", function (snap) {
-    let userContactData = Object.entries(snap.val()).map((data) => {
-      return {
-        id: data[0],
-        ...data[1],
-      };
-    });
-    renderPageContact(userContactData);
+userContact.on("value", function (snap) {
+  let userContactData = Object.entries(snap.val()).map((data) => {
+    return {
+      id: data[0],
+      ...data[1],
+    };
   });
+  renderPageContact(userContactData);
+});
 
-  function renderPageContact(userArr) {
-    $("#contactTable").html(
-      userArr.map((user, index) => {
-        return `
+function renderPageContact(userArr) {
+  $("#contactTable").html(
+    userArr.map((user, index) => {
+      return `
             <tr>
                   <th scope="row">${index + 1}</th>
                   <td>${user.fullNameContactUs}</td>
@@ -228,9 +225,8 @@ $(document).ready(() =>{
                   <td>${user.phoneContactUs}</td>
             </tr>
       `;
-      })
-    );
-  }
+    })
+  );
 
   // Mobile //
 
@@ -243,5 +239,4 @@ $(document).ready(() =>{
     sidebar.hide();
     $("#adminpanel").show();
   });
-});
-
+}
