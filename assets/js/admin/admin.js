@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(()=> {
   // Join Us //
 
   let userInformation = myDatabase.ref("/clientJoin");

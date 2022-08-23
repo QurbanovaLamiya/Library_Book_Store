@@ -39,7 +39,7 @@ header {
   margin: 10% 16%;
 }
 .homeContent {
-  width: 30%;
+  width: 25%;
 }
 .homeTitle {
   font-weight: 900;
@@ -61,6 +61,7 @@ header {
   border: none;
   font-weight: 900;
   line-height: 29px;
+  text-align: left;
 }
 .homeSection button:hover {
   background-color: #c85e02;
@@ -114,7 +115,6 @@ header {
 .aboutStoreContent div {
   margin-left: 55px;
 }
-
 .aboutStoreContent span {
   line-height: 98px;
   font-weight: 900;
@@ -162,7 +162,6 @@ header {
 }
 
 .navbar {
-  /* background: #444; */
   transition: all 0.6s;
   display: none;
   backface-visibility: hidden;
@@ -257,6 +256,11 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+.footerLogo{
+  width: 290px;
+  height: 68px;
 }
 .footerList {
   font-weight: 400;
@@ -293,6 +297,10 @@ footer {
   font-size: 12px;
   line-height: 24px;
 }
+.mobileFooterList,
+.mobileFooterEnd {
+  display: none;
+}
 
 /* ScrollBar */
 ::-webkit-scrollbar {
@@ -326,20 +334,16 @@ footer {
   margin-top: 40px;
 }
 
-/* @media screen and (max-width: 320px) {
-  body{
-    position: relative;
-    background-color: red;
-  }
+/* Responsive design */
+
+@media screen and (max-width: 320px) {
   main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
-  .homeContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  .homeSection {
+    margin-top: 0;
   }
   .homeContent {
     width: 100%;
@@ -347,11 +351,10 @@ footer {
   .homeTitle {
     font-size: 26px;
     line-height: 55px;
-    margin: 60px 0 25px;
+    margin-bottom: 10px;
   }
   .homeContent p {
-    text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .homeSection button {
     text-align: center;
@@ -361,26 +364,47 @@ footer {
   .homeBtn a {
     text-align: center;
   }
-
-  .catalogSectionBox {
-    display: flex;
-    flex-wrap: wrap;
+  .catalogSectionBox div {
+    margin-bottom: 10px;
   }
-  .socialMediaSectionContent{
-    display: flex;
-    align-items: center;
+  .aboutStoreContent div {
+    margin-left: 20px;
   }
   .socialMediaSection p {
     font-size: 18px;
     line-height: 35px;
   }
-  .socialMediaSectionContent a{
-    width: 100px;
-  }
   .socialMediaSectionContent img {
     width: 50px;
     height: 50px;
-   
   }
-  
-} */
+  .footerList,
+  .footerNumber,
+  .footerNum {
+    display: none !important;
+  }
+  .mobileFooterList,
+  .mobileFooterEnd {
+    display: block;
+  }
+  .footerLogo{
+    width:200px;
+    height: 50px;
+    margin-top: 18px;
+  }
+  .footerContent{
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileFooterList{
+    margin-bottom: 40px;
+  }
+  .mobileFooterList li a,
+  .mobileFooterEnd p{
+    font-size: 10px;
+  }
+  .mobileLine{
+    width: 253px;
+    height: 1px;
+  }
+}
