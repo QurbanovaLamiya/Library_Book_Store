@@ -11,10 +11,10 @@ $(document).ready(function() {
     })
 })
 $(document).ready(function () {
-  let db = firebase.database();
+  let myDatabase = firebase.database();
   let bookDesc = $("#bookDesc");
-  let addNewBook = db.ref("/addNewBook");
-  let addAboutNewStore = db.ref("/addAboutNewStore");
+  let addNewBook = myDatabase.ref("/addNewBook");
+  let addAboutNewStore = myDatabase.ref("/addAboutNewStore");
 
 
 
