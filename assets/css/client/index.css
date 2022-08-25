@@ -246,9 +246,9 @@ form .joinBtn {
 } */
 
 @media screen and (max-width: 320px) {
-  header {
+  /* header {
     display: none;
-  }
+  } */
   main {
     display: flex;
     flex-direction: column;
