@@ -326,11 +326,6 @@ footer {
   margin-top: 40px;
 }
 
-/* @media screen and (max-width: 320px) {
-  body{
-    position: relative;
-    background-color: red;
-  }
   main {
     display: flex;
     flex-direction: column;

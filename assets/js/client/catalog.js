@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(() => {
     $(".owl-carousel1").owlCarousel({
       autoplay: true,
       autoplayTimeout: 3000,
@@ -20,17 +20,6 @@ $(document).ready(function () {
           items: 5,
         },
       },
-    });
-})
+    }) 
+  })
 
-// $(document).ready(function() {
-
-//   let sidebar2 = $('.navbar ')
-//     $('.navbar-toggler').click(function () {
-//       $('.catalog-main').hide() 
-//       $('.socialMediaSectio')  .hide()       
-//        sidebar2.show()
-    
-    // })
-    
-// })
