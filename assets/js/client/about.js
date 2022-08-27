@@ -1,3 +1,4 @@
+$(document).ready(()=>{
 myDatabase.ref('about-store').on("value", function (snap) {
     $(".loadingSpinner").fadeOut();
     $(".about-title").text(snap.val()["about-title"]);

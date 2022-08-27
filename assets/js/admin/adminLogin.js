@@ -9,7 +9,7 @@ $(document).ready(() => {
     adminLoginForm.show();
     adminPanel.hide();
   }
- 
+
   //  Join button
   $(document).on("click", "#adminJoinButton", (e) => {
     e.preventDefault();
@@ -74,6 +74,7 @@ $(document).ready(() => {
   // Hamburger Button//
   $(document).on("click", ".hamburger", () => {
     $(".sideBar").removeClass("d-none");
+    $(".menuHeader").hide();
   });
 
   // Logout Button
@@ -87,5 +88,6 @@ $(document).ready(() => {
   // List Button
   $(document).on("click", ".mobileNavList li", () => {
     $(".sidebar").hide();
+    $(".menuHeader").show();
   });
 });
