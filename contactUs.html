@@ -38,88 +38,83 @@
     </button>
 
     <!-- Mobile Nav start -->
-    <nav class="navbar navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Bootstrap Hamburger Menu</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <div class="collapse navbar-collapse bg-warning" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link scroll-link" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll-link" href="./catalog.html">Catalog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll-link" href="./aboutStore.html">About Store</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll-link" href="./contactUs.html">Contact US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll-link" href="./search.html">Search</a>
-            </li>
-            <li class="nav-item  d-flex ">
-              <a class="nav-link scroll-link" type="button" class="btn" data-toggle="modal"
-                data-target="#exampleModal">Join Us</a>
-            </li>
-          </ul>
+    <div class="mobileNavClient d-none w-100 position-fixed top-0 pt-5 mt-4">
+      <div class="mobilHeader d-flex align-items-center position-relative ml-3">
+        <div class="mobileLogo mr-4">
+          <img src="./assets/images/homeLogo.svg" alt="">
+        </div>
+        <div class="d-flex align-items-center">
+          <button type="button" class="bg-transparent border-0 mr-1" data-toggle="modal" data-target="#staticBackdrop">
+            <a type="button" class="btn d-flex align-items-center" data-toggle="modal" data-target="#exampleModal"><img
+                src="./assets/images/adminLogo.svg" alt=""></a>
+          </button>
+          <div>
+            <img class="clientHamburger" src="./assets/images/hamburgerMenu.svg" alt="">
+          </div>
         </div>
       </div>
-      </div>
-    </nav>
+    </div>
+    <div class="mobNavMenu d-none">
+      <nav class="mobnavList d-flex flex-column align-items-end position-absolute w-100 vh-100">
+        <div>
+          <img src="./assets/images/x.svg" class="xbtn" alt="">
+        </div>
+        <ul class="d-flex flex-column align-items-end">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./catalog.html">Catalog</a></li>
+          <li><a href="./aboutStore.html">About Store</a></li>
+          <li><a href="./contactUs.html">Contact Us</a></li>
+          <li><a href="./search.html">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <!-- Mobile Nav end -->
   </header>
 
 
   <!-- Main Start -->
   <main>
-    <div class="container mt-4">
-      <div class="row justify-content-between mt-5">
-        <div class="col-md-12 pb-5">
-          <div class="search-title h2 mt-5 pt-5 font-weight-bold">Contact Us</div>
+    <div class="container mt-lg-4">
+      <div class="row justify-content-between mt-lg-5">
+        <div class="col-md-12 pb-lg-5">
+          <div class="search-title h2 mt-lg-5 pt-lg-5 font-weight-bold">Contact Us</div>
 
           <!-- Contact Us Input  -->
           <form id="contactFormReset">
-            <div class="row mt-5">
-
+            <div class="row mt-lg-5">
               <div class="col-md-6">
                 <div class="form-group d-flex flex-column position-relative">
                   <input type="text" id="fullNameContactUs" style="height: 75px" placeholder="Full Name"
-                    class="form-control form-control-lg px-5 rounded" />
+                    class="form-control form-control-lg px-lg-5 mt-lg-4 rounded" />
                   <small class="h6 text-danger"></small>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group d-flex flex-column position-relative">
                   <input type="text" id="emailContactUs" style="height: 75px" placeholder="Email"
-                    class="form-control form-control-lg px-5 rounded" />
+                    class="form-control form-control-lg px-lg-5 mt-lg-4 rounded" />
                   <small class="h6 text-danger"></small>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group d-flex flex-column position-relative">
                   <input type="text" id="addressContactUs" style="height: 75px" placeholder="Address"
-                    class="form-control form-control-lg px-5 rounded" />
+                    class="form-control form-control-lg px-lg-5 mt-lg-4 rounded" />
                   <small class="h6 text-danger"></small>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 mt-lg-4">
                 <div class="form-group d-flex flex-column position-relative input-group">
                   <input type="phone" id="phoneContactUs" style="height: 75px" placeholder="Phone"
-                    class="form-control form-control-lg px-5 rounded input" />
+                    class="form-control form-control-lg px-lg-5 mt-lg-5 rounded  input" />
                   <small class="h6 text-danger"></small>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <button id="contactBookButton" style="height: 75px; transition: all 0.3s ease"
-                  class="btn3  rounded mt-4 w-100 text-white">
+                  class="btn3  rounded mt-lg-5 w-100 text-white">
                   Send
                 </button>
               </div>
@@ -202,21 +197,29 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content modalSection">
-        <div class="mt-5 mx-4 h1 font-weight-bolder text-center">
+        <div class="mt-lg-3 h1 font-weight-bolder text-center">
           <h5 class="modal-title" id="exampleModalLabel">Join Us</h5>
         </div>
         <div class="modal-body">
           <form class="modalForm">
             <div class="form-group">
-              <label for="exampleInputPassword1"></label>
-              <input type="text" class="form-control pl-5" placeholder="Full name" id="exampleInputText">
+              <label for="inputFullName"></label>
+              <input type="text" class="form-control pl-lg-5" placeholder="Full name" id="inputFullName">
             </div>
             <div class="form-group">
-              <label for="exampleInputEmail1"></label>
-              <input type="email" class="form-control pl-5" id="exampleInputEmail1" placeholder="Email"
+              <label for="inputEmail"></label>
+              <input type="email" class="form-control pl-lg-5" id="inputEmail" placeholder="Email"
                 aria-describedby="emailHelp">
+              <div class="alert alert-danger mt-lg-4 p-lg-3 alertMsg d-none" role="alert">
+                Please check form !!!
+              </div>
             </div>
-            <button type="submit" class="btn joinBtn btn-block">Join</button>
+            <button type="submit" class="btn btn-block joinBtn">Join</button>
+            <div class="alert alert-success mt-lg-3 alertSuccessMsg d-none" role="alert">
+              <h4 class="alert-heading h3  text-center">Successful!</h4>
+              <hr>
+              <p class="mb-lg-0 h4 text-center">Welcome to the Library</p>
+            </div>
           </form>
         </div>
       </div>
@@ -238,6 +241,7 @@
   <script src="./assets/js/db.js"></script>
   <script src="./assets/js/client/contactUs.js"></script>
   <script src="./assets/js/client/join.js"></script>
+  <script src="./assets/js/client/navbar.js"></script>
 
 
 </body>

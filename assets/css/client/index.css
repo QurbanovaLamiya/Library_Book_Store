@@ -1,38 +1,4 @@
-body {
-  box-sizing: border-box;
-  font-family: var(--MontserratFont);
-  background-color: #fffaf5;
-  overflow-x: hidden;
-  color: var(--ColorDarkGreen);
-}
-/* Header */
-header {
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fffaf5;
-}
-.clientLogo {
-  margin-left: 15%;
-}
-.clientPageNavbar li a {
-  margin-right: 21px;
-  color: var(--ColorDarkGreen);
-  font-size: 12px;
-}
-.clientPageNavbar ul li a:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
-.joinUs a {
-  font-family: var(--RobotoFont);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--ColorDarkGreen);
-}
+/* *********************************** */
 /* Home Section */
 .homeSection {
   width: 80%;
@@ -73,6 +39,7 @@ header {
   width: 100%;
 }
 
+/* ***************************** */
 /* Catalog Section */
 .catalogSection {
   margin-top: 60px;
@@ -101,6 +68,7 @@ header {
   line-height: 27px;
 }
 
+/* **************************************** */
 /* About Store Section */
 .aboutStoreSection {
   margin-top: 130px;
@@ -130,6 +98,7 @@ header {
   color: var(--ColorDarkGreen);
 }
 
+/* ************************************* */
 /* Delivery Section */
 .deliverySection {
   margin-top: 160px;
@@ -147,193 +116,7 @@ header {
   color: var(--ColorDarkGreen);
 }
 
-/* Social Section */
-.socialMediaSection {
-  margin: 134px auto;
-}
-.socialMediaSectionTitle p {
-  font-weight: 900;
-  line-height: 49px;
-  color: var(--ColorDarkGreen);
-}
-.socialMediaSectionContent a {
-  cursor: pointer;
-  margin: 0 25px;
-}
-
-.navbar {
-  transition: all 0.6s;
-  display: none;
-  backface-visibility: hidden;
-  box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5);
-}
-
-.navbar-dark .navbar-nav {
-  position: absolute;
-  font-size: 15px;
-  color: black;
-  background: rgba(36, 20, 0, 0.9);
-  text-transform: uppercase;
-  margin-top: 10px;
-  height: 100vh;
-  width: 100%;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-  margin-left: 150px;
-  border: 0;
-}
-.navbar-dark .navbar-toggler:focus {
-  background: none;
-  outline: 0;
-}
-.navbar-dark .navbar-toggler span {
-  display: block;
-  width: 30px;
-  height: 2px;
-  margin: 6px auto;
-  background: black;
-  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-.navbar-dark .navbar-toggler:hover span,
-.navbar-dark .navbar-toggler:focus span {
-  background: black;
-}
-/* rotate first span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-/* hide second span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
-  opacity: 0;
-}
-/* rotate third span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-.navbar-dark .navbar-toggler[aria-expanded="false"] span {
-  transform: none;
-  opacity: 1;
-}
-.navbar-brand {
-  width: 162px;
-  height: 44px;
-  background: url(../img/logo.png) left center no-repeat;
-  border: 0;
-  text-indent: -99999px;
-}
-.navbar-dark .navbar-toggler span {
-  display: block;
-  width: 30px;
-  height: 2px;
-  margin: 6px auto;
-  background: black;
-  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-/* rotate first span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-/* hide second span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
-  opacity: 0;
-}
-/* rotate third span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-.navbar-dark .navbar-toggler[aria-expanded="false"] span {
-  transform: none;
-  opacity: 1;
-}
-
-/* Footer */
-footer {
-  background-color: #391f00;
-}
-.footerContent {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.footerLogo{
-  width: 290px;
-  height: 68px;
-}
-.footerList {
-  font-weight: 400;
-  font-size: 18px;
-}
-.footerList ul {
-  margin: 0 45px;
-}
-.footerList ul li a {
-  font-size: 13px;
-  line-height: 26px;
-}
-.footerNumber p {
-  font-weight: 900;
-  font-size: 12px;
-  height: 18px;
-}
-.footerNumber button {
-  line-height: 27px;
-  width: 136px;
-  height: 30px;
-  border: 1px solid var(--ColorOrange);
-  background-color: transparent;
-  color: var(--ColorOrange);
-  font-weight: 500;
-  font-size: 14px;
-}
-.footerNumber button:hover {
-  background-color: var(--ColorOrange);
-  color: #fff;
-}
-.footerNum {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-}
-.mobileFooterList,
-.mobileFooterEnd {
-  display: none;
-}
-
-/* ScrollBar */
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #a3a2a2;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #720418;
-  border-radius: 10px;
-}
-
-/* Join us Modal */
-.modalSection {
-  margin-top: 30%;
-  padding: 30px;
-  width: 600px;
-}
-.modalForm input {
-  height: 70px;
-  border: 1px solid #cecece;
-}
-.modalForm .joinBtn {
-  height: 70px;
-  color: #fff;
-  background: #e16a00;
-  border: 1px solid #cecece;
-  border-radius: 5px;
-  margin-top: 40px;
-}
-
+/* ********************************************* */
 /* Responsive design */
 
 @media screen and (max-width: 320px) {
@@ -342,6 +125,7 @@ footer {
     flex-direction: column !important;
     align-items: center !important;
   }
+  /* Home */
   .homeSection {
     margin-top: 0;
   }
@@ -364,47 +148,14 @@ footer {
   .homeBtn a {
     text-align: center;
   }
+
+  /* Catalog */
   .catalogSectionBox div {
     margin-bottom: 10px;
   }
+
+  /* About */
   .aboutStoreContent div {
     margin-left: 20px;
-  }
-  .socialMediaSection p {
-    font-size: 18px;
-    line-height: 35px;
-  }
-  .socialMediaSectionContent img {
-    width: 50px;
-    height: 50px;
-  }
-  .footerList,
-  .footerNumber,
-  .footerNum {
-    display: none !important;
-  }
-  .mobileFooterList,
-  .mobileFooterEnd {
-    display: block;
-  }
-  .footerLogo{
-    width:200px;
-    height: 50px;
-    margin-top: 18px;
-  }
-  .footerContent{
-    display: flex;
-    flex-direction: column;
-  }
-  .mobileFooterList{
-    margin-bottom: 40px;
-  }
-  .mobileFooterList li a,
-  .mobileFooterEnd p{
-    font-size: 10px;
-  }
-  .mobileLine{
-    width: 253px;
-    height: 1px;
   }
 }

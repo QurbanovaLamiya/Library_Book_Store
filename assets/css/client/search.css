@@ -1,46 +1,9 @@
-body {
-  box-sizing: border-box;
-  font-family: var(--MontserratFont);
-  background-color: #fffaf5;
-  overflow-x: hidden;
-  color: var(--ColorDarkGreen);
-}
-/* Header */
-header {
-  padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fffaf5;
-}
-.clientLogo {
-  margin-left: 15%;
-}
-.clientPageNavbar li a {
-  margin-right: 21px;
-  color: var(--ColorDarkGreen);
-  font-size: 12px;
-}
-.clientPageNavbar ul li a:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
-.joinUs a {
-  font-family: var(--RobotoFont);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--ColorDarkGreen);
-}
 main {
-  margin-top: 145px;
+  margin: 143px 0 134px;
   z-index: -10;
 }
 .content {
-  margin-top: 44px;
-  margin-left: 40px;
-  margin-right: -15px;
+  margin: 44px -15px 44px;
 }
 .textt h2 {
   font-weight: 700;
@@ -48,6 +11,7 @@ main {
   line-height: 196.19%;
   color: var(--ColorDarkGreen);
 }
+
 .content h2 {
   font-family: var(--Montserrat600);
   font-style: normal;
@@ -125,318 +89,76 @@ main {
   color: var(--White);
   text-decoration: none;
 }
-
-.search-content {
-  margin: 64px 27px 134px 23px;
-}
-.search-content2 {
-  margin: 64px 27px 134px 23px;
-}
-
 .carousel-control-prev {
   margin-left: -60px;
   background-image: url(/assets/images/prev.svg);
   width: 14.79px;
   height: 46px;
-  margin-top: 250px;
-  /* margin: auto 0; */
-  /* top: 50px; */
-  /* Тема */
-  /* border: 1px solid #720418; */
+  margin-top: 200px;
 }
 .carousel-control-next {
   margin-right: -60px;
   background-image: url(/assets/images/next.svg);
   width: 14.79px;
   height: 46px;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 .fixed-menu {
   display: none;
 }
-.modal-header {
-  border-bottom: none;
-}
-.navbar {
-  /* background: #444; */
-  transition: all 0.6s;
-  display: none;
-  backface-visibility: hidden;
-  /* box-shadow: 0 2px 5px 1px rgba(51, 51, 51, 0.5); */
-}
-.navbar-dark .navbar-nav {
-  font-size: 15px;
-  color: black;
-  background: rgba(36, 20, 0, 0.9);
-  text-transform: uppercase;
-  margin-top: 10px;
-  height: 100vh;
-}
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-  margin-left: 150px;
-  border: 0;
-}
-
-.navbar-dark .navbar-toggler:focus {
-  background: none;
-  outline: 0;
-}
-
-.navbar-dark .navbar-toggler span {
-  display: block;
-  width: 30px;
-  height: 2px;
-  margin: 6px auto;
-  background: black;
-  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-.navbar-dark .navbar-toggler:hover span,
-.navbar-dark .navbar-toggler:focus span {
-  background: black;
-}
-
-/* rotate first span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-/* hide second span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
-  opacity: 0;
-}
-
-/* rotate third span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.navbar-dark .navbar-toggler[aria-expanded="false"] span {
-  transform: none;
-  opacity: 1;
-}
-
-.navbar-brand {
-  width: 162px;
-  height: 44px;
-  background: url(../img/logo.png) left center no-repeat;
-  border: 0;
-  text-indent: -99999px;
-}
-
-.navbar-dark .navbar-toggler span {
-  display: block;
-  width: 30px;
-  height: 2px;
-  margin: 6px auto;
-  background: black;
-  transition: all 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-/* rotate first span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:first-of-type {
-  transform: rotate(45deg) translate(6px, 6px);
-}
-
-/* hide second span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:nth-of-type(2) {
-  opacity: 0;
-}
-
-/* rotate third span */
-.navbar-dark .navbar-toggler[aria-expanded="true"] span:last-of-type {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.navbar-dark .navbar-toggler[aria-expanded="false"] span {
-  transform: none;
-  opacity: 1;
-}
-/* Social Section */
-
-.socialMediaSection {
-  margin: 134px auto;
-}
-.socialMediaSectionTitle p {
-  font-weight: 900;
-  line-height: 49px;
-  color: var(--ColorDarkGreen);
-}
-.socialMediaSectionContent a {
-  cursor: pointer;
-  margin: 0 25px;
-}
-
-/* Footer */
-footer {
-  background-color: #391f00;
-}
-.footerContent {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.footerLogo {
-  width: 290px;
-  height: 68px;
-}
-.footerList {
-  font-weight: 400;
-  font-size: 18px;
-}
-.footerList ul {
-  margin: 0 45px;
-}
-.footerList ul li a {
-  font-size: 13px;
-  line-height: 26px;
-}
-.footerNumber p {
-  font-weight: 900;
-  font-size: 12px;
-  height: 18px;
-}
-.footerNumber button {
-  line-height: 27px;
-  width: 136px;
-  height: 30px;
-  border: 1px solid var(--ColorOrange);
-  background-color: transparent;
-  color: var(--ColorOrange);
-  font-weight: 500;
-  font-size: 14px;
-}
-.footerNumber button:hover {
-  background-color: var(--ColorOrange);
-  color: #fff;
-}
-.footerNum {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 24px;
-}
-.mobileFooterList,
-.mobileFooterEnd {
-  display: none;
-}
-
-/* ScrollBar */
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #a3a2a2;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #720418;
-  border-radius: 10px;
-}
-/* Join us Modal */
-.modalSection {
-  margin-top: 30%;
-  padding: 30px;
-  width: 600px;
-}
-.modalForm input {
-  height: 70px;
-  border: 1px solid #cecece;
-}
-.modalForm .joinBtn {
-  height: 70px;
-  color: #fff;
-  background: #e16a00;
-  border: 1px solid #cecece;
-  border-radius: 5px;
-  margin-top: 70px;
-}
-
+/* ********************************************* */
+/* Responsive design */
 @media screen and (max-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
-  .search-content {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .search-content2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .content {
-    text-align: center;
-  }
-  .content h2 {
-    margin-left: 0px;
-  }
-  .content p {
-    margin-left: -20px;
-  }
-  .searchh {
-    background-color: var(--ColorPink);
-    box-shadow: none;
-  }
-  .search-content img {
-    margin-left: 20px;
-  }
   .textt h2 {
+    font-size: 25px;
+    line-height: 49px;
     text-align: center;
   }
   .searchh2 {
-    background-color: var(--ColorPink);
-    box-shadow: none;
+    width: 100%;
   }
-  .text h2 {
-    font-size: 16px;
+  .search-content2 {
+    padding-left: 50px;
   }
-  .carousel-control-next {
-    margin-right: -30px;
-    margin-top: 200px;
+  .search-content,
+  .search-content2 {
+    margin-bottom: 30px;
   }
-  .carousel-control-prev {
+  .searchAuthor {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+  }
+  .searchAuthor,
+  .searchText {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .content h2 {
     margin-left: 10px;
-    margin-top: 200px;
+    text-align: center;
   }
+
+  .search-content img {
+    margin-left: 18px !important;
+  }
+  .carousel-control-next,
+  .carousel-control-prev,
   .clientPageNavbar {
     display: none;
   }
-  .socialMediaSection p {
-    font-size: 18px;
-    line-height: 35px;
+  .headerTitle h2 {
+    font-size: 24px !important;
   }
-  .socialMediaSectionContent img {
-    width: 50px;
-    height: 50px;
+  .searchbutton input,
+  #searchBookButton {
+    height: 39px;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
   }
-  .footerList,
-  .footerNumber,
-  .footerNum {
-    display: none !important;
-  }
-  .mobileFooterList,
-  .mobileFooterEnd {
-    display: block;
-  }
-  .footerLogo {
-    width: 200px;
-    height: 50px;
-    margin-top: 18px;
-  }
-  .footerContent {
-    display: flex;
-    flex-direction: column;
-  }
-  .mobileFooterList {
-    margin-bottom: 40px;
-  }
-  .mobileFooterList li a,
-  .mobileFooterEnd p {
-    font-size: 10px;
-  }
-  .mobileLine {
-    width: 253px;
-    height: 1px;
+  #searchBookButton {
+    height: 37px;
+    margin-bottom: 80px !important;
   }
 }

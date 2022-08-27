@@ -105,15 +105,21 @@
   display: none;
 }
 @media screen and (max-width: 320px) {
-  #contact{
+  .menuHeader {
+    background: #fffaf5;
+  }
+  #contact {
     overflow-x: scroll;
-    }
+  }
   #adminPanelNavbar {
     position: relative;
     display: none;
   }
   .menuHeader {
     display: block;
+  }
+  .addbook {
+    margin-top: 100px;
   }
   #AdminSearch {
     width: 100%;

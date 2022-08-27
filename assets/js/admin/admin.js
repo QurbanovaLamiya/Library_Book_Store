@@ -238,5 +238,6 @@ function renderPageContact(userArr) {
   $(".x-image").click(function () {
     sidebar.hide();
     $("#adminpanel").show();
+    $(".menuHeader").show();
   });
 }

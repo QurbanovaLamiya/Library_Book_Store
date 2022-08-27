@@ -26,14 +26,9 @@ $(document).ready(() => {
   });
 });
 
-// $(document).ready(function() {
-
-//   let sidebar2 = $('.navbar ')
-//     $('.navbar-toggler').click(function () {
-//       $('.catalog-main').hide()
-//       $('.socialMediaSectio')  .hide()
-//        sidebar2.show()
-
-// })
-
-// })
+let sidebar2 = $(".navbar ");
+$(".navbar-toggler").click(function () {
+  $(".catalog-main").hide();
+  $(".socialMediaSectio").hide();
+  sidebar2.show();
+});
