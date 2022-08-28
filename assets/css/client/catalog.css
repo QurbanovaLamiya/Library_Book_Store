@@ -68,7 +68,7 @@
 
 .card {
   background-color: var(--White);
-  padding: 24px;
+  padding: 15px;
   margin-top: 50px;
   border-radius: 0%;
   box-shadow: 0 0 10px 0 lightgray;
@@ -157,7 +157,7 @@
   border: none;
   width: 110px;
   padding: 10px;
-  margin: 10px auto;
+  margin: 10px 20px ;
 }
 .catalogbtn a {
   color: var(--White);
