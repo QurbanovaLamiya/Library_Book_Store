@@ -6,7 +6,7 @@
   font-size: 50px;
   color: var(--mainRedColor);
   position: absolute;
-  width: 98.6%;
+  width: 102%;
   display: flex;
   justify-content: space-between;
   top: 50%;
@@ -48,12 +48,6 @@
   top: 40%;
   border-radius: 50%;
 }
-.next-button {
-  right: 0;
-}
-.prev-button {
-  left: -70px;
-}
 .content,
 .cataloglist {
   width: 80%;
@@ -62,6 +56,12 @@
 .content {
   margin-bottom: 128px;
 }
+/* 
+.owl-carousel .owl-nav.disabled{
+  display: block;
+  background-color: orange;
+  width: 100%;
+} */
 
 /* ******************************************** */
 /* main */
@@ -175,6 +175,7 @@
   color: var(--White);
   border: none;
 }
+
 
 /* ********************************************* */
 /* Responsive design */
