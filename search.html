@@ -86,9 +86,9 @@
                 <!--Search result card-->
                 <div class="row " style="display: flex; justify-content: space-between;">
                     <div class="col-12 col-sm-4 searchbutton">
-                        <input type="name" class="form-control col-12 " id="exampleFormControlInput1"
+                        <input type="name" class="form-control col-12 " id="searchInput"
                             placeholder="Search a book">
-                        <button type="button  " class="btns form-control " id="searchBookButton"><a href="#">Search</a>
+                        <button type="button  " class="btns form-control " id="searchBtn"><a href="#">Search</a>
                         </button>
 
                     </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div> -->
 
-                    <div id="carouselExampleControls" class="carousel slide col-sm-7 col-lg-7  searchh2 d-flex "
+                    <!-- <div id="carouselExampleControls" class="carousel slide col-sm-7 col-lg-7  searchh2 d-flex "
                         data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -181,17 +181,23 @@
                                     </div>
                                 </div>
                             </div>
+                        </div> -->
+                        <div class="col-lg-7 col-md-12 slider-section d-none mt-lg-0 mt-md-5">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div id="searchSlider" class="carousel-inner">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev d-none" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next d-none" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -302,7 +308,9 @@
     </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"

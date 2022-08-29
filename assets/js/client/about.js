@@ -5,3 +5,4 @@ myDatabase.ref('about-store').on("value", function (snap) {
     $(".about-description").text(snap.val()["about-description"]);
     $(".about-img img").attr("src", snap.val()["about-url"]);
 })
+})
