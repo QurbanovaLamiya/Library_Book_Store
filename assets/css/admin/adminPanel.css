@@ -135,7 +135,7 @@
   padding-top: 0px !important;
   cursor: pointer;
 }
-#addBookBtn{
+#addBookBtn {
   background-color: var(--Orangebutton);
   height: 45px;
   border-radius: 10px;
@@ -143,19 +143,19 @@
   font-size: 14px;
   line-height: 16px;
 }
-#bookTypeBtn{
+#bookTypeBtn {
   font-family: var(--RobotoFont);
   background-color: var(--Orangebutton);
   border-radius: 10px;
   height: 40px;
 }
-#addTypeSection{
+#addTypeSection {
   width: 200px;
 }
-.add-type-section{
+.add-type-section {
   border-radius: 25px;
 }
-#categorySelect{
+#categorySelect {
   height: 50px;
   font-family: var(--RobotoFont);
   line-height: 19px;

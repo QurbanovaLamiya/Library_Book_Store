@@ -157,7 +157,7 @@
   border: none;
   width: 110px;
   padding: 10px;
-  margin: 10px 20px ;
+  margin: 10px 20px;
 }
 .catalogbtn a {
   color: var(--White);
@@ -175,7 +175,6 @@
   color: var(--White);
   border: none;
 }
-
 
 /* ********************************************* */
 /* Responsive design */
