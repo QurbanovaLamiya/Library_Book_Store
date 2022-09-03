@@ -216,41 +216,35 @@
                 </div>
                 <!-- Add Book end-->
 
-
-                <!-- About Store section -->
+<!-- About Store section -->
                 <div class="col-md-12 my-5">
-                    <div class="h2 mb-lg-4 addbook  bookForm" id="menuAboutStore">About
-                        Store</div>
-                    <div class="form-book-section mt-lg-2">
-                        <div class="jumbotron form-book-section2  bg-white p-lg-4 px-lg-0">
-                            <form>
-                                <div class="form-group name2">
-                                    <label for="aboutTitle" class="mb-lg-2">Title</label>
-                                    <input type="text" class="form-control form2
-                                       form-control-lg" id="aboutStoreTitle" name="bookName">
-
-                                    <small class="form-text text-danger" style="display:none"></small>
-                                </div>
-                                <div class="form-group name2">
-                                    <label for="aboutImageUrl" class="mb-lg-2">Image Url</label>
-                                    <input type="text" class="  form-control form-control-lg form2"
-                                        id="aboutStoreImageUrl" name="aboutImageUrl">
-                                    <small class="form-text text-danger" style="display:none"></small>
-                                </div>
-                                <div class="form-group mb-lg-4 name2">
-                                    <label for="aboutDesc" class="mb-lg-2">Description</label>
-                                    <textarea rows="4" value='' type="text" class="form-control form-control-lg form2"
-                                        id="aboutStoreDesc" name="aboutDesc"></textarea>
-                                    <small class="form-text text-danger" style="display:none"></small>
-                                </div>
-                                <button type="submit" id="aboutStoreFormSubmit" class="btn2 text-white ">About Info Add
-                                </button>
-                            </form>
-                        </div>
-
+                <div id="aboutPage" class="about-store h2 mb-lg-4 addbook  bookForm" id="menuAboutStore">
+                      <h1>About Store</h1>
+                <div class="storeContent form-book-section mt-lg-2">
+                    <div class="jumbotron form-book-section2  bg-white p-lg-4 px-lg-0">
+                        <form>
+                            <div class="bookTitle form-group name2">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control form2
+                                form-control-lg" id="title" placeholder="About store title">
+                            </div>
+                            <div class="bookImageUrl form-group name2">
+                                <label for="imageUrl">Book Image Url</label>
+                                <input type="text" class="form-control form-control-lg form2" id="imageUrl" placeholder="https://image:url/">
+                            </div>
+                            <div class="bookDescription form-group mb-lg-4 name2">
+                                <label for="aboutDescription">Description</label>
+                                <textarea name="" id="aboutDescription" maxlength="1000" class="form-control mb-2 form-control-lg form2 "
+                                    rows="3" placeholder="Write description..."></textarea>
+                                <span id="aboutTextarea" class="textarea-limit"><span id="aboutTextareaCount">0</span> /
+                                    1000</span>
+                            </div>
+                            <button class="about-info-add form-control btn2 text-white">About info add</button>
+                        </form>
                     </div>
                 </div>
-
+                </div>
+            </div>
                 <!-- About Store section end-->
 
 

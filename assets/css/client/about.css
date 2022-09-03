@@ -1,54 +1,55 @@
 /* *********************************** */
 /* About Section */
-.aboutSection {
+.about-section {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 13% 16%;
 }
-.aboutTitle,
-.aboutText {
+.about-title,
+.about-description {
   font-weight: 900;
   font-size: 36px;
   line-height: 70px;
   color: var(--ColorDarkGreen);
 }
-.aboutText {
+.about-description {
   width: 85%;
   font-weight: 400;
   font-size: 18px;
   line-height: 35px;
   margin-top: 12px;
 }
-.aboutSection img {
+.about-img img {
   margin: 60px 0 0 72px;
+  width: 100%;
 }
 
 /* ********************************************* */
 /* Responsive design */
 @media screen and (max-width: 320px) {
-  .aboutSection {
+  .about-section {
     margin-top: 0;
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
   }
-  .aboutSection img {
+  .about-img {
     margin-top: 25px;
   }
-  .aboutImg img,
-  .aboutText {
+  .about-img img,
+  .about-description {
     margin-left: 10px;
     width: 300px;
   }
   .aboutContent {
     margin-top: 59px;
   }
-  .aboutTitle {
+  .about-title {
     text-align: center;
     font-size: 25px;
   }
-  .aboutText {
+  .about-description {
     font-size: 12px;
     line-height: 24px;
     text-align: center !important;
