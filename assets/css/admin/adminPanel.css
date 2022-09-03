@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+.admin {
+  font-family: var(--RobotoFont);
+}
 #adminPanelNavbar {
   background-color: var(--ColorRed);
 }
@@ -29,6 +32,7 @@
   display: none;
 }
 .searchBtn {
+  margin-bottom: 6px;
   padding: 8px 22px;
   width: 63px;
   height: 40px;
@@ -83,13 +87,17 @@
   border: 1px solid #e2e6ee;
   box-shadow: 0px 4px 18px #9ea8bd4f;
   border-radius: 10px;
+  margin-bottom: 24px;
 }
 .btn2 {
   background-color: var(--Orangebutton);
   width: 100%;
-  height: 40px;
+  height: 45px;
   border: none;
   border-radius: 10px;
+  font-family: var(--RobotoFont);
+  font-size: 14px;
+  line-height: 16px;
 }
 .table1 {
   background-color: var(--ColorRed);
@@ -104,6 +112,56 @@
 .sideBar {
   display: none;
 }
+#AdminSearchResult {
+  padding: 17px 0 19px 20px;
+  width: 400px;
+  height: 150px;
+  border-radius: 35px;
+  background-color: var(--White2);
+}
+
+#AdminSearchResult::-webkit-scrollbar-track {
+  margin: 20px 0 !important;
+}
+.bookTypeTitle {
+  font-family: var(--RobotoFont);
+  font-weight: 400;
+  line-height: 19px;
+  color: #030102;
+}
+#addTypeBtn {
+  color: #28a745;
+  font-weight: 900;
+  padding-top: 0px !important;
+  cursor: pointer;
+}
+#addBookBtn{
+  background-color: var(--Orangebutton);
+  height: 45px;
+  border-radius: 10px;
+  font-family: var(--RobotoFont);
+  font-size: 14px;
+  line-height: 16px;
+}
+#bookTypeBtn{
+  font-family: var(--RobotoFont);
+  background-color: var(--Orangebutton);
+  border-radius: 10px;
+  height: 40px;
+}
+#addTypeSection{
+  width: 200px;
+}
+.add-type-section{
+  border-radius: 25px;
+}
+#categorySelect{
+  height: 50px;
+  font-family: var(--RobotoFont);
+  line-height: 19px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 320px) {
   .menuHeader {
     background: #fffaf5;

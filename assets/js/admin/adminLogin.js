@@ -47,7 +47,7 @@ $(document).ready(() => {
             clearUserInfo();
             adminLoginForm.hide();
             adminPanel.show();
-          }, 1000);
+          }, 100);
         } else {
           Swal.fire({
             icon: "error",
