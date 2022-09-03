@@ -113,8 +113,8 @@ $(document).ready(() => {
   $(document).on("click", "#addTypeBtn", () => {
     $("#addTypeSection").show();
   });
- 
-  let AddBookType = myDatabase.ref("/addBookType")
+
+  let AddBookType = myDatabase.ref("/addBookType");
 
   AddBookType.on("value", function (snap) {
     let bookTypeArr = Object.entries(snap.val()).reverse();
@@ -131,10 +131,9 @@ $(document).ready(() => {
 
   function bookTypePage(arr) {
     $("#categorySelect").html(
-      arr
-        .map((item) => {
-          return `<option value="${item.bookType}" class="mb-3">${item.bookType}</option>`;
-        })
+      arr.map((item) => {
+        return `<option value="${item.bookType}" class="mb-3">${item.bookType}</option>`;
+      })
     );
   }
 
@@ -192,61 +191,57 @@ $(document).ready(() => {
     });
     clearBookForm();
   });
-  
-  
-// About Store Section //
 
-function countLimit(textarea, countDiv, textDiv) {
-       $(textarea).on("change keyup paste", () => {
-           $(countDiv).text($(textarea).val().length);
-           if ($(textarea).val().length >= 1000) {
-               $(textDiv).addClass("text-danger");
-           } else {
-               $(textDiv).removeClass("text-danger");
-           }
-       })
-   }
-  
+  // About Store Section //
 
+  function countLimit(textarea, countDiv, textDiv) {
+    $(textarea).on("change keyup paste", () => {
+      $(countDiv).text($(textarea).val().length);
+      if ($(textarea).val().length >= 1000) {
+        $(textDiv).addClass("text-danger");
+      } else {
+        $(textDiv).removeClass("text-danger");
+      }
+    });
+  }
 
-countLimit("#aboutDescription", "#aboutTextareaCount", "#aboutTextarea");
+  countLimit("#aboutDescription", "#aboutTextareaCount", "#aboutTextarea");
 
-myDatabase.ref('about-store').on("value", function (snap) {
+  myDatabase.ref("about-store").on("value", function (snap) {
     $("#title").val(snap.val()["title"]);
     $("#imageUrl").val(snap.val()["about-url"]);
     $("#aboutDescription").val(snap.val()["about-description"]);
 
-    let aboutCount = (snap.val()["about-description"]).length;
+    let aboutCount = snap.val()["about-description"].length;
     $("#aboutTextareaCount").text(aboutCount);
-})
+  });
 
-$(".about-info-add").on("click", (e) => {
+  $(".about-info-add").on("click", (e) => {
     e.preventDefault();
     let title = $("#title").val().trim();
     let imageUrl = $("#imageUrl").val().trim();
     let aboutDescription = $("#aboutDescription").val().trim();
 
-
     if (title === "" || imageUrl === "" || aboutDescription === "") {
-        swal({
-            icon: 'error',
-            title: 'Error...',
-            text: "Information can't be empty",
-        })
-        return
+      swal({
+        icon: "error",
+        title: "Error...",
+        text: "Information can't be empty",
+      });
+      return;
     }
-    myDatabase.ref('about-store').set({
-        "about-title": title,
-        "about-url": imageUrl,
-        "about-description": aboutDescription
+    myDatabase.ref("about-store").set({
+      "about-title": title,
+      "about-url": imageUrl,
+      "about-description": aboutDescription,
     });
 
     swal({
-        icon: 'success',
-        title: 'Success...',
-        text: "Information successfully updated",
-    })
-})
+      icon: "success",
+      title: "Success...",
+      text: "Information successfully updated",
+    });
+  });
 
   // Join Us //
 
@@ -321,9 +316,3 @@ $(".about-info-add").on("click", (e) => {
     });
   }
 });
-
-
-
-
-
-
