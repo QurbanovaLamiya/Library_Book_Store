@@ -3,6 +3,7 @@ $(document).ready(() => {
 
   AddBookType.on("value", function (snap) {
     let bookTypeArr = Object.entries(snap.val()).reverse();
+    console.log(bookTypeArr);
     let objectArray = bookTypeArr.map((item) => {
       return {
         id: item[0],

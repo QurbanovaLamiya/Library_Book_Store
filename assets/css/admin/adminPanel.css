@@ -165,7 +165,6 @@
 @media screen and (max-width: 320px) {
   .menuHeader {
     background: #fffaf5;
-    display: block;
   }
   #contact {
     overflow-x: scroll;
@@ -174,25 +173,15 @@
     position: relative;
     display: none;
   }
+  .menuHeader {
+    display: block;
+  }
   .addbook {
-    margin-top: 80px;
-  }
-  #AdminSearchResult {
-    width: 250px;
-    padding: 10px 0px !important ;
-  }
-  .serachpart {
-    margin-bottom: 29px;
+    margin-top: 100px;
   }
   #AdminSearch {
-    width: 310px !important;
-  }
-  .searchBtn {
-    border-radius: 5px !important;
-    width: 38px !important;
-    margin-left: 5px;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    margin-left: 15px;
   }
   .adminpanel {
     overflow-x: hidden;
@@ -203,8 +192,14 @@
   .admin {
     display: none;
   }
+  .formdiv {
+    width: 90%;
+  }
   .form-book-section2 {
-    width: 100%;
+    width: 95%;
+  }
+  .tablewidth {
+    width: 10%;
   }
   .navbar-brand {
     margin-top: 16px;
@@ -239,13 +234,6 @@
     right: 0;
     background-color: rgba(36, 20, 0, 0.7);
     height: 100%;
-  }
-  .form-book-section2 {
-    margin-top: 10px;
-    padding: 0px !important ;
-  }
-  .table {
-    width: 300px !important;
   }
 }
 
