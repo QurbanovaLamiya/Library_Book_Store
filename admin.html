@@ -120,7 +120,7 @@
                     </div>
                     <div class="addBook col-md-12 mt-5">
                         <div class="row">
-                            <div class="ml-lg-4">
+                            <div class="col-md-12">
                                 <div class="addbook " id="homePage"> Add book</div>
                                 <div class="serachpart mt-lg-5">
                                     <div class="h5 mb-lg-3 searchbook"> Search book</div>
@@ -151,25 +151,25 @@
                     <div class="jumbotron form-book-section2 bg-white p-lg-4 px-0">
                         <form id="bookForm" method="post">
                             <div class="form-group name2">
-                                <label for="bookName" class="mb-2">Book Name</label>
+                                <label for="bookName" class="mb-lg-2">Book Name</label>
                                 <input type="text" class="form-control form-control-lg form2" id="bookName"
                                     name="bookName">
                                 <small class="form-text text-danger"></small>
                             </div>
                             <div class="form-group name2">
-                                <label for="authorName" class="mb-2">Author Name</label>
+                                <label for="authorName" class="mb-lg-2">Author Name</label>
                                 <input type="text" class="form-control form-control-lg form2" name="authorName"
                                     id="authorName">
                                 <small class="form-text text-danger"></small>
                             </div>
                             <div class="form-group name2">
-                                <label for="bookImageUrl" class="mb-2"> Book Image Url</label>
+                                <label for="bookImageUrl" class="mb-lg-2"> Book Image Url</label>
                                 <input type="text" class="  form-control form-control-lg form2" id="bookImageUrl"
                                     name="bookImageUrl">
                                 <small class="form-text text-danger"> </small>
                             </div>
                             <div class="form-group name2">
-                                <label for="publicationYear" class="mb-2">Publication
+                                <label for="publicationYear" class="mb-lg-2">Publication
                                     Year</label>
                                 <input type="number" class="form-control form-control-lg form2" id="publicationYear"
                                     name="publicationYear">
@@ -183,7 +183,7 @@
                                 </div>
                             </div>
                             <div class="form-group mb-lg-4 name2">
-                                <label class="mb-2" for="bookDesc">Description</label>
+                                <label class="mb-lg-2" for="bookDesc">Description</label>
                                 <textarea rows="4" value='' type="text" maxlength="1000"
                                     class="form-control form-control-lg form2 mb-lg-2" id="bookDesc" name="bookDesc">
                                 </textarea>
@@ -194,14 +194,14 @@
                                 <div class=" d-flex align-items-center ">
                                     <h3 class="mr-lg-3 h6 bookTypeTitle">Book type</h3>
                                     <button id="addTypeBtn" type="button" class="bg-transparent border-0 h4">+</button>
-                                    <div id="addTypeSection" class="add-type-section ml-lg-3 my-2 shadow px-3">
+                                    <div id="addTypeSection" class="add-type-section ml-lg-3 my-lg-2 shadow px-lg-3">
                                         <form action=""
                                             class="d-flex flex-column justify-content-between w-25 position-absolute">
-                                            <label for="bookTypeInput" class="my-3 mx-lg-2 h6"
+                                            <label for="bookTypeInput" class="my-lg-3 mx-lg-2 h6"
                                                 style="font-family: var(--RobotoFont);">Add type</label>
                                             <input type="text" class="form-control" id="bookTypeInput">
                                             <button id="bookTypeBtn" type="button"
-                                                class="bookTypeBtn text-center text-white w-100 my-3">Add</button>
+                                                class="bookTypeBtn text-center text-white w-100 my-lg-3">Add</button>
                                         </form>
                                     </div>
                                 </div>
@@ -217,24 +217,24 @@
                 <!-- Add Book end-->
 
                 <!-- About Store section -->
-                <div class="ml-lg-4 my-5">
-                    <div class="about-store h2 mb-lg-4 addbook  bookForm" id="menuAboutStore" id="aboutPage">
+                <div class="col-md-12 my-5">
+                    <div id="aboutPage" class="about-store h2 mb-lg-4 addbook  bookForm" id="menuAboutStore">
                         <h1>About Store</h1>
                         <div class="storeContent form-book-section mt-lg-2">
-                            <div class="jumbotron form-book-section2 bg-white p-4 px-lg-0">
+                            <div class="jumbotron form-book-section2  bg-white p-lg-4 px-lg-0">
                                 <form>
                                     <div class="bookTitle form-group name2">
-                                        <label for="title" class="mb-2">Title</label>
+                                        <label for="title">Title</label>
                                         <input type="text" class="form-control form2
                                 form-control-lg" id="title" placeholder="About store title">
                                     </div>
                                     <div class="bookImageUrl form-group name2">
-                                        <label for="imageUrl" class="mb-2">Book Image Url</label>
+                                        <label for="imageUrl">Book Image Url</label>
                                         <input type="text" class="form-control form-control-lg form2" id="imageUrl"
                                             placeholder="https://image:url/">
                                     </div>
                                     <div class="bookDescription form-group mb-lg-4 name2">
-                                        <label for="aboutDescription" class="mb-2">Description</label>
+                                        <label for="aboutDescription">Description</label>
                                         <textarea name="" id="aboutDescription" maxlength="1000"
                                             class="form-control mb-2 form-control-lg form2 " rows="3"
                                             placeholder="Write description..."></textarea>
@@ -252,7 +252,7 @@
 
 
                 <!-- Join  Us section start-->
-                <div class="ml-lg-4 my-5">
+                <div class="col-md-12 my-5">
                     <div class="h2 mb-4 bookForm" id="menuJoin">Join Us</div>
                     <table class=" w-50 table text-center">
                         <thead class="table1 text-white ">
@@ -269,7 +269,7 @@
 
 
                 <!-- Contact Us section Start-->
-                <div class="ml-lg-4 my-5 pr-lg-5" id="contact">
+                <div class="col-12 my-5 pr-lg-5" id="contact">
                     <div class="h2 mb-4 bookForm" id="menuContact">Contact Us</div>
                     <table class="table tablewidth text-center">
                         <thead class=" table1 text-white ">
