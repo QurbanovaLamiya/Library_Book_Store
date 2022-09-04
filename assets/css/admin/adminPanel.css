@@ -215,10 +215,13 @@
   }
   .leftSide {
     background-color: var(--ColorRed);
-    position: absolute;
     z-index: 999;
     top: 0;
     left: 0;
+    height: 100%;
+  }
+  .rightSide{
+    background: rgba(36, 20, 0, 0.7);
     height: 100%;
   }
   .mobileNavImg {
