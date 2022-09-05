@@ -217,11 +217,11 @@ $(document).ready(() => {
   });
 
   $(".about-info-add").on("click", (e) => {
-    e.preventDefault();
+   
     let title = $("#title").val().trim();
     let imageUrl = $("#imageUrl").val().trim();
     let aboutDescription = $("#aboutDescription").val().trim();
-
+    e.preventDefault();
     if (title === "" || imageUrl === "" || aboutDescription === "") {
       swal({
         icon: "error",
