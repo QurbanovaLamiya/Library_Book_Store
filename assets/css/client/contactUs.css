@@ -20,7 +20,9 @@
   background-color: var(--Orange2);
   border: none;
 }
-
+.main-section{
+  margin-left: 200px;
+}
 /* ********************************************* */
 /* Responsive design */
 @media screen and (max-width: 320px) {
@@ -44,5 +46,8 @@
   #contactBookButton {
     margin-top: 70px !important;
     height: 39px !important;
+  }
+  .main-section{
+    margin-left: 0px;
   }
 }

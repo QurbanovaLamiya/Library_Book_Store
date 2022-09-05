@@ -74,22 +74,22 @@
                 $(".slider-section").removeClass('d-none');
                 count++;
                 resultArr.push(item);
-                let image = '';
+                let bookImage = '';
                 let cardNew = ''
-                item.image ? image = item.image : image = "https://www.iconattitude.com/icons/open_icon_library/oxygen-style/png/256/x-office-address-book.png";
+                item.bookImage ? bookImage = item.bookImage : bookImage = "https://static.wixstatic.com/media/223356_4adca957048e4b3cada43d1709362beb~mv2.jpg/v1/fill/w_560,h_622,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/boook.jpg";
                 item.isNew === true ? cardNew = '<span class="card-new">NEW</span>' : false;
     
                 let result = `<div class="carousel-item ${count == 1 ? 'active' : ''}">
                 <div class="row">
                         <div class="col-lg-4 col-md-4 col-sm-12 col-12 img-section">
                         ${cardNew}
-                            <img class="img-thumbnail" src="${image}"
+                            <img class="img-thumbnail" src="${bookImage}"
                                 alt="">
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-12 col-12">
                             <h2 class="book-name">${item.bookName.substring(0, 40)}</h2>
                             <p class="author-name">${item.authorName}</p>
-                            <p class="book-description">${item.description.substring(0, 250)}</p>
+                            <p class="book-description">${item.bookDesc.substring(0, 250)}</p>
                         </div>
                     </div>
                 </div>`
