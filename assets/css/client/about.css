@@ -6,6 +6,9 @@
   width: 80%;
   margin: 13% 16%;
 }
+.loadingSpinner{
+  margin-left: 250px;
+}
 .about-title,
 .about-description {
   font-weight: 900;
