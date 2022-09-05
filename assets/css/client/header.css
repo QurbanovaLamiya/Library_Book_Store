@@ -59,7 +59,7 @@ header {
 /* ******************************************************* */
 /* ScrollBar */
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px #a3a2a2;

@@ -1,5 +1,4 @@
-
-    let resultArr = [];
+ let resultArr = [];
     let count = 0;
     
     if (localStorage.getItem("search")) {

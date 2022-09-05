@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+.admin {
+  font-family: var(--RobotoFont);
+}
 #adminPanelNavbar {
   background-color: var(--ColorRed);
 }
@@ -29,6 +32,7 @@
   display: none;
 }
 .searchBtn {
+  margin-bottom: 6px;
   padding: 8px 22px;
   width: 63px;
   height: 40px;
@@ -83,13 +87,17 @@
   border: 1px solid #e2e6ee;
   box-shadow: 0px 4px 18px #9ea8bd4f;
   border-radius: 10px;
+  margin-bottom: 24px;
 }
 .btn2 {
   background-color: var(--Orangebutton);
   width: 100%;
-  height: 40px;
+  height: 45px;
   border: none;
   border-radius: 10px;
+  font-family: var(--RobotoFont);
+  font-size: 14px;
+  line-height: 16px;
 }
 .table1 {
   background-color: var(--ColorRed);
@@ -104,9 +112,60 @@
 .sideBar {
   display: none;
 }
+#AdminSearchResult {
+  padding: 17px 0 19px 20px;
+  width: 400px;
+  height: 150px;
+  border-radius: 35px;
+  background-color: var(--White2);
+}
+
+#AdminSearchResult::-webkit-scrollbar-track {
+  margin: 20px 0 !important;
+}
+.bookTypeTitle {
+  font-family: var(--RobotoFont);
+  font-weight: 400;
+  line-height: 19px;
+  color: #030102;
+}
+#addTypeBtn {
+  color: #28a745;
+  font-weight: 900;
+  padding-top: 0px !important;
+  cursor: pointer;
+}
+#addBookBtn {
+  background-color: var(--Orangebutton);
+  height: 45px;
+  border-radius: 10px;
+  font-family: var(--RobotoFont);
+  font-size: 14px;
+  line-height: 16px;
+}
+#bookTypeBtn {
+  font-family: var(--RobotoFont);
+  background-color: var(--Orangebutton);
+  border-radius: 10px;
+  height: 40px;
+}
+#addTypeSection {
+  width: 200px;
+}
+.add-type-section {
+  border-radius: 25px;
+}
+#categorySelect {
+  height: 50px;
+  font-family: var(--RobotoFont);
+  line-height: 19px;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 320px) {
   .menuHeader {
     background: #fffaf5;
+    display: block;
   }
   #contact {
     overflow-x: scroll;
@@ -115,15 +174,25 @@
     position: relative;
     display: none;
   }
-  .menuHeader {
-    display: block;
-  }
   .addbook {
-    margin-top: 100px;
+    margin-top: 80px;
+  }
+  #AdminSearchResult {
+    width: 250px;
+    padding: 10px 0px !important ;
+  }
+  .serachpart {
+    margin-bottom: 29px;
   }
   #AdminSearch {
-    width: 100%;
-    margin-left: 15px;
+    width: 310px !important;
+  }
+  .searchBtn {
+    border-radius: 5px !important;
+    width: 38px !important;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
   }
   .adminpanel {
     overflow-x: hidden;
@@ -134,14 +203,8 @@
   .admin {
     display: none;
   }
-  .formdiv {
-    width: 90%;
-  }
   .form-book-section2 {
-    width: 95%;
-  }
-  .tablewidth {
-    width: 10%;
+    width: 100%;
   }
   .navbar-brand {
     margin-top: 16px;
@@ -152,10 +215,13 @@
   }
   .leftSide {
     background-color: var(--ColorRed);
-    position: absolute;
     z-index: 999;
     top: 0;
     left: 0;
+    height: 100%;
+  }
+  .rightSide{
+    background: rgba(36, 20, 0, 0.7);
     height: 100%;
   }
   .mobileNavImg {
@@ -176,6 +242,13 @@
     right: 0;
     background-color: rgba(36, 20, 0, 0.7);
     height: 100%;
+  }
+  .form-book-section2 {
+    margin-top: 10px;
+    padding: 0px !important ;
+  }
+  .table {
+    width: 300px !important;
   }
 }
 
