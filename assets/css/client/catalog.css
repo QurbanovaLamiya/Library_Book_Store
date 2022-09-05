@@ -6,7 +6,7 @@
   font-size: 50px;
   color: var(--mainRedColor);
   position: absolute;
-  width: 102%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   top: 50%;
@@ -56,22 +56,18 @@
 .content {
   margin-bottom: 128px;
 }
-/* 
-.owl-carousel .owl-nav.disabled{
-  display: block;
-  background-color: orange;
-  width: 100%;
-} */
 
 /* ******************************************** */
 /* main */
 
 .card {
   background-color: var(--White);
-  padding: 15px;
   margin-top: 50px;
   border-radius: 0%;
   box-shadow: 0 0 10px 0 lightgray;
+}
+.card img {
+  padding: 24px 25px 30px;
 }
 
 .catalogul a {
@@ -84,14 +80,12 @@
   font-weight: 700;
   font-family: var(--MontserratFont);
   text-align: center;
-  margin: 0px auto;
 }
 
 .card-text {
   font-weight: 400;
   font-size: 12px;
-  text-align: center;
-  margin: 10px auto;
+  padding: 0 15px;
 }
 
 .cataloglist {
@@ -157,7 +151,7 @@
   border: none;
   width: 110px;
   padding: 10px;
-  margin: 10px 20px;
+  margin: 10px 30px 0px;
 }
 .catalogbtn a {
   color: var(--White);
@@ -180,9 +174,8 @@
 /* Responsive design */
 @media screen and (max-width: 320px) {
   .catalogSection {
+    width: 90% !important;
     margin-top: 5px;
-    margin: 0 -20px;
-    width: 100vw;
   }
   .cataloglist {
     flex-wrap: wrap;
@@ -201,5 +194,15 @@
   }
   .navbar {
     display: block;
+  }
+  .content,
+  .cataloglist {
+    margin-left: 0 !important;
+    width: 90%;
+    background-color: red;
+  }
+  .card {
+    width: 184px;
+    background-color: blue;
   }
 }
