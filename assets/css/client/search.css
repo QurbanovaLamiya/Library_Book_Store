@@ -106,7 +106,9 @@ main {
 .fixed-menu {
   display: none;
 }
-
+.main-section{
+  margin-left: 200px;
+}
 /* ********************************************* */
 /* Responsive design */
 @media screen and (max-width: 320px) {
@@ -160,5 +162,8 @@ main {
   #searchBtn {
     height: 37px;
     margin-bottom: 80px !important;
+  }
+  .main-section{
+    margin-left: 0px;
   }
 }
