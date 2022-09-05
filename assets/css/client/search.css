@@ -151,13 +151,13 @@ main {
     font-size: 24px !important;
   }
   .searchbutton input,
-  #searchBookButton {
+  #searchBtn {
     height: 39px;
     font-weight: 400 !important;
     font-size: 16px !important;
     line-height: 21px !important;
   }
-  #searchBookButton {
+  #searchBtn {
     height: 37px;
     margin-bottom: 80px !important;
   }
