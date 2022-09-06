@@ -66,6 +66,7 @@ $(document).ready(() => {
     $("#bookImageUrl").val("");
     $("#publicationYear").val("");
     $("#bookDesc").val("");
+    $("#isNew").prop("checked", false);
   }
 
   // Book Form Section //
