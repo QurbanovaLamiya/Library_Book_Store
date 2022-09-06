@@ -25,6 +25,23 @@ $(document).ready(() => {
     },
   });
 
+  $("#categoryAppend li a").click(function () {});
+
+  function getBooksInfo() {
+    myDatabase.ref("/books").on("value", function (snap) {
+      let bookInfoArr = Object.entries(snap.val()).reverse();
+      let bookInfoObjArr = bookInfoArr.map((item) => {
+        return {
+          id: item[0],
+          ...item[1],
+        };
+      });
+
+      console.log(bookInfoObjArr);
+    });
+  }
+  getBooksInfo();
+
   // let sidebar2 = $(".navbar ");
   // $(".navbar-toggler").click(function () {
   //   $(".catalog-main").hide();
