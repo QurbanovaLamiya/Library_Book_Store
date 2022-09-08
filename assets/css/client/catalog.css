@@ -1,8 +1,5 @@
 /* ************************************** */
 /* Carousel */
-#categoryAppend li a:focus {
-  color: var(--Orange2);
-}
 .owl-dots {
   display: none;
 }
@@ -60,6 +57,17 @@
 .content {
   margin-bottom: 128px;
 }
+.catalogul .categoryAll:hover{
+  color: var(--Orange2);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.catalogul .categoryAll:active{
+  color: var(--Orange2);
+}
+.catalogul .active{
+  color: var(--Orange2);
+}
 .cataloglist {
   display: flex;
   margin-bottom: 30px;
@@ -101,6 +109,20 @@
   font-size: 25px;
   line-height: 49px;
   color: var(--Brown);
+}
+.newBook {
+  background-color: #EB5757;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: 900;
+  font-size: 9px;
+  font-family: var(--MontserratFont);
+  color: #fff;
+  line-height: 18px;
+  padding: 0 12px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
 }
 .card {
   background-color: var(--White);
