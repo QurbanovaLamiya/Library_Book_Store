@@ -46,9 +46,9 @@ $(document).ready(() => {
     $("#categoryAppend").html(
       arr.map((info) => {
         if (info.bookType === localStorage.getItem("bookType")) {
-          return `<li class="categoryAll active ml-lg-4" value="${info.bookType}">${info.bookType}</li>`;
+          return `<li class="categoryAll active ml-4" value="${info.bookType}">${info.bookType}</li>`;
         } else {
-          return `<li class="categoryAll ml-lg-4" value="${info.bookType}">${info.bookType}</li>`;
+          return `<li class="categoryAll ml-4" value="${info.bookType}">${info.bookType}</li>`;
         }
       })
     );
