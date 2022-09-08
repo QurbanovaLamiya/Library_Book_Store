@@ -66,6 +66,7 @@ $(document).ready(() => {
       });
 
       let localCategory = localStorage.getItem("bookType");
+      // console.log(localCategory); bookun typelarini qaytarir
 
       renderBestseller(bookInfoObjArr);
       renderNewReleases(bookInfoObjArr);
@@ -127,7 +128,7 @@ $(document).ready(() => {
   function renderCatPage(arr, localCategory) {
     for (let item of arr) {
       if (localCategory) {
-        if (item.bookType === localCategory) {
+        if (item.bookCategory === localCategory) {
           var length = $(".all-book-carousel .owl-item").length;
           for (var i = 0; i < length; i++) {
             $(".all-book-carousel")
@@ -137,11 +138,13 @@ $(document).ready(() => {
           setTimeout(() => {
             getBooksInfo(item, "#allBookList");
           }, 1000);
-        } else if (localCategory === "All") {
+        } 
+        else if (localCategory === "all") {
           $("#allCategory").addClass("active");
           getBooksInfo(item, "#allBookList");
         }
-      } else {
+      } 
+      else {
         $("#allCategory").addClass("active");
         getBooksInfo(item, "#allBookList");
       }
