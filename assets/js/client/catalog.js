@@ -66,7 +66,6 @@ $(document).ready(() => {
       });
 
       let localCategory = localStorage.getItem("bookType");
-      // console.log(localCategory); bookun typelarini qaytarir
 
       renderBestseller(bookInfoObjArr);
       renderNewReleases(bookInfoObjArr);
@@ -138,13 +137,11 @@ $(document).ready(() => {
           setTimeout(() => {
             getBooksInfo(item, "#allBookList");
           }, 1000);
-        } 
-        else if (localCategory === "all") {
+        } else if (localCategory === "all") {
           $("#allCategory").addClass("active");
           getBooksInfo(item, "#allBookList");
         }
-      } 
-      else {
+      } else {
         $("#allCategory").addClass("active");
         getBooksInfo(item, "#allBookList");
       }
