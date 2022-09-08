@@ -6,7 +6,7 @@
   width: 80%;
   margin: 13% 16%;
 }
-.loadingSpinner{
+.loadingSpinner {
   margin-left: 250px;
 }
 .about-title,
@@ -31,6 +31,10 @@
 /* ********************************************* */
 /* Responsive design */
 @media screen and (max-width: 320px) {
+  .loadingSpinner {
+    margin: 0 28px !important;
+    width: 100px !important;
+  }
   .about-section {
     margin-top: 0;
     width: 100%;

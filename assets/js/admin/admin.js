@@ -217,7 +217,6 @@ $(document).ready(() => {
   });
 
   $(".about-info-add").on("click", (e) => {
-   
     let title = $("#title").val().trim();
     let imageUrl = $("#imageUrl").val().trim();
     let aboutDescription = $("#aboutDescription").val().trim();
