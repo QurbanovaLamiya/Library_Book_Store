@@ -13,6 +13,7 @@
                 }
             })
             renderBooks(bookObjArr, localSearch);
+            $(".slider-section").addClass('d-none');
             if (resultArr.length == 0) {
                 $(".slider-section").addClass('d-none');
                 localStorage.removeItem("search");
