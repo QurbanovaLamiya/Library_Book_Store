@@ -1,4 +1,4 @@
-let bookId = localStorage.getItem("bookId");
+let bookType = localStorage.getItem("bookType");
 
 myDatabase.ref("/books").on("value", function (snap) {
     let bookObj = snap.val()
@@ -24,13 +24,13 @@ function showBooks(item) {
     $(".bookYea").text(item.bookYear);
     $(".bookContent").text(item.bookDesc.substring(0, 500));
     $(".bookImg img").attr("src", bookImage);
-    // $("#bookTimeAgo").attr("datetime", item.addDate);
+     $("#bookTimeAgo").attr("datetime", item.addDate);
     $(".bookImg").append(cardNew);
 }
 
 function renderProductPage(arr) {
     for (let item of arr) {
-        if (item.id === bookId) {
+        if (item.id === bookType) {
             showBooks(item, '#newReleases');
         }
     }
@@ -69,7 +69,7 @@ const addComment = () => {
 
     time = GetTodayDate();
     let postData = JSON.stringify({
-        bookId,
+        bookType,
         comment,
         time,
     })
@@ -98,7 +98,7 @@ function showComment() {
     $.ajax(comments).then(function (response) {
         let commentArr = response.reverse();
         for (let item of commentArr) {
-            if (item.bookId === bookId) {
+            if (item.bookType === bookType) {
                 let div = $("<div>").addClass("comment-card").html(`
                 <span class="comment-author">anonim</span>
                 <span class="comment-time"><time class="timeago" datetime="${item.time}"></time> added
@@ -120,4 +120,13 @@ $("#commentBtn").on("click", function (e) {
     $("#commentInput").val("");
     setTimeout(() => showComment(), 1000);
 })
+
+
+
+
+
+
+
+
+
 

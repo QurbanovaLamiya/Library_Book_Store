@@ -66,6 +66,7 @@ $(document).ready(() => {
     $("#bookImageUrl").val("");
     $("#publicationYear").val("");
     $("#bookDesc").val("");
+    $("#isNew").prop("checked", false);
   }
 
   // Book Form Section //
@@ -118,7 +119,6 @@ $(document).ready(() => {
 
   AddBookType.on("value", function (snap) {
     let bookTypeArr = Object.entries(snap.val()).reverse();
-    console.log(bookTypeArr);
     let objectArray = bookTypeArr.map((item) => {
       return {
         id: item[0],
@@ -217,7 +217,6 @@ $(document).ready(() => {
   });
 
   $(".about-info-add").on("click", (e) => {
-   
     let title = $("#title").val().trim();
     let imageUrl = $("#imageUrl").val().trim();
     let aboutDescription = $("#aboutDescription").val().trim();

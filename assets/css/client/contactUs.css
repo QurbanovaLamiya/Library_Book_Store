@@ -20,8 +20,8 @@
   background-color: var(--Orange2);
   border: none;
 }
-.main-section{
-  margin-left: 200px;
+.main-section {
+  margin-left: 14% !important;
 }
 /* ********************************************* */
 /* Responsive design */
@@ -47,7 +47,7 @@
     margin-top: 70px !important;
     height: 39px !important;
   }
-  .main-section{
-    margin-left: 0px;
+  .main-section {
+    margin-left: 0px !important;
   }
 }
