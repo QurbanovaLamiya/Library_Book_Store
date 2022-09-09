@@ -1,87 +1,174 @@
 /* **************************************** */
 /* Main  */
-.mainSection {
-  width: 70%;
-  margin-left: 16%;
+
+.single-book-section {
+  margin-top: 100px;
 }
-.booksSection {
-  margin-top: 180px;
-}
-.backBtn {
-  margin-bottom: 80px;
-}
-.backBtn,
-.bookYear {
-  width: 100px;
-  height: 29px;
+
+.back-btn {
   background-color: var(--ColorOrange);
-  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
   border-radius: 3px;
+  color: var(--white);
+  font-family: var(--MontserratFont);
   font-weight: 900;
   font-size: 12px;
-  line-height: 24px;
-  text-transform: uppercase;
-  border: none;
+  line-height: 29px;
+  width: 100px;
+  height: 29px;
+  display: inline-block;
+  transition: .3s all ease-in-out;
 }
-.bookYear {
+
+.back-btn:hover {
+  color: var(--white);
+  text-decoration: none;
+  background-color:var(--ColorOrange);
+}
+
+.book-info .year-text {
+  background-color: #2F80ED;
+  border-radius: 3px;
+  color: var(--white);
+  font-family: var(--MontserratFont);
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 23px;
   width: 69px;
   height: 23px;
-  background: #2f80ed;
+  transition: .3s all ease-in-out;
+  margin-top: 80px;
 }
-.bookInfo h2 {
+
+.book-info .book-name {
+  font-family: var(--MontserratFont);
   font-weight: 700;
   font-size: 35px;
-  line-height: 70px;
+  line-height: 69px;
+  color: var(--catalogBlackColor);
 }
-.bookInfo span {
+
+.book-info .book-days {
+  font-family: var(--MontserratFont);
   font-weight: 700;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 31px;
+  margin-top: -10px;
+  display: block;
+  color: var(--catalogBlackColor);
 }
-.bookAuthor {
+
+.book-info .author-name {
+  font-family: var(--MontserratFont);
   font-weight: 400;
   font-size: 22px;
-  line-height: 40px;
+  line-height: 43px;
+  color: var(--catalogBlackColor);
 }
-.bookContent {
+
+.book-info .book-description {
+  font-family: var(--MontserratFont);
   font-weight: 400;
   font-size: 18px;
   line-height: 35px;
-  width: 80%;
+  color: var(--catalogBlackColor);
 }
-.commentSection {
-  margin: 20% 0 53px 0;
+
+.book-img {
+  padding-left: 100px;
 }
-.commentContent {
-  margin-top: 53px;
+
+.book-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
-.commentSection input {
-  height: 60px;
-  width: 83%;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
+
+.comment-section {
+  margin-top: 100px;
 }
-.commentBtn {
-  width: 60px;
-  height: 60px;
-  background: #e16a00;
-  border-radius: 5px;
-  border: none;
+
+.comment-form {
+  margin-bottom: 50px;
 }
-.commentContent div {
-  width: 95%;
-  border-radius: 5px;
-  margin-bottom: 43px;
-}
-.commentContent span {
-  font-weight: 500;
-  line-height: 19px;
-  color: #232323;
-}
-.commentContent div p {
-  font-weight: 400;
+
+.comment-section input {
+  margin-right: 18px;
+  padding: 30px 38px;
+  font-size: 20px;
+  font-weight: 300;
   line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 10px 0 lightgray;
+}
+
+.comment-section button {
+  border-radius: 5px;
+  background-color: var(--mainOrangeColor);
+  color: var(--ColorOrange);
+  border: none;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.comment-section button img {
+  width: 300%;
+  margin-top:40px ;
+  background-color: orange;
+  
+}
+
+.comment-card {
+  background-color: var(--white);
+  padding: 30px 18px;
+  box-shadow: 0 0 10px 0 lightgray;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.comment-author {
   color: #232323;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.comment-time, .comment-body {
+  color: #232323;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  margin-top: 17px;
+}
+.card-new {
+  background-color: #EB5757;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  font-weight: 900;
+  font-size: 9px;
+  font-family: var(--MontserratFont);
+  color: var(--white);
+  line-height: 18px;
+  padding: 0 12px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+
+
+.mainSection {
+  width: 70%;
+  margin-left: 16%;
 }
 
 /* ********************************************************** */

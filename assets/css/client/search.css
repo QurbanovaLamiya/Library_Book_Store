@@ -11,6 +11,59 @@ main {
   line-height: 196.19%;
   color: var(--ColorDarkGreen);
 }
+.slider-section {
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 lightgray;
+  padding: 47px 31px;
+}
+
+.book-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 47px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--catalogBlackColor);
+}
+
+.author-name {
+  font-weight: 400px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+  color: var(--catalogBlackColor);
+}
+
+.book-description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.img-section {
+  padding-right: 30px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.img-section img {
+  width: 100%;
+}
+
+.card-new {
+  background-color: #EB5757;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  font-weight: 900;
+  font-size: 9px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 18px;
+  padding: 0 12px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
+}
 
 .content h2 {
   font-family: var(--Montserrat600);
@@ -106,9 +159,7 @@ main {
 .fixed-menu {
   display: none;
 }
-.main-section{
-  margin-left: 200px;
-}
+
 /* ********************************************* */
 /* Responsive design */
 @media screen and (max-width: 320px) {
