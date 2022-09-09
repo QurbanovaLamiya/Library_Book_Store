@@ -1,4 +1,4 @@
-let bookType = localStorage.getItem("bookType");
+let bookId = localStorage.getItem("bookId");
 
 myDatabase.ref("/books").on("value", function (snap) {
     let bookObj = snap.val()
@@ -16,21 +16,21 @@ myDatabase.ref("/books").on("value", function (snap) {
 function showBooks(item) {
     let bookImage = '';
     let cardNew = ''
-    item.bookImage ? bookImage = item.bookImage : bookImage = "https://www.iconattitude.com/icons/open_icon_library/oxygen-style/png/256/x-office-address-book.png";
+    item.bookImage ? bookImage = item.bookImage : bookImage = "https://static.wixstatic.com/media/223356_4adca957048e4b3cada43d1709362beb~mv2.jpg/v1/fill/w_560,h_622,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/boook.jpg";
     item.isNew === true ? cardNew = '<span class="card-new">NEW</span>' : false;
 
-    $(".book-name").text(item.bookName);
-    $(".bookAuthor").text(item.authorName);
-    $(".bookYea").text(item.bookYear);
-    $(".bookContent").text(item.bookDesc.substring(0, 500));
-    $(".bookImg img").attr("src", bookImage);
+    $(".book-name").html(item.bookName);
+    $(".author-name").html(item.authorName);
+    $(".year-text").html(item.bookYear);
+    $(".book-description").html(item.bookDesc.substring(0, 500));
+    $(".book-img img").attr("src", bookImage);
      $("#bookTimeAgo").attr("datetime", item.addDate);
-    $(".bookImg").append(cardNew);
+    $(".book-img").append(cardNew);
 }
 
 function renderProductPage(arr) {
     for (let item of arr) {
-        if (item.id === bookType) {
+        if (item.id === bookId) {
             showBooks(item, '#newReleases');
         }
     }
@@ -69,7 +69,7 @@ const addComment = () => {
 
     time = GetTodayDate();
     let postData = JSON.stringify({
-        bookType,
+        bookId,
         comment,
         time,
     })
@@ -98,7 +98,7 @@ function showComment() {
     $.ajax(comments).then(function (response) {
         let commentArr = response.reverse();
         for (let item of commentArr) {
-            if (item.bookType === bookType) {
+            if (item.bookId === bookId) {
                 let div = $("<div>").addClass("comment-card").html(`
                 <span class="comment-author">anonim</span>
                 <span class="comment-time"><time class="timeago" datetime="${item.time}"></time> added

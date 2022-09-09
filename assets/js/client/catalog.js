@@ -95,7 +95,7 @@ $(document).ready(() => {
           <h5 class="card-title">${bookName}</h5>
           <p class="card-text">${bookAuthor}</p>
           <button class="catalogbtn">
-              <a href="./bookPage.html" data-value="${item.id}">Read more</a>
+              <a href="./bookPage.html" data-value="${item.id}" class="book-info"> Read more</a>
           </button>
       </div>
       `);
@@ -147,4 +147,7 @@ $(document).ready(() => {
       }
     }
   }
+  $(document).on("click", ".book-info", function () {
+    localStorage.setItem("bookId", $(this).data("value"))
+})
 });
