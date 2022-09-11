@@ -97,7 +97,7 @@ $(document).ready(() => {
     $("#adminDescCountZero").html(descCount);
   }
 
-  function countLimitDesc(textarea, count, text) {
+  function DescAbout(textarea, count, text) {
     $(textarea).on("keyup", () => {
       $(count).html($(textarea).val().length);
       if ($(textarea).val().length >= 1000) {
@@ -108,11 +108,11 @@ $(document).ready(() => {
     });
   }
 
-  countLimitDesc("#bookDesc", "#adminDescCountZero", "#adminDescCount");
+  DescAbout("#bookDesc", "#adminDescCountZero", "#adminDescCount");
 
   // Add Book Type //
-  $(document).on("click", "#addTypeBtn", () => {
-    $("#addTypeSection").show();
+  $(document).on("click", "#addAbout", () => {
+    $("#addSection").show();
   });
 
   let AddBookType = myDatabase.ref("/addBookType");
@@ -152,7 +152,7 @@ $(document).ready(() => {
     }
 
     $("#bookTypeInput").val("");
-    $("#addTypeSection").hide();
+    $("#addSection").hide();
   });
 
   $("#addBookBtn").on("click", () => {
