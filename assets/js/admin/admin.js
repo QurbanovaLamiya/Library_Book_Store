@@ -52,7 +52,6 @@ $(document).ready(() => {
             searchResult.on("click", () => {
               clearBookForm();
               bookFormInfo(data);
-              console.log(data);
             });
           }
         }
@@ -97,7 +96,7 @@ $(document).ready(() => {
     $("#adminDescCountZero").html(descCount);
   }
 
-  function DescAbout(textarea, count, text) {
+  function countLimitDesc(textarea, count, text) {
     $(textarea).on("keyup", () => {
       $(count).html($(textarea).val().length);
       if ($(textarea).val().length >= 1000) {
@@ -108,11 +107,11 @@ $(document).ready(() => {
     });
   }
 
-  DescAbout("#bookDesc", "#adminDescCountZero", "#adminDescCount");
+  countLimitDesc("#bookDesc", "#adminDescCountZero", "#adminDescCount");
 
   // Add Book Type //
-  $(document).on("click", "#addAbout", () => {
-    $("#addSection").show();
+  $(document).on("click", "#addTypeBtn", () => {
+    $("#addTypeSection").show();
   });
 
   let AddBookType = myDatabase.ref("/addBookType");
@@ -152,7 +151,7 @@ $(document).ready(() => {
     }
 
     $("#bookTypeInput").val("");
-    $("#addSection").hide();
+    $("#addTypeSection").hide();
   });
 
   $("#addBookBtn").on("click", () => {

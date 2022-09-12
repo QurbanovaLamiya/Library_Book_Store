@@ -148,6 +148,6 @@ $(document).ready(() => {
     }
   }
   $(document).on("click", ".book-info", function () {
-    localStorage.setItem("bookId", $(this).data("value"))
-})
+    localStorage.setItem("bookId", $(this).data("value"));
+  });
 });

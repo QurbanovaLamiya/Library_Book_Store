@@ -1,10 +1,9 @@
 /* **************************************** */
 /* Main  */
-
-.single-book-section {
-  margin-top: 100px;
+.mainSection {
+  width: 73%;
+  margin-left: 15%;
 }
-
 .back-btn {
   background-color: var(--ColorOrange);
   border-radius: 3px;
@@ -16,17 +15,18 @@
   width: 100px;
   height: 29px;
   display: inline-block;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  margin-top: 20px;
 }
 
 .back-btn:hover {
   color: var(--white);
   text-decoration: none;
-  background-color:var(--ColorOrange);
+  background-color: var(--ColorOrange);
 }
 
 .book-info .year-text {
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   border-radius: 3px;
   color: var(--white);
   font-family: var(--MontserratFont);
@@ -35,7 +35,7 @@
   line-height: 23px;
   width: 69px;
   height: 23px;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   margin-top: 80px;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .comment-section {
-  margin-top: 100px;
+  margin: 100px 0 0 20px;
 }
 
 .comment-form {
@@ -93,28 +93,23 @@
 
 .comment-section input {
   margin-right: 18px;
-  padding: 30px 38px;
+  padding-left: 38px;
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   box-shadow: 0 0 10px 0 lightgray;
 }
 
 .comment-section button {
   border-radius: 5px;
-  background-color: var(--mainOrangeColor);
+  background-color: var(--ColorOrange);
+  margin-top: 44px;
+  height: 70px;
   color: var(--ColorOrange);
   border: none;
   text-align: center;
   padding: 0 20px;
-}
-
-.comment-section button img {
-  width: 300%;
-  margin-top:40px ;
-  background-color: orange;
-  
 }
 
 .comment-card {
@@ -129,21 +124,22 @@
   color: #232323;
   font-size: 16px;
   line-height: 19px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   margin-right: 30px;
 }
 
-.comment-time, .comment-body {
+.comment-time,
+.comment-body {
   color: #232323;
   font-size: 16px;
   line-height: 24px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   margin-top: 17px;
 }
 .card-new {
-  background-color: #EB5757;
+  background-color: #eb5757;
   position: absolute;
   top: 0;
   right: 16px;
@@ -157,87 +153,58 @@
   box-shadow: 0 0 3px 0 rgba(225, 106, 0, 0.19);
 }
 
-
-
-
-
-
-
-
-
-
-.mainSection {
-  width: 70%;
-  margin-left: 16%;
-}
-
 /* ********************************************************** */
 /* Responsive design */
 @media screen and (max-width: 320px) {
   .mainSection {
-    margin-left: 0;
-    width: 100%;
+    margin-left: 15px;
+    width: 90%;
   }
-  
+  .back-btn {
+    margin: 0 0 68px;
+  }
+  .book-img {
+    padding: 10px;
+  }
   .book-info .book-name {
     font-size: 25px;
-  
-    line-height: 69px;
+    line-height: 49px;
     text-align: center;
-}
-.book-info{
-  padding: 20px;
-}
-.book-info .author-name {
-    font-size: 10px;
-   
-    text-align: center;
-}
-
-.book-info .book-days {
-    display: none;
-}
-
-.book-info .book-description {
+  }
+  .book-info .author-name {
     font-size: 12px;
-}
-
-.comment-section input {
-    margin-right: 10px;
-    padding: 15px 19px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .book-info .book-days {
+    display: none;
+  }
+  .book-info .book-description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .comment-section {
+    margin-left: 0;
+  }
+  .comment-section input {
+    height: 45px;
+    padding: 0 19px;
     font-size: 14px;
-}
-
-.comment-section button {
+  }
+  .comment-section button {
+    height: 45px;
     padding: 0 10px;
-}
-
-.comment-section button img {
-    width: 60px;
-}
-
-.comment-card {
+  }
+  .comment-card {
     padding: 20px 10px;
-}
-
-.comment-author {
+  }
+  .comment-author {
     font-size: 14px;
     margin-right: 30px;
-}
-
-.comment-time, .comment-body {
+  }
+  .comment-time,
+  .comment-body {
     font-size: 14px;
-}
-.book-img {
-  padding-left: 80px;
-  margin-right: 50px;
-  margin-top: 20px;
-}
-
-.book-img img {
-  width: 90%;
-  object-fit: cover;
-  border-radius: 10px;
-  
-}
+  }
 }
