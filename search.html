@@ -75,120 +75,26 @@
     </header>
 
     <!-- Main Start -->
-    <main  >
-        <section>
-            
-            <div class="container">
+    <main>
+        <section class="searchSect">
+            <div>
                 <div class="row">
                     <div class="col-12 col-sm-12 textt">
                         <h2>Search</h1>
                     </div>
                 </div>
                 <!--Search result card-->
-                <div class="row " style="display: flex; justify-content: space-between;">
+                <div class="row" style="display: flex; justify-content: space-between;">
                     <div class="col-12 col-sm-4 searchbutton">
                         <input type="name" class="form-control col-12 " id="searchInput" placeholder="Search a book">
-                        <button type="button  " class="btns form-control " id="searchBtn"><a href="#">Search</a>
+                        <button type="button  " class="btns form-control " id="searchBtn">Search
                         </button>
-
                     </div>
 
-                    <!-- <div class="col-sm-7 col-10 pb-5  d-flex searchh">
-                    <div class="row ">
-                        <div class="search-content col-3">
-                            <img src="./assets/images/searcchbook.svg">
-                        </div>
-                        <div class="col-sm-7 text col-10 content" style="margin-left: 50px">
-                            <h2 class="col-12">Order in Chaos</h2>
-                            <h3>Konstantin Koptelov</h3>
-                            <p>We work without holidays and weekends! Residents of Kiev can receive an order on the day
-                                of its registration. Customers from other cities of Ukraine can receive an order within
-                                1-5 days, depending on the location of the settlement and the selected delivery method.
-                                Orders over UAH 1000 are delivered free of charge *. You can see the available methods,
-                                exact terms and cost of delivery during checkout in the order basket, after selecting
-                                the delivery city </p>
-                        </div>
-                    </div>
-                </div> -->
-
-                    <!-- <div id="carouselExampleControls" class="carousel slide col-sm-7 col-lg-7  searchh2 d-flex "
-                        data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="search-content2 col-3 mt-lg-5">
-                                        <img src="./assets/images/searcchbook.svg">
-                                    </div>
-                                    <div class="col-sm-7 text col-lg-7 content" style="margin-left: 50px">
-                                        <h2 class="col-12 ">Order in Chaos</h2>
-                                        <h3 class="searchAuthor">Konstantin Koptelov</h3>
-                                        <p class="searchText">We work without holidays and weekends! Residents of Kiev
-                                            can receive an order
-                                            on
-                                            the day of its registration. Customers from other cities of Ukraine can
-                                            receive
-                                            an order within 1-5 days, depending on the location of the settlement and
-                                            the
-                                            selected delivery method. Orders over UAH 1000 are delivered free of charge
-                                            *.
-                                            You can see the available methods, exact terms and cost of delivery during
-                                            checkout in the order basket, after selecting the delivery city </p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-7 col-md-12 slider-section d-none mt-lg-0 mt-md-5 mt-lg-5">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div id="searchSlider" class="carousel-inner">
                             </div>
-                            <div class="carousel-item">
-                                <div class="row ">
-                                    <div class="search-content2 col-3 mt-lg-5">
-                                        <img src="./assets/images/searcchbook.svg">
-                                    </div>
-                                    <div class="col-sm-7 text col-lg-7 content" style="margin-left: 50px">
-                                        <h2 class="col-12">Order in Chaos</h2>
-                                        <h3 class="searchAuthor">Konstantin Koptelov</h3>
-                                        <p class="searchText">We work without holidays and weekends! Residents of Kiev
-                                            can receive an order
-                                            on
-                                            the day of its registration. Customers from other cities of Ukraine can
-                                            receive
-                                            an order within 1-5 days, depending on the location of the settlement and
-                                            the
-                                            selected delivery method. Orders over UAH 1000 are delivered free of charge
-                                            *.
-                                            You can see the available methods, exact terms and cost of delivery during
-                                            checkout in the order basket, after selecting the delivery city </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="row ">
-                                    <div class="search-content2 col-3 mt-lg-5">
-                                        <img src="./assets/images/searcchbook.svg">
-                                    </div>
-                                    <div class="col-sm-7 text col-lg-7 content" style="margin-left: 50px">
-                                        <h2 class="col-12">Order in Chaos</h2>
-                                        <h3 class="searchAuthor">Konstantin Koptelov</h3>
-                                        <p class="searchText">We work without holidays and weekends! Residents of Kiev
-                                            can receive an order
-                                            on
-                                            the day of its registration. Customers from other cities of Ukraine can
-                                            receive
-                                            an order within 1-5 days, depending on the location of the settlement and
-                                            the
-                                            selected delivery method. Orders over UAH 1000 are delivered free of charge
-                                            *.
-                                            You can see the available methods, exact terms and cost of delivery during
-                                            checkout in the order basket, after selecting the delivery city </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="col-lg-7 col-md-12 slider-section d-none mt-lg-0 mt-md-5 mt-lg-5">
-                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                <div id="searchSlider" class="carousel-inner">
-                                </div>
-
-                   
                         </div>
                         <a class="carousel-control-prev d-none" href="#carouselExampleControls" role="button"
                             data-slide="prev">
@@ -314,15 +220,15 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
-    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-    crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
     <script src="./assets/js/db.js"></script>
     <script src="./assets/js/client/home.js"></script>
     <script src="./assets/js/client/search.js"></script>
